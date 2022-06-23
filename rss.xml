@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Deep Diary]]></title><description><![CDATA[基于深度学习，专注于旅游，记忆追溯相关的开发]]></description><link>https://www.deep-diary.com</link><generator>RSS for Node</generator><lastBuildDate>Wed, 22 Jun 2022 16:14:33 GMT</lastBuildDate><atom:link href="https://www.deep-diary.com/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[深度日记]]></copyright><language><![CDATA[en]]></language><item><title><![CDATA[Django Wheels]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Deep Diary]]></title><description><![CDATA[基于深度学习，专注于旅游，记忆追溯相关的开发]]></description><link>https://www.deep-diary.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 23 Jun 2022 00:01:22 GMT</lastBuildDate><atom:link href="https://www.deep-diary.com/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[深度日记]]></copyright><language><![CDATA[en]]></language><item><title><![CDATA[用户登入后端]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+<p>​	本文主要分享如何用<code>Django</code>实现用户模型定义，实现登入登出等<code>api</code>接口，后续的前端，使用的是<code>vue-element-admin</code>框架</p>
+<p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
+</div>
+]]></description><link>https://www.deep-diary.com/Project/gallery/1.%20user%20login%20backend.html</link><guid isPermaLink="true">https://www.deep-diary.com/Project/gallery/1.%20user%20login%20backend.html</guid><category><![CDATA[Gallery]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Thu, 23 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[用户登入前端]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+<p>​	本文主要介绍如何使用<code>vue-element-admin</code>实现最基本的登入登出流程及原理，如何实现通过<code>axios</code>发送网络请求并处理返回的数据。</p>
+<p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
+</div>
+]]></description><link>https://www.deep-diary.com/Project/gallery/2.%20user%20login%20frontend.html</link><guid isPermaLink="true">https://www.deep-diary.com/Project/gallery/2.%20user%20login%20frontend.html</guid><category><![CDATA[Gallery]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Thu, 23 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Django Wheels]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
 <p>如果用<code>Python</code>开发网站的话，其后端最有名的就是<code>Django</code>了，本模块主要分享下<code>Django</code>下比较使用的轮子</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
@@ -27,12 +35,7 @@
 <p>本模块主要分享汽车行业的项目管理经验，项目开发流程，GM, TESLA 主机厂的开发流程，产线规划，产品质量追溯，注塑行业的相关工艺等。主要适用于汽车行业的项目经理及工程师，特别适合对接主机厂是 GM, TESLA 的朋友们。</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
-]]></description><link>https://www.deep-diary.com/PM/hot%20plate%20welding.html</link><guid isPermaLink="true">https://www.deep-diary.com/PM/hot%20plate%20welding.html</guid><category><![CDATA[PM]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introduction of Gallery Project]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
-<p>​	本项目主要基于深度学习的人脸识别，目标识别，照片元数据，包括<code>GPS</code>, 日期，纪念日，主题颜色等属性为照片打上标签，继而使用<code>GCN</code>图卷积网络进行训练，使每张照片产生跟多个人，多张照片有一定相关性的特征向量，从而可以进行快速检索其相关性，也就是记忆碎片的概念。</p>
-<p>​	至于前端，使用<code>vue-element-admin</code>框架进行展示</p>
-<p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
-</div>
-]]></description><link>https://www.deep-diary.com/Project/gallery/</link><guid isPermaLink="true">https://www.deep-diary.com/Project/gallery/</guid><category><![CDATA[Gallery]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introduction of Blog Project]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+]]></description><link>https://www.deep-diary.com/PM/hot%20plate%20welding.html</link><guid isPermaLink="true">https://www.deep-diary.com/PM/hot%20plate%20welding.html</guid><category><![CDATA[PM]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introduction of Blog Project]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
 <p>搭建博客的方式有很多，博主也是一步步摸索过来的，从一开始的<code>django+AdminLTE</code>, 再到<code>django+DRF+elementUI-admin</code>, 最终选择了最近比较流行的<code>vuepress</code>, 本章会记录开发过程中的每一个功能点， 如果您也正想搭建个人博客，相信本章应该会比较适合您。</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
@@ -40,7 +43,17 @@
 <p><code>Favicon</code>也称为<code>URL</code>图标或网站图标。这些图标非常小（通常为16×16或32×32），并会显示在浏览器窗口和书签中网站网址的旁边，让访问用户可以轻松在其打开的窗口中识别你的网站，本文将会分享如何进行<code>Favicon</code>的生成及使用</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
-]]></description><link>https://www.deep-diary.com/Project/blog/favicon.html</link><guid isPermaLink="true">https://www.deep-diary.com/Project/blog/favicon.html</guid><category><![CDATA[blog]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[用Python实现的小工具]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+]]></description><link>https://www.deep-diary.com/Project/blog/favicon.html</link><guid isPermaLink="true">https://www.deep-diary.com/Project/blog/favicon.html</guid><category><![CDATA[blog]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introduction of Gallery Project]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+<p>​	本项目主要基于深度学习的人脸识别，目标识别，照片元数据，包括<code>GPS</code>, 日期，纪念日，主题颜色等属性为照片打上标签，继而使用<code>GCN</code>图卷积网络进行训练，使每张照片产生跟多个人，多张照片有一定相关性的特征向量，从而可以进行快速检索其相关性，也就是记忆碎片的概念。</p>
+<p>​	至于前端，使用<code>vue-element-admin</code>框架进行展示</p>
+<p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
+</div>
+]]></description><link>https://www.deep-diary.com/Project/gallery/</link><guid isPermaLink="true">https://www.deep-diary.com/Project/gallery/</guid><category><![CDATA[Gallery]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[相册模块后台]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+<p>​	本文重点在于介绍如何定义相册模型，实现照片上传，获取照片中的属性比如<code>gps</code>,<code>date</code>，<code>人脸信息</code>（本文提到的人脸信息，主要是基于<code>lightroom</code>识别后，人脸信息会保存在图片的<code>xml</code>文件中）</p>
+<p>​	至于前端，使用<code>vue-element-admin</code>框架进行展示</p>
+<p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
+</div>
+]]></description><link>https://www.deep-diary.com/Project/gallery/3.%20gallery%20backend.html</link><guid isPermaLink="true">https://www.deep-diary.com/Project/gallery/3.%20gallery%20backend.html</guid><category><![CDATA[Gallery]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[用Python实现的小工具]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
 <p><code>Python</code>这个编程语言，发展越来越快，涉及的领域也越来越多，算是一个万能胶水吧，本文主要分享用<code>python</code>实现的小工具</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
@@ -56,11 +69,7 @@
 <p>网站开发，最后，也是最难的一步就是部署，本文将分享如何将<code>vuepress</code>网站，部署到<code>gitee</code>,<code>github</code>,<code>ECS服务器</code>上</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
-]]></description><link>https://www.deep-diary.com/Guide/deploy.html</link><guid isPermaLink="true">https://www.deep-diary.com/Guide/deploy.html</guid><category><![CDATA[Develop]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Sun, 19 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introduction of Usefull Software]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
-<p>好的软件可以快速帮助我们实现工作，在这里，您可以学到一些高效办公软件，现在让我们一起来感受下吧！</p>
-<p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
-</div>
-]]></description><link>https://www.deep-diary.com/Software/</link><guid isPermaLink="true">https://www.deep-diary.com/Software/</guid><category><![CDATA[Software]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Sat, 18 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Git常用命令大全]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+]]></description><link>https://www.deep-diary.com/Guide/deploy.html</link><guid isPermaLink="true">https://www.deep-diary.com/Guide/deploy.html</guid><category><![CDATA[Develop]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Sun, 19 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Git常用命令大全]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
 <p>使用<code>vuepress</code>搭建好博客后，就可以在本地写文章，然后使用 git 指令，发布到<code>gitee</code>或<code>github</code>上去，因此会用到<code>git</code>指令，本文就对其做一些汇总</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
@@ -68,8 +77,8 @@
 <p><code>Typora</code> 是 <code>window</code> 上最好用的<code>markdown</code>软件，正常情况下，当您写完文章或笔记后，图片会保存到本地，那样对后续的发布会造成特别的麻烦，本文分享如何在<code>Typora</code>中，直接将图片保存到<code>oss</code>服务器中</p>
 <p><a href="http://www.deep-diary.com" target="_blank" rel="noopener noreferrer">点击免费观看教学视频<OutboundLink/></a></p>
 </div>
-]]></description><link>https://www.deep-diary.com/Software/Typora+PicGo+%E9%98%BF%E9%87%8C%E4%BA%91oss%E5%AE%9E%E7%8E%B0%E4%BA%91%E7%AC%94%E8%AE%B0.html</link><guid isPermaLink="true">https://www.deep-diary.com/Software/Typora+PicGo+%E9%98%BF%E9%87%8C%E4%BA%91oss%E5%AE%9E%E7%8E%B0%E4%BA%91%E7%AC%94%E8%AE%B0.html</guid><category><![CDATA[Software]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Sat, 18 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[本站指南]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
-<p>每个事情，都要有目标，本文罗列总结了后续本站会涉及到的一些技术图谱，便于有缘人找到自己的精神归宿。</p>
+]]></description><link>https://www.deep-diary.com/Software/Typora+PicGo+%E9%98%BF%E9%87%8C%E4%BA%91oss%E5%AE%9E%E7%8E%B0%E4%BA%91%E7%AC%94%E8%AE%B0.html</link><guid isPermaLink="true">https://www.deep-diary.com/Software/Typora+PicGo+%E9%98%BF%E9%87%8C%E4%BA%91oss%E5%AE%9E%E7%8E%B0%E4%BA%91%E7%AC%94%E8%AE%B0.html</guid><category><![CDATA[Software]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Sat, 18 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introduction of Usefull Software]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+<p>好的软件可以快速帮助我们实现工作，在这里，您可以学到一些高效办公软件，现在让我们一起来感受下吧！</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
-]]></description><link>https://www.deep-diary.com/Guide/</link><guid isPermaLink="true">https://www.deep-diary.com/Guide/</guid><category><![CDATA[Develop]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Mon, 06 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Time Line]]></title><link>https://www.deep-diary.com/Timeline/</link><guid isPermaLink="true">https://www.deep-diary.com/Timeline/</guid><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Invalid Date</pubDate></item><item><title><![CDATA[处理 Nginx ERR]]></title><link>https://www.deep-diary.com/Web/Backend/Nginx/handle-error.html</link><guid isPermaLink="true">https://www.deep-diary.com/Web/Backend/Nginx/handle-error.html</guid><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Invalid Date</pubDate></item></channel></rss>
+]]></description><link>https://www.deep-diary.com/Software/</link><guid isPermaLink="true">https://www.deep-diary.com/Software/</guid><category><![CDATA[Software]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Sat, 18 Jun 2022 00:00:00 GMT</pubDate></item></channel></rss>
