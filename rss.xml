@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Deep Diary]]></title><description><![CDATA[基于深度学习，专注于旅游，记忆追溯相关的开发]]></description><link>https://www.deep-diary.com</link><generator>RSS for Node</generator><lastBuildDate>Wed, 20 Jul 2022 23:50:35 GMT</lastBuildDate><atom:link href="https://www.deep-diary.com/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[深度日记]]></copyright><language><![CDATA[en]]></language><item><title><![CDATA[Introduction of Autowin Project]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
-<p>​	本节主要介绍在<code>autowin</code>做过的一些项目，包括一些电子项目，项目管理等。涉及到的电子项目有<code>一脚踢</code>，<code>全景摄像头清洗系统</code>，<code>智能语音提醒系统</code>，<code>智能烧水壶</code>，<code>AVAS</code>；涉及到的项目管理产品的主要有<code>洗涤壶</code>，<code>膨胀箱</code>，<code>歧管</code>，对接的客户主要为<code>Tesla</code>, <code>GM</code></p>
-<p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
-</div>
-]]></description><link>https://www.deep-diary.com/Project/autowin/</link><guid isPermaLink="true">https://www.deep-diary.com/Project/autowin/</guid><category><![CDATA[project]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Mon, 11 Jul 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[水冷歧管-Coolant Manifold]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Deep Diary]]></title><description><![CDATA[基于深度学习，专注于旅游，记忆追溯相关的开发]]></description><link>https://www.deep-diary.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 26 Jul 2022 23:55:21 GMT</lastBuildDate><atom:link href="https://www.deep-diary.com/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[深度日记]]></copyright><language><![CDATA[en]]></language><item><title><![CDATA[水冷歧管-Coolant Manifold]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
 <p>​	<code>tesla</code>，算是新能源行业的领头羊，涉及的产品，往往被其它主机厂模仿，比如本文介绍的超级歧管，现在成了新能源车的标配，这里就从产品简介，产线简介，质量控制方法，经验教训总结，这几个方面，对这个项目做一个简单的介绍</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
-]]></description><link>https://www.deep-diary.com/Project/autowin/tesla%20manifold.html</link><guid isPermaLink="true">https://www.deep-diary.com/Project/autowin/tesla%20manifold.html</guid><category><![CDATA[project]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Mon, 11 Jul 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[吹塑工艺简介]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+]]></description><link>https://www.deep-diary.com/Project/autowin/tesla%20manifold.html</link><guid isPermaLink="true">https://www.deep-diary.com/Project/autowin/tesla%20manifold.html</guid><category><![CDATA[project]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Mon, 11 Jul 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introduction of Autowin Project]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+<p>​	本节主要介绍在<code>autowin</code>做过的一些项目，包括一些电子项目，项目管理等。涉及到的电子项目有<code>一脚踢</code>，<code>全景摄像头清洗系统</code>，<code>智能语音提醒系统</code>，<code>智能烧水壶</code>，<code>AVAS</code>；涉及到的项目管理产品的主要有<code>洗涤壶</code>，<code>膨胀箱</code>，<code>歧管</code>，对接的客户主要为<code>Tesla</code>, <code>GM</code></p>
+<p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
+</div>
+]]></description><link>https://www.deep-diary.com/Project/autowin/</link><guid isPermaLink="true">https://www.deep-diary.com/Project/autowin/</guid><category><![CDATA[project]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Mon, 11 Jul 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[吹塑工艺简介]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
 <p>本文主要介绍下吹塑相关工艺，比如吹塑成型的原理，如何对吹塑产品进行质量控制，如何进行模内打孔，具体的生产过程等。</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
@@ -28,11 +28,7 @@
 <p>如果用<code>Python</code>开发网站的话，其后端最有名的就是<code>Django</code>了，本模块主要分享下<code>Django</code>下比较使用的轮子</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
-]]></description><link>https://www.deep-diary.com/Web/Backend/Django/django%20wheels.html</link><guid isPermaLink="true">https://www.deep-diary.com/Web/Backend/Django/django%20wheels.html</guid><category><![CDATA[WEB]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Wed, 22 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Django 处理保存上传的图片]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
-<p>使用<code>Django</code>开发网站的过程中，我们免不了需要上传图片，上传后的图片一般有2种格式，一种保存到内存中，处理图片会更加快速，不过对于有些函数，无法直接读取内存中的图片；另外一种是保存到系统临时文件中，基本上所有函数都可以直接读取，本文就来分享下如何分别配置这2中模式？</p>
-<p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
-</div>
-]]></description><link>https://www.deep-diary.com/Web/Backend/Django/django%20%E5%A4%84%E7%90%86%E4%BF%9D%E5%AD%98%E4%B8%8A%E4%BC%A0%E7%9A%84%E5%9B%BE%E7%89%87.html</link><guid isPermaLink="true">https://www.deep-diary.com/Web/Backend/Django/django%20%E5%A4%84%E7%90%86%E4%BF%9D%E5%AD%98%E4%B8%8A%E4%BC%A0%E7%9A%84%E5%9B%BE%E7%89%87.html</guid><category><![CDATA[WEB]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Wed, 22 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Django 实现云存储]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+]]></description><link>https://www.deep-diary.com/Web/Backend/Django/django%20wheels.html</link><guid isPermaLink="true">https://www.deep-diary.com/Web/Backend/Django/django%20wheels.html</guid><category><![CDATA[WEB]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Wed, 22 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Django 实现云存储]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
 <p>对象存储<code>oss</code>可以简单理解为用来存储图片、音频、视频等非结构化数据的数据池。相对于主机服务器，具有读写速度快，利于分享的特点。本文主要分享下如何在<code>django</code>中使用阿里云<code>oss</code></p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
@@ -40,12 +36,20 @@
 <p>网站的访问速度，极大的影响用户体验，那如何进行网站加速呢，本文主要分享2种方法：1. 将静态资源保存到<code>oss</code>服务器种；2. 使用CDN服务器进行网站加速。</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
-]]></description><link>https://www.deep-diary.com/Web/Backend/Django/django%20%E7%BD%91%E7%AB%99%E5%8A%A0%E9%80%9F.html</link><guid isPermaLink="true">https://www.deep-diary.com/Web/Backend/Django/django%20%E7%BD%91%E7%AB%99%E5%8A%A0%E9%80%9F.html</guid><category><![CDATA[WEB]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Wed, 22 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introduction of Deep Learning]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+]]></description><link>https://www.deep-diary.com/Web/Backend/Django/django%20%E7%BD%91%E7%AB%99%E5%8A%A0%E9%80%9F.html</link><guid isPermaLink="true">https://www.deep-diary.com/Web/Backend/Django/django%20%E7%BD%91%E7%AB%99%E5%8A%A0%E9%80%9F.html</guid><category><![CDATA[WEB]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Wed, 22 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Django 处理保存上传的图片]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+<p>使用<code>Django</code>开发网站的过程中，我们免不了需要上传图片，上传后的图片一般有2种格式，一种保存到内存中，处理图片会更加快速，不过对于有些函数，无法直接读取内存中的图片；另外一种是保存到系统临时文件中，基本上所有函数都可以直接读取，本文就来分享下如何分别配置这2中模式？</p>
+<p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
+</div>
+]]></description><link>https://www.deep-diary.com/Web/Backend/Django/django%20%E5%A4%84%E7%90%86%E4%BF%9D%E5%AD%98%E4%B8%8A%E4%BC%A0%E7%9A%84%E5%9B%BE%E7%89%87.html</link><guid isPermaLink="true">https://www.deep-diary.com/Web/Backend/Django/django%20%E5%A4%84%E7%90%86%E4%BF%9D%E5%AD%98%E4%B8%8A%E4%BC%A0%E7%9A%84%E5%9B%BE%E7%89%87.html</guid><category><![CDATA[WEB]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Wed, 22 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introduction of Deep Learning]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
 <p>深度学习方面：涵盖 Python, pytorch, CNN, RNN, LSTM, ATTENTION, GNN, GCN, Insightface 人脸识别，openmmlib 目标识别等，也是博主的主要学习方向</p>
 <p>本章适合对深度学习感兴趣的，特别是对于人脸识别，目标识别，图神经网络感兴趣的同学。</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
-]]></description><link>https://www.deep-diary.com/Deep-Learning/</link><guid isPermaLink="true">https://www.deep-diary.com/Deep-Learning/</guid><category><![CDATA[deep learning]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introduction of Project Management]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+]]></description><link>https://www.deep-diary.com/Deep-Learning/</link><guid isPermaLink="true">https://www.deep-diary.com/Deep-Learning/</guid><category><![CDATA[deep learning]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[热板焊工艺]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+<p>本文主要介绍热板焊接相关原理，控制方法，相关工艺参数，质量追溯等</p>
+<p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
+</div>
+]]></description><link>https://www.deep-diary.com/PM/hot%20plate%20welding.html</link><guid isPermaLink="true">https://www.deep-diary.com/PM/hot%20plate%20welding.html</guid><category><![CDATA[PM]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introduction of Project Management]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
 <p>本模块主要分享汽车行业的项目管理经验，项目开发流程，GM, TESLA 主机厂的开发流程，产线规划，产品质量追溯，注塑行业的相关工艺等。主要适用于汽车行业的项目经理及工程师，特别适合对接主机厂是 GM, TESLA 的朋友们。</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
@@ -53,11 +57,7 @@
 <p>搭建博客的方式有很多，博主也是一步步摸索过来的，从一开始的<code>django+AdminLTE</code>, 再到<code>django+DRF+elementUI-admin</code>, 最终选择了最近比较流行的<code>vuepress</code>, 本章会记录开发过程中的每一个功能点， 如果您也正想搭建个人博客，相信本章应该会比较适合您。</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
-]]></description><link>https://www.deep-diary.com/Project/blog/</link><guid isPermaLink="true">https://www.deep-diary.com/Project/blog/</guid><category><![CDATA[blog]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[热板焊工艺]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
-<p>本文主要介绍热板焊接相关原理，控制方法，相关工艺参数，质量追溯等</p>
-<p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
-</div>
-]]></description><link>https://www.deep-diary.com/PM/hot%20plate%20welding.html</link><guid isPermaLink="true">https://www.deep-diary.com/PM/hot%20plate%20welding.html</guid><category><![CDATA[PM]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[如何制作Favicon图标]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+]]></description><link>https://www.deep-diary.com/Project/blog/</link><guid isPermaLink="true">https://www.deep-diary.com/Project/blog/</guid><category><![CDATA[blog]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[如何制作Favicon图标]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
 <p><code>Favicon</code>也称为<code>URL</code>图标或网站图标。这些图标非常小（通常为16×16或32×32），并会显示在浏览器窗口和书签中网站网址的旁边，让访问用户可以轻松在其打开的窗口中识别你的网站，本文将会分享如何进行<code>Favicon</code>的生成及使用</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
@@ -66,16 +66,16 @@
 <p>​	至于前端，使用<code>vue-element-admin</code>框架进行展示</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
-]]></description><link>https://www.deep-diary.com/Project/gallery/</link><guid isPermaLink="true">https://www.deep-diary.com/Project/gallery/</guid><category><![CDATA[Gallery]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[用Python实现的小工具]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
-<p><code>Python</code>这个编程语言，发展越来越快，涉及的领域也越来越多，算是一个万能胶水吧，本文主要分享用<code>python</code>实现的小工具</p>
-<p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
-</div>
-]]></description><link>https://www.deep-diary.com/Software/Python%20tools.html</link><guid isPermaLink="true">https://www.deep-diary.com/Software/Python%20tools.html</guid><category><![CDATA[Software]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[相册模块后台]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+]]></description><link>https://www.deep-diary.com/Project/gallery/</link><guid isPermaLink="true">https://www.deep-diary.com/Project/gallery/</guid><category><![CDATA[Gallery]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[相册模块后台]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
 <p>​	本文重点在于介绍如何定义相册模型，实现照片上传，获取照片中的属性比如<code>gps</code>,<code>date</code>，<code>人脸信息</code>（本文提到的人脸信息，主要是基于<code>lightroom</code>识别后，人脸信息会保存在图片的<code>xml</code>文件中）</p>
 <p>​	至于前端，使用<code>vue-element-admin</code>框架进行展示</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
-]]></description><link>https://www.deep-diary.com/Project/gallery/3.%20gallery%20backend.html</link><guid isPermaLink="true">https://www.deep-diary.com/Project/gallery/3.%20gallery%20backend.html</guid><category><![CDATA[Gallery]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Python 建站神器Django]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+]]></description><link>https://www.deep-diary.com/Project/gallery/3.%20gallery%20backend.html</link><guid isPermaLink="true">https://www.deep-diary.com/Project/gallery/3.%20gallery%20backend.html</guid><category><![CDATA[Gallery]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[用Python实现的小工具]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
+<p><code>Python</code>这个编程语言，发展越来越快，涉及的领域也越来越多，算是一个万能胶水吧，本文主要分享用<code>python</code>实现的小工具</p>
+<p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
+</div>
+]]></description><link>https://www.deep-diary.com/Software/Python%20tools.html</link><guid isPermaLink="true">https://www.deep-diary.com/Software/Python%20tools.html</guid><category><![CDATA[Software]]></category><dc:creator><![CDATA[Blue]]></dc:creator><pubDate>Tue, 21 Jun 2022 00:00:00 GMT</pubDate></item><item><title><![CDATA[Python 建站神器Django]]></title><description><![CDATA[<div class="custom-block tip"><p class="custom-block-title">说明</p>
 <p>如果用<code>Python</code>开发网站的话，其后端最有名的就是<code>Django</code>了，那为什么选择用<code>Python</code>建站，主要看重它的海纳百川的特点，可以跟爬虫，深度学习进行无缝对接</p>
 <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p>
 </div>
