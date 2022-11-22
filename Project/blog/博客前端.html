@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>博客前端 | Deep Diary</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <meta name="description" content="基于深度学习，专注于旅游，记忆追溯相关的开发">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="google-site-verification">
+    <meta name="keywords" content="深记,deep-diary,自建博客,葛维冬，深度学习，记忆追溯">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="robots" content="all">
+    <meta name="author" content="deep-diary">
+    
+    <link rel="preload" href="/assets/css/0.styles.bfd62ff8.css" as="style"><link rel="preload" href="/assets/js/app.8fd3f559.js" as="script"><link rel="preload" href="/assets/js/4.5e854a94.js" as="script"><link rel="preload" href="/assets/js/1.650e7656.js" as="script"><link rel="preload" href="/assets/js/25.40a6d405.js" as="script"><link rel="preload" href="/assets/js/10.51e38269.js" as="script"><link rel="prefetch" href="/assets/js/11.fb66f811.js"><link rel="prefetch" href="/assets/js/12.4c092a46.js"><link rel="prefetch" href="/assets/js/13.35cb78ac.js"><link rel="prefetch" href="/assets/js/14.c5816d28.js"><link rel="prefetch" href="/assets/js/15.fdc6a846.js"><link rel="prefetch" href="/assets/js/16.fe23022b.js"><link rel="prefetch" href="/assets/js/17.1a31eb11.js"><link rel="prefetch" href="/assets/js/18.66d4c6cf.js"><link rel="prefetch" href="/assets/js/19.42422af7.js"><link rel="prefetch" href="/assets/js/20.ed6e6c3d.js"><link rel="prefetch" href="/assets/js/21.1a784aea.js"><link rel="prefetch" href="/assets/js/22.8bd53904.js"><link rel="prefetch" href="/assets/js/23.a3a2aaad.js"><link rel="prefetch" href="/assets/js/24.2b2ecd12.js"><link rel="prefetch" href="/assets/js/26.9c6af062.js"><link rel="prefetch" href="/assets/js/27.b0c209b4.js"><link rel="prefetch" href="/assets/js/28.089d0c18.js"><link rel="prefetch" href="/assets/js/29.327c0986.js"><link rel="prefetch" href="/assets/js/30.ed574e61.js"><link rel="prefetch" href="/assets/js/31.22de3eca.js"><link rel="prefetch" href="/assets/js/32.7fa4c407.js"><link rel="prefetch" href="/assets/js/33.fc6288e5.js"><link rel="prefetch" href="/assets/js/34.a2284905.js"><link rel="prefetch" href="/assets/js/35.e16bc36b.js"><link rel="prefetch" href="/assets/js/36.8933ab22.js"><link rel="prefetch" href="/assets/js/37.c8708c2d.js"><link rel="prefetch" href="/assets/js/38.0e49992a.js"><link rel="prefetch" href="/assets/js/39.a5343f2f.js"><link rel="prefetch" href="/assets/js/40.028ae324.js"><link rel="prefetch" href="/assets/js/41.d1e1db06.js"><link rel="prefetch" href="/assets/js/42.4c30c5f0.js"><link rel="prefetch" href="/assets/js/43.746190f0.js"><link rel="prefetch" href="/assets/js/44.5e7ae7b6.js"><link rel="prefetch" href="/assets/js/45.53b85b0c.js"><link rel="prefetch" href="/assets/js/46.b56fe8e7.js"><link rel="prefetch" href="/assets/js/47.bf32be9e.js"><link rel="prefetch" href="/assets/js/48.a95638b8.js"><link rel="prefetch" href="/assets/js/49.c39681e9.js"><link rel="prefetch" href="/assets/js/5.03b654a4.js"><link rel="prefetch" href="/assets/js/50.9dd6d4cf.js"><link rel="prefetch" href="/assets/js/51.37646a35.js"><link rel="prefetch" href="/assets/js/52.9891e5f0.js"><link rel="prefetch" href="/assets/js/53.6b5b1d14.js"><link rel="prefetch" href="/assets/js/54.def96dee.js"><link rel="prefetch" href="/assets/js/55.f7892c7c.js"><link rel="prefetch" href="/assets/js/56.5f5f204c.js"><link rel="prefetch" href="/assets/js/57.50f6279d.js"><link rel="prefetch" href="/assets/js/58.1f186d61.js"><link rel="prefetch" href="/assets/js/59.d844658f.js"><link rel="prefetch" href="/assets/js/6.ac399d41.js"><link rel="prefetch" href="/assets/js/60.c56afb78.js"><link rel="prefetch" href="/assets/js/61.a78f1fa4.js"><link rel="prefetch" href="/assets/js/62.1ffdbfc6.js"><link rel="prefetch" href="/assets/js/63.84d50267.js"><link rel="prefetch" href="/assets/js/64.c5b65bc1.js"><link rel="prefetch" href="/assets/js/65.284acdeb.js"><link rel="prefetch" href="/assets/js/66.2ddc2745.js"><link rel="prefetch" href="/assets/js/67.eb37ac4c.js"><link rel="prefetch" href="/assets/js/68.959a8bc5.js"><link rel="prefetch" href="/assets/js/69.02b77ce0.js"><link rel="prefetch" href="/assets/js/7.706f533b.js"><link rel="prefetch" href="/assets/js/70.bfe280be.js"><link rel="prefetch" href="/assets/js/71.7aef00da.js"><link rel="prefetch" href="/assets/js/72.be85292b.js"><link rel="prefetch" href="/assets/js/73.fac9947d.js"><link rel="prefetch" href="/assets/js/74.694aa9a8.js"><link rel="prefetch" href="/assets/js/75.2efdf72f.js"><link rel="prefetch" href="/assets/js/76.f6792410.js"><link rel="prefetch" href="/assets/js/77.cb19fd0e.js"><link rel="prefetch" href="/assets/js/78.20a98f34.js"><link rel="prefetch" href="/assets/js/79.6030e847.js"><link rel="prefetch" href="/assets/js/8.5e0abf00.js"><link rel="prefetch" href="/assets/js/80.b95919e9.js"><link rel="prefetch" href="/assets/js/81.409820c4.js"><link rel="prefetch" href="/assets/js/82.cea68c6c.js"><link rel="prefetch" href="/assets/js/83.9603771c.js"><link rel="prefetch" href="/assets/js/84.f94304e2.js"><link rel="prefetch" href="/assets/js/85.1687d319.js"><link rel="prefetch" href="/assets/js/86.d9d59341.js"><link rel="prefetch" href="/assets/js/87.9ec44d88.js"><link rel="prefetch" href="/assets/js/88.c5cd7561.js"><link rel="prefetch" href="/assets/js/89.9e3e5049.js"><link rel="prefetch" href="/assets/js/9.2d9184d6.js"><link rel="prefetch" href="/assets/js/90.99760ff2.js"><link rel="prefetch" href="/assets/js/91.59046907.js"><link rel="prefetch" href="/assets/js/92.e0d2a51c.js"><link rel="prefetch" href="/assets/js/93.116e2aed.js"><link rel="prefetch" href="/assets/js/94.88804724.js"><link rel="prefetch" href="/assets/js/95.e1cef1ca.js"><link rel="prefetch" href="/assets/js/96.cce16545.js"><link rel="prefetch" href="/assets/js/97.868a50a6.js"><link rel="prefetch" href="/assets/js/98.5ea81e85.js"><link rel="prefetch" href="/assets/js/99.0fef2eb3.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.e51760b9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bfd62ff8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-1c4f0192 data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-1c4f0192><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Deep Diary</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>Blue</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Deep Diary</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/deep learning/" class="nav-link"><i class="iconfont undefined"></i>
+  deep learning
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Develop/" class="nav-link"><i class="iconfont undefined"></i>
+  Develop
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/conference/" class="nav-link"><i class="iconfont undefined"></i>
+  conference
+</a></li><li class="dropdown-item"><!----> <a href="/categories/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  blog
+</a></li><li class="dropdown-item"><!----> <a href="/categories/project/" class="nav-link"><i class="iconfont undefined"></i>
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/categories/WEB/" class="nav-link"><i class="iconfont undefined"></i>
+  WEB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Synology/" class="nav-link"><i class="iconfont undefined"></i>
+  Synology
+</a></li><li class="dropdown-item"><!----> <a href="/categories/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-faq"></i>
+      Guide
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link"><i class="iconfont undefined"></i>
+  Guide
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Project
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/management/" class="nav-link"><i class="iconfont undefined"></i>
+  Management
+</a></li><li class="dropdown-item"><!----> <a href="/project/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/project/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  Blog
+</a></li><li class="dropdown-item"><!----> <a href="/project/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  Vuepress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Web
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Web/Backend/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/web/backend/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/frondend/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/" class="nav-link"><i class="iconfont undefined"></i>
+  Database
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Deep Learning
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Deep-Learning/" class="nav-link"><i class="iconfont undefined"></i>
+  Deep Learning
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Software
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      PM
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-date"></i>
+      Timeline
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/timeline/" class="nav-link"><i class="iconfont undefined"></i>
+  Timeline
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-6c8ffc9c> <h3 class="name" data-v-6c8ffc9c>
+    Blue
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>59</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>79</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/deep learning/" class="nav-link"><i class="iconfont undefined"></i>
+  deep learning
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Develop/" class="nav-link"><i class="iconfont undefined"></i>
+  Develop
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/conference/" class="nav-link"><i class="iconfont undefined"></i>
+  conference
+</a></li><li class="dropdown-item"><!----> <a href="/categories/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  blog
+</a></li><li class="dropdown-item"><!----> <a href="/categories/project/" class="nav-link"><i class="iconfont undefined"></i>
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/categories/WEB/" class="nav-link"><i class="iconfont undefined"></i>
+  WEB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Synology/" class="nav-link"><i class="iconfont undefined"></i>
+  Synology
+</a></li><li class="dropdown-item"><!----> <a href="/categories/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-faq"></i>
+      Guide
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link"><i class="iconfont undefined"></i>
+  Guide
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Project
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/management/" class="nav-link"><i class="iconfont undefined"></i>
+  Management
+</a></li><li class="dropdown-item"><!----> <a href="/project/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/project/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  Blog
+</a></li><li class="dropdown-item"><!----> <a href="/project/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  Vuepress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Web
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Web/Backend/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/web/backend/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/frondend/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/" class="nav-link"><i class="iconfont undefined"></i>
+  Database
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Deep Learning
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Deep-Learning/" class="nav-link"><i class="iconfont undefined"></i>
+  Deep Learning
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Software
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      PM
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-date"></i>
+      Timeline
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/timeline/" class="nav-link"><i class="iconfont undefined"></i>
+  Timeline
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Blog</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Project/blog/" aria-current="page" class="sidebar-link">Introduction of Blog Project</a></li><li><a href="/Project/blog/favicon.html" class="sidebar-link">如何制作Favicon图标</a></li><li><a href="/Project/blog/博客前端.html" class="active sidebar-link">博客前端</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Project/blog/博客前端.html#前端框架介绍" class="sidebar-link">前端框架介绍</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客前端.html#部署到gitee-io" class="sidebar-link">部署到gitee.io</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客前端.html#部署到github-io" class="sidebar-link">部署到github.io</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客前端.html#本地nginx部署" class="sidebar-link">本地Nginx部署</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客前端.html#部署发布到云服务器" class="sidebar-link">部署发布到云服务器</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客前端.html#自动侧边栏" class="sidebar-link">自动侧边栏</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客前端.html#问题清单" class="sidebar-link">问题清单</a></li></ul></li><li><a href="/Project/blog/博客后端.html" class="sidebar-link">博客后端</a></li><li><a href="/Project/blog/标签系统后端.html" class="sidebar-link">标签系统后端</a></li><li><a href="/Project/blog/评论后端.html" class="sidebar-link">评论后端</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>博客前端</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>Blue</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2022
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>博客前端</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>Blue</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2022-08-14</span></i> <!----> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      blog
+    </span><span class="tag-item" data-v-484a899e>
+      vuepress
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><div class="custom-block tip"><p class="custom-block-title">说明</p> <p>搭建博客的方式有很多，博主也是一步步摸索过来的，从一开始的<code>django+AdminLTE</code>, 再到<code>django+DRF+elementUI-admin</code>, 最终选择了最近比较流行的<code>vuepress</code>, 本章会记录开发过程中的每一个功能点， 如果您也正想搭建个人博客，相信本章应该会比较适合您。</p> <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p></div> <h1 id="博客前端">博客前端</h1> <h2 id="前端框架介绍">前端框架介绍</h2> <blockquote><p>https://zhuanlan.zhihu.com/p/359826964</p></blockquote> <blockquote><p><a href="https://blog.csdn.net/xiaoxianer321/article/details/119548202" target="_blank" rel="noopener noreferrer">vuepress使用简介及个人博客搭建_穆瑾轩的博客-CSDN博客_vuepress<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://www.it235.com/guide/notes/vuepress.html#%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA" target="_blank" rel="noopener noreferrer">vuePress博客搭建指南 | 君哥的学习笔记 (it235.com)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://docs.shanyuhai.top/pre-reading.html" target="_blank" rel="noopener noreferrer">先看 | 飞跃高山与大洋的鱼 (shanyuhai.top)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm install --global yarn
+yarn --version
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>配置<code>gitee</code>和<code>github</code>, <code>ssh</code>公钥</p> <blockquote><p><a href="https://www.jianshu.com/p/b2ff4e11568c" target="_blank" rel="noopener noreferrer">解决git@gitee.com: Permission denied (publickey). - 简书 (jianshu.com)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <h2 id="部署到gitee-io">部署到<code>gitee.io</code></h2> <p>把文章发布到<code>gitee</code>, 静态网站发布到<code>github</code></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> init
+<span class="token function">git</span> <span class="token function">add</span> -A
+<span class="token function">git</span> commit -m <span class="token string">&quot;first commit&quot;</span>
+<span class="token function">git</span> remote <span class="token function">add</span> origin git@gitee.com:deep-diary/deep-diary.git
+<span class="token function">git</span> push -u origin <span class="token string">&quot;master&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>PS D:<span class="token punctuation">\</span>BlueDoc<span class="token punctuation">\</span>deep-diary<span class="token operator">&gt;</span> <span class="token function">git</span> push -u origin <span class="token string">&quot;master&quot;</span>
+To gitee.com:deep-diary/deep-diary.git
+ <span class="token operator">!</span> <span class="token punctuation">[</span>rejected<span class="token punctuation">]</span>        master -<span class="token operator">&gt;</span> master <span class="token punctuation">(</span>fetch first<span class="token punctuation">)</span>
+error: failed to push some refs to <span class="token string">'gitee.com:deep-diary/deep-diary.git'</span>
+hint: Updates were rejected because the remote contains work that you <span class="token keyword">do</span>
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: <span class="token punctuation">(</span>e.g., <span class="token string">'git pull ...'</span><span class="token punctuation">)</span> before pushing again.
+hint: See the <span class="token string">'Note about fast-forwards'</span> <span class="token keyword">in</span> <span class="token string">'git push --help'</span> <span class="token keyword">for</span> details.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="部署到github-io">部署到<code>github.io</code></h2> <p>接下来我们将<code>npm run docs:build</code>生成<code>dist</code>拷贝到指定目录下，使用如下命令进行发布</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 注意不要放在开发目录下，因为开发目录下已经有.git版本控制了，需要拷贝到外面</span>
+
+<span class="token comment"># 进入到dist目录</span>
+$ <span class="token builtin class-name">cd</span> dist
+
+<span class="token comment"># git初始化</span>
+$ <span class="token function">git</span> init
+$ <span class="token function">git</span> <span class="token function">add</span> -A
+$ <span class="token function">git</span> commit -m <span class="token string">&quot;first commit&quot;</span>
+$ <span class="token function">git</span> branch -M main
+
+<span class="token comment"># 注意此处的格式是：git push -f git@github.com:USERNAME/USERNAME.github.io.git main</span>
+$ <span class="token function">git</span> push -f git@github.com:deep-diary/deep-diary.github.io.git main
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="本地nginx部署">本地<code>Nginx</code>部署</h2> <blockquote><p><a href="https://nginx.org/en/download.html" target="_blank" rel="noopener noreferrer">nginx: download<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <p>为了更好的在线上使用nginx，首先要完成本地部署</p> <p>下载好<code>nginx</code>后，可以直接双击运行，浏览器输入<code>localhost</code>就可以访问默认界面了</p> <h3 id="修改配置文件">修改配置文件</h3> <p>修改完配置文件后，需要重启<code>gninx</code>, 不过有时候在任务管理器中看不到这个应用程序，我们可以通过<code>cmd</code>指令关闭</p> <blockquote><p><a href="https://blog.csdn.net/qq_44766883/article/details/105894333" target="_blank" rel="noopener noreferrer">Win正确关闭nginx服务(不要采坑了!!!)_迷雾总会解的博客-CSDN博客_关闭nginx<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>taskkill /im nginx.exe /f
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code>location <span class="token operator">/</span> <span class="token punctuation">{</span>
+    alias html<span class="token operator">/</span>dist<span class="token operator">/</span><span class="token punctuation">;</span>  #类似于重定向
+    index index<span class="token punctuation">.</span>html<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+location <span class="token operator">/</span> <span class="token punctuation">{</span>
+    proxy_pass http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span><span class="token operator">:</span><span class="token number">7777</span><span class="token punctuation">;</span> # 反向代理到服务器端口
+<span class="token punctuation">}</span>
+ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="部署发布到云服务器">部署发布到云服务器</h2> <p><a href="https://blog.csdn.net/weixin_43128203/article/details/120713831" target="_blank" rel="noopener noreferrer">如何将阿里云的域名绑定到Github_Page_追男孩的风筝的博客-CSDN博客_阿里云域名绑定github<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>服务器环境</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> --version
+<span class="token function">node</span> -v
+<span class="token function">npm</span> -v
+<span class="token function">yarn</span> -version
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>云服务器ECS配置环境</p> <ol><li>Git 安装</li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -y <span class="token function">git</span>
+<span class="token function">git</span> --version
+<span class="token function">git</span> config --global user.name <span class="token string">&quot;deep-diary&quot;</span>
+<span class="token function">git</span> config --global user.email <span class="token string">&quot;geweidong525@sina.com&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="2"><li>Node 安装</li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>root@deep-diary:~<span class="token comment"># apt install nodejs</span>
+root@deep-diary:~<span class="token comment"># node -v</span>
+v10.19.0
+
+<span class="token comment"># 安装npm时，提示缺少依赖</span>
+<span class="token comment"># 解决Unable to Correct Problems ‘You have Held Broken Packages’</span>
+<span class="token comment"># sudo apt-get install aptitude</span>
+<span class="token comment"># sudo aptitude install &lt;package-name&gt;</span>
+
+root@deep-diary:/etc/apt<span class="token comment"># aptitude install npm</span>
+root@deep-diary:/etc/apt<span class="token comment"># npm -v</span>
+<span class="token number">6.14</span>.4
+
+root@deep-diary:/etc/apt<span class="token comment"># aptitude install git</span>
+root@deep-diary:/etc/apt<span class="token comment"># git --version</span>
+<span class="token function">git</span> version <span class="token number">2.25</span>.1
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><ol start="2"><li>SSH 公私钥生成</li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>root@deep-diary:/etc/apt<span class="token comment"># ssh-keygen -t rsa -C &quot;deep-diary@qq.com&quot;</span>
+Generating public/private rsa key pair.
+Enter <span class="token function">file</span> <span class="token keyword">in</span> <span class="token function">which</span> to save the key <span class="token punctuation">(</span>/root/.ssh/id_rsa<span class="token punctuation">)</span>: 
+Enter passphrase <span class="token punctuation">(</span>empty <span class="token keyword">for</span> no passphrase<span class="token punctuation">)</span>: 
+Enter same passphrase again: 
+Your identification has been saved <span class="token keyword">in</span> /root/.ssh/id_rsa
+Your public key has been saved <span class="token keyword">in</span> /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:lSeEC2NGJcSbGOyyYtHskRuSF13TivfuE/rj/ZeMAUI deep-diary@qq.com
+root@deep-diary:/etc/apt<span class="token comment"># cd /root/.ssh/</span>
+root@deep-diary:~/.ssh<span class="token comment"># ls</span>
+authorized_keys  id_rsa  id_rsa.pub
+root@deep-diary:~/.ssh<span class="token comment"># cat id_rsa.pub </span>
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDM14y4TexOKh92NCsllUWjPiYodTrR/Q4Yn336UoodENdeGAFNQBTMds0dWybZfumX+EU1J6N+taz0LFvGcHq435hZxtpxQNTs/4bjSdA4v/c4ooHueoLJsJBSn2ZwwnWvTI/hcDPWfg03bgUCVEv7W9ATvIKYFfnowcqKAvEPHTGCE3eHJ6KGkgT5pcz/0wLBoYgHW3bud8RqfUlFzg8cUP4Fb0vGTn1U8vabrhwqnF8TEquXuP0g1WxwFbOBuSbT0OxEVqYJ6i3NMs7wVt42j5RARSHdrccKHPD+JDJhw4gG3nJ00Pnsj7GW5hzo97/nbFXGiwjtNqc2yzbm6aDlGqkRVaJQvyzAstSNhgaQDwH6GiJpaFDca7FL85yedmKERkwEfgMtAWuiJjMXN9xvqOXvf2tSC3ajPVI/u3/zVJWSt2gh9nKTesK2D+oFbMy+rmQ6fz20SQzSSC8ArWr+Aw6Xku3m738hvfFUKn5Wagp4An6altkzbsk5FeoOqk0<span class="token operator">=</span> deep-diary@qq.com
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ol start="4"><li>公钥配置（gitee/github）</li></ol> <p>将/root/.ssh目录下的公钥配置到代码托管平台，与windows一样，配置好后才能下载拉取</p> <p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/image-20220619124744657.png" alt="image-20220619124744657"></p> <ol start="5"><li>拉取代码并运行</li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>root@deep-diary:/<span class="token comment"># cd home/</span>
+root@deep-diary:/home<span class="token comment"># ls</span>
+deep_diary
+root@deep-diary:/home<span class="token comment"># git clone git@gitee.com:deep-diary/deep-diary.git</span>
+Cloning into <span class="token string">'deep-diary'</span><span class="token punctuation">..</span>.
+The authenticity of <span class="token function">host</span> <span class="token string">'gitee.com (212.64.63.190)'</span> can<span class="token string">'t be established.
+ECDSA key fingerprint is SHA256:FQGC9Kn/eye1W8icdBgrQp+KkGYoFgbVr17bmjey0Wc.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '</span>gitee.com,212.64.63.190' <span class="token punctuation">(</span>ECDSA<span class="token punctuation">)</span> to the list of known hosts.
+remote: Enumerating objects: <span class="token number">479</span>, done.
+remote: Counting objects: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">479</span>/479<span class="token punctuation">)</span>, done.
+remote: Compressing objects: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">238</span>/238<span class="token punctuation">)</span>, done.
+remote: Total <span class="token number">479</span> <span class="token punctuation">(</span>delta <span class="token number">203</span><span class="token punctuation">)</span>, reused <span class="token number">393</span> <span class="token punctuation">(</span>delta <span class="token number">168</span><span class="token punctuation">)</span>, pack-reused <span class="token number">0</span>
+Receiving objects: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">479</span>/479<span class="token punctuation">)</span>, <span class="token number">2.78</span> MiB <span class="token operator">|</span> <span class="token number">1.80</span> MiB/s, done.
+Resolving deltas: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">203</span>/203<span class="token punctuation">)</span>, done.
+root@deep-diary:/home<span class="token comment"># ls</span>
+deep-diary  deep_diary
+
+
+<span class="token comment"># 这里报错了</span>
+<span class="token function">npm</span> <span class="token function">install</span>
+added <span class="token number">1467</span> packages from <span class="token number">983</span> contributors and audited <span class="token number">1489</span> packages <span class="token keyword">in</span> <span class="token number">46</span>.301s
+
+<span class="token number">95</span> packages are looking <span class="token keyword">for</span> funding
+  run <span class="token variable"><span class="token variable">`</span><span class="token function">npm</span> fund<span class="token variable">`</span></span> <span class="token keyword">for</span> details
+
+found <span class="token number">35</span> vulnerabilities <span class="token punctuation">(</span><span class="token number">2</span> low, <span class="token number">14</span> moderate, <span class="token number">19</span> high<span class="token punctuation">)</span>
+  run <span class="token variable"><span class="token variable">`</span><span class="token function">npm</span> audit fix<span class="token variable">`</span></span> to fix them, or <span class="token variable"><span class="token variable">`</span><span class="token function">npm</span> audit<span class="token variable">`</span></span> <span class="token keyword">for</span> details
+
+<span class="token function">npm</span> audit fix
++ axios@0.27.2
++ vuepress-theme-reco@1.6.13
+added <span class="token number">66</span> packages from <span class="token number">80</span> contributors, removed <span class="token number">10</span> packages, updated <span class="token number">13</span> packages and moved <span class="token number">2</span> packages <span class="token keyword">in</span> <span class="token number">46</span>.643s
+
+<span class="token number">94</span> packages are looking <span class="token keyword">for</span> funding
+  run <span class="token variable"><span class="token variable">`</span><span class="token function">npm</span> fund<span class="token variable">`</span></span> <span class="token keyword">for</span> details
+
+fixed <span class="token number">14</span> of <span class="token number">35</span> vulnerabilities <span class="token keyword">in</span> <span class="token number">1489</span> scanned packages
+  <span class="token number">21</span> vulnerabilities required manual review and could not be updated
+
+
+<span class="token builtin class-name">cd</span> deep-diary
+<span class="token function">npm</span> <span class="token function">install</span> / <span class="token function">yarn</span> <span class="token function">install</span>
+<span class="token function">npm</span> run docs:dev
+
+<span class="token comment"># 这种方式运行，不能`Ctrl + d` 退出，否正进程被杀死，我们一般以nohup的方式启动，如下</span>
+
+root@deep-diary:~<span class="token comment"># curl 0.0.0.0:7777  # 用另外一个终端执行这条命令，如果有返回网站内容，就说明配置成功了</span>
+<span class="token operator">&lt;</span><span class="token operator">!</span>DOCTYPE html<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>html <span class="token assign-left variable">lang</span><span class="token operator">=</span><span class="token string">&quot;en&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>head<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>meta <span class="token assign-left variable">charset</span><span class="token operator">=</span><span class="token string">&quot;utf-8&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>meta <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;viewport&quot;</span> <span class="token assign-left variable">content</span><span class="token operator">=</span><span class="token string">&quot;width=device-width,initial-scale=1&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>title<span class="token operator">&gt;</span><span class="token operator">&lt;</span>/title<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>link <span class="token assign-left variable">rel</span><span class="token operator">=</span><span class="token string">&quot;apple-touch-icon&quot;</span> <span class="token assign-left variable">href</span><span class="token operator">=</span><span class="token string">&quot;/apple-touch-icon.png&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>link <span class="token assign-left variable">rel</span><span class="token operator">=</span><span class="token string">&quot;icon&quot;</span> <span class="token assign-left variable">href</span><span class="token operator">=</span><span class="token string">&quot;/favicon.ico&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>link <span class="token assign-left variable">rel</span><span class="token operator">=</span><span class="token string">&quot;manifest&quot;</span> <span class="token assign-left variable">href</span><span class="token operator">=</span><span class="token string">&quot;/manifest.json&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>link <span class="token assign-left variable">rel</span><span class="token operator">=</span><span class="token string">&quot;stylesheet&quot;</span> <span class="token assign-left variable">href</span><span class="token operator">=</span><span class="token string">&quot;https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>meta <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;theme-color&quot;</span> <span class="token assign-left variable">content</span><span class="token operator">=</span><span class="token string">&quot;#ffffff&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>meta <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;google-site-verification&quot;</span> <span class="token assign-left variable">content</span><span class="token operator">=</span><span class="token string">&quot;undefined&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>meta <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;keywords&quot;</span> <span class="token assign-left variable">content</span><span class="token operator">=</span><span class="token string">&quot;深记,deep-diary,自建博客,葛维冬，深度学习，记忆追溯&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>meta <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;description&quot;</span> <span class="token assign-left variable">content</span><span class="token operator">=</span><span class="token string">&quot;基于深度学习，专注于旅游，记忆追溯相关的开发，期望有一天，可以成为您身边的记忆管家&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>meta <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;viewport&quot;</span> <span class="token assign-left variable">content</span><span class="token operator">=</span><span class="token string">&quot;width=device-width,initial-scale=1,user-scalable=no&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>meta <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;robots&quot;</span> <span class="token assign-left variable">content</span><span class="token operator">=</span><span class="token string">&quot;all&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>meta <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;author&quot;</span> <span class="token assign-left variable">content</span><span class="token operator">=</span><span class="token string">&quot;deep-diary&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>link <span class="token assign-left variable">rel</span><span class="token operator">=</span><span class="token string">&quot;stylesheet&quot;</span> <span class="token assign-left variable">href</span><span class="token operator">=</span><span class="token string">&quot;/css/style.css&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>script <span class="token assign-left variable">charset</span><span class="token operator">=</span><span class="token string">&quot;utf-8&quot;</span> <span class="token assign-left variable">src</span><span class="token operator">=</span><span class="token string">&quot;/js/custom.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>/script<span class="token operator">&gt;</span><span class="token operator">&lt;</span>/head<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token assign-left variable">id</span><span class="token operator">=</span><span class="token string">&quot;app&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>script <span class="token assign-left variable">type</span><span class="token operator">=</span><span class="token string">&quot;text/javascript&quot;</span> <span class="token assign-left variable">src</span><span class="token operator">=</span><span class="token string">&quot;/assets/js/app.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>/script<span class="token operator">&gt;</span><span class="token operator">&lt;</span>/body<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/html<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br></div></div><ol start="6"><li>start.sh 脚本方式启动</li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token shebang important">#!/bin/bash</span>
+<span class="token comment"># 切入源码目录，以确保能正常执行</span>
+<span class="token builtin class-name">cd</span> /home/deep-diary
+
+<span class="token comment"># 拉取最新代码</span>
+<span class="token function">git</span> pull
+
+<span class="token comment"># 杀死目前已启动进程</span>
+<span class="token assign-left variable">ID</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token function">ps</span> -ef<span class="token operator">|</span><span class="token function">grep</span> <span class="token function">node</span> <span class="token operator">|</span> <span class="token function">grep</span> vuepress<span class="token operator">|</span><span class="token function">awk</span> <span class="token string">'{print $2}'</span><span class="token variable">`</span></span>
+<span class="token builtin class-name">echo</span> --- the process is <span class="token variable">$ID</span> ---
+<span class="token function">kill</span> -9  <span class="token variable">$ID</span>
+<span class="token builtin class-name">echo</span>  <span class="token string">&quot;Killed <span class="token variable">$ID</span>&quot;</span>
+
+<span class="token comment"># 启动</span>
+<span class="token function">nohup</span> <span class="token function">npm</span> run docs:dev<span class="token operator">&amp;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>https://www.it235.com/guide/notes/vuepress.html</p> <p>按esc ，输入:wq，保存退出后，使用<code>./start.sh</code>来启动程序</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 执行启动命令</span>
+$ ./start.sh
+
+<span class="token comment"># 查看运行日志</span>
+$ <span class="token function">tail</span> -222f nohup.out
+
+<span class="token comment"># 使用curl检测程序是否正常运行</span>
+$ <span class="token function">curl</span> http://localhost:7777
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>SSL 证书（https）配置</p> <p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/image-20220619092452258.png" alt="image-20220619092452258"></p> <p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/image-20220619092714514.png" alt="image-20220619092714514"></p> <p>主机记录：_dnsauth</p> <p>记录值：202206180000000siaw6mp121atek3rzakmjaaeavctn2mpbykwgmcloazlajxwo</p> <p>Nginx配置证书</p> <div class="language-nginx line-numbers-mode"><pre class="language-nginx"><code><span class="token comment"># 进入/usr/local/nginx/conf/目录</span>
+$ <span class="token directive"><span class="token keyword">vim</span> nginx.conf
+
+<span class="token comment"># 在最后一行大括号结束之前，加入以下配置，并将it235换成你的域名</span>
+	<span class="token comment"># 所有http的请求，统一发到https请求上</span>
+	server</span> <span class="token punctuation">{</span>
+    	<span class="token directive"><span class="token keyword">listen</span> <span class="token number">80</span></span><span class="token punctuation">;</span>
+    	<span class="token directive"><span class="token keyword">server_name</span> www.it235.com *.it235.com</span><span class="token punctuation">;</span>
+    	<span class="token directive"><span class="token keyword">rewrite</span> ^(.*)$  https://<span class="token variable">$host</span><span class="token variable">$1</span> permanent</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment"># 未带www的请求，统一分发到https://www上</span>
+	<span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">listen</span> <span class="token number">80</span></span><span class="token punctuation">;</span>
+		<span class="token directive"><span class="token keyword">listen</span> <span class="token number">443</span> ssl</span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">server_name</span>  it235.com</span><span class="token punctuation">;</span>
+		<span class="token directive"><span class="token keyword">return</span> <span class="token number">301</span> https://www.it235.com<span class="token variable">$request_uri</span></span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment"># https 请求处理</span>
+    <span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+		<span class="token directive"><span class="token keyword">listen</span> <span class="token number">443</span> default_server ssl</span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">server_name</span>  www.it235.com</span><span class="token punctuation">;</span>
+		<span class="token directive"><span class="token keyword">ssl_certificate</span> /etc/letsencrypt/live/it235.com/fullchain.pem</span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">ssl_certificate_key</span> /etc/letsencrypt/live/it235.com/privkey.pem</span><span class="token punctuation">;</span>
+
+        <span class="token directive"><span class="token keyword">large_client_header_buffers</span> <span class="token number">4</span> <span class="token number">16k</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">client_max_body_size</span> <span class="token number">30m</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">client_body_buffer_size</span> <span class="token number">128k</span></span><span class="token punctuation">;</span>
+
+    	<span class="token comment"># 域名默认映射到 http://127.0.0.1:7777</span>
+        <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+               <span class="token directive"><span class="token keyword">proxy_pass</span> http://127.0.0.1:7777</span><span class="token punctuation">;</span>
+               <span class="token directive"><span class="token keyword">proxy_redirect</span> <span class="token boolean">off</span></span><span class="token punctuation">;</span>
+               <span class="token directive"><span class="token keyword">proxy_set_header</span> Host <span class="token variable">$host</span></span><span class="token punctuation">;</span>
+               <span class="token directive"><span class="token keyword">proxy_set_header</span> X-Real-IP <span class="token variable">$remote_addr</span></span><span class="token punctuation">;</span>
+               <span class="token directive"><span class="token keyword">proxy_set_header</span> X-Forwarded-For <span class="token variable">$proxy_add_x_forwarded_for</span></span><span class="token punctuation">;</span>
+               <span class="token directive"><span class="token keyword">proxy_set_header</span> Upgrade <span class="token variable">$http_upgrade</span></span><span class="token punctuation">;</span>
+               <span class="token directive"><span class="token keyword">proxy_set_header</span> Connection <span class="token string">&quot;upgrade&quot;</span></span><span class="token punctuation">;</span>
+
+               <span class="token directive"><span class="token keyword">root</span> html</span><span class="token punctuation">;</span>
+               <span class="token directive"><span class="token keyword">index</span> index.html index.html</span><span class="token punctuation">;</span>
+
+        <span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br></div></div><p>重启nginx服务</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 验证nginx配置文件是否正确</span>
+$ /usr/local/nginx/sbin/nginx -t
+
+<span class="token comment"># 重新加载nginx配置文件，重新加载才会生效</span>
+$ /usr/local/nginx/sbin/nginx -s reload
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>最终效果，访问<code>https://www.it235.com</code>要能成功，并且加上锁</li></ul> <h2 id="自动侧边栏">自动侧边栏</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">yarn</span> <span class="token function">add</span> vuepress-plugin-auto-sidebar
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="配置侧边栏插件">配置侧边栏插件</h3> <p>在<code>vuepress</code>插件配置文件中进行如下配置</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>  <span class="token string-property property">&quot;vuepress-plugin-auto-sidebar&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">collapsable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">titleMode</span><span class="token operator">:</span> <span class="token string">&quot;titlecase&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">nav</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>  <span class="token comment">//自动生成导航栏</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="自动生成导航栏">自动生成导航栏</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>yard docs:dev   // 调试运行
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>执行之后，就会在<code>.vuepress</code>中生成nav.js</p> <p>这里需要注意的是，如果这个文件已经存在，需要将其删除，否则无法正常生成</p> <p>然后就可以把相关路径，拷贝到实际对应的导航配置文件中去</p> <h2 id="问题清单">问题清单</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>Error from chokidar <span class="token punctuation">(</span>D:<span class="token punctuation">\</span><span class="token punctuation">)</span>: Error: EBUSY: resource busy or locked, lstat <span class="token string">'D:\DumpStack.log.tmp'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>原因：错误的编写导致导入外部库代码</p> <p>删除 node_modules后npm install ；</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">install</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">8/14/2022, 1:17:07 PM</span></div></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div><!----><div></div><!----><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://music.163.com/song/media/outer/url?id=316756.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://p2.music.126.net/qOOTIykbSLw9RHB0vI83GA==/737772302281958.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://p2.music.126.net/qOOTIykbSLw9RHB0vI83GA==/737772302281958.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>大城小事</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>杨千嬅</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><!----></div></div>
+    <script src="/assets/js/app.8fd3f559.js" defer></script><script src="/assets/js/4.5e854a94.js" defer></script><script src="/assets/js/1.650e7656.js" defer></script><script src="/assets/js/25.40a6d405.js" defer></script><script src="/assets/js/10.51e38269.js" defer></script>
+  </body>
+</html>

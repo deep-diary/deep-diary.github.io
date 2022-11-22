@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>博客后端 | Deep Diary</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <meta name="description" content="基于深度学习，专注于旅游，记忆追溯相关的开发">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="google-site-verification">
+    <meta name="keywords" content="深记,deep-diary,自建博客,葛维冬，深度学习，记忆追溯">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="robots" content="all">
+    <meta name="author" content="deep-diary">
+    
+    <link rel="preload" href="/assets/css/0.styles.bfd62ff8.css" as="style"><link rel="preload" href="/assets/js/app.8fd3f559.js" as="script"><link rel="preload" href="/assets/js/4.5e854a94.js" as="script"><link rel="preload" href="/assets/js/1.650e7656.js" as="script"><link rel="preload" href="/assets/js/26.9c6af062.js" as="script"><link rel="preload" href="/assets/js/10.51e38269.js" as="script"><link rel="prefetch" href="/assets/js/11.fb66f811.js"><link rel="prefetch" href="/assets/js/12.4c092a46.js"><link rel="prefetch" href="/assets/js/13.35cb78ac.js"><link rel="prefetch" href="/assets/js/14.c5816d28.js"><link rel="prefetch" href="/assets/js/15.fdc6a846.js"><link rel="prefetch" href="/assets/js/16.fe23022b.js"><link rel="prefetch" href="/assets/js/17.1a31eb11.js"><link rel="prefetch" href="/assets/js/18.66d4c6cf.js"><link rel="prefetch" href="/assets/js/19.42422af7.js"><link rel="prefetch" href="/assets/js/20.ed6e6c3d.js"><link rel="prefetch" href="/assets/js/21.1a784aea.js"><link rel="prefetch" href="/assets/js/22.8bd53904.js"><link rel="prefetch" href="/assets/js/23.a3a2aaad.js"><link rel="prefetch" href="/assets/js/24.2b2ecd12.js"><link rel="prefetch" href="/assets/js/25.40a6d405.js"><link rel="prefetch" href="/assets/js/27.b0c209b4.js"><link rel="prefetch" href="/assets/js/28.089d0c18.js"><link rel="prefetch" href="/assets/js/29.327c0986.js"><link rel="prefetch" href="/assets/js/30.ed574e61.js"><link rel="prefetch" href="/assets/js/31.22de3eca.js"><link rel="prefetch" href="/assets/js/32.7fa4c407.js"><link rel="prefetch" href="/assets/js/33.fc6288e5.js"><link rel="prefetch" href="/assets/js/34.a2284905.js"><link rel="prefetch" href="/assets/js/35.e16bc36b.js"><link rel="prefetch" href="/assets/js/36.8933ab22.js"><link rel="prefetch" href="/assets/js/37.c8708c2d.js"><link rel="prefetch" href="/assets/js/38.0e49992a.js"><link rel="prefetch" href="/assets/js/39.a5343f2f.js"><link rel="prefetch" href="/assets/js/40.028ae324.js"><link rel="prefetch" href="/assets/js/41.d1e1db06.js"><link rel="prefetch" href="/assets/js/42.4c30c5f0.js"><link rel="prefetch" href="/assets/js/43.746190f0.js"><link rel="prefetch" href="/assets/js/44.5e7ae7b6.js"><link rel="prefetch" href="/assets/js/45.53b85b0c.js"><link rel="prefetch" href="/assets/js/46.b56fe8e7.js"><link rel="prefetch" href="/assets/js/47.bf32be9e.js"><link rel="prefetch" href="/assets/js/48.a95638b8.js"><link rel="prefetch" href="/assets/js/49.c39681e9.js"><link rel="prefetch" href="/assets/js/5.03b654a4.js"><link rel="prefetch" href="/assets/js/50.9dd6d4cf.js"><link rel="prefetch" href="/assets/js/51.37646a35.js"><link rel="prefetch" href="/assets/js/52.9891e5f0.js"><link rel="prefetch" href="/assets/js/53.6b5b1d14.js"><link rel="prefetch" href="/assets/js/54.def96dee.js"><link rel="prefetch" href="/assets/js/55.f7892c7c.js"><link rel="prefetch" href="/assets/js/56.5f5f204c.js"><link rel="prefetch" href="/assets/js/57.50f6279d.js"><link rel="prefetch" href="/assets/js/58.1f186d61.js"><link rel="prefetch" href="/assets/js/59.d844658f.js"><link rel="prefetch" href="/assets/js/6.ac399d41.js"><link rel="prefetch" href="/assets/js/60.c56afb78.js"><link rel="prefetch" href="/assets/js/61.a78f1fa4.js"><link rel="prefetch" href="/assets/js/62.1ffdbfc6.js"><link rel="prefetch" href="/assets/js/63.84d50267.js"><link rel="prefetch" href="/assets/js/64.c5b65bc1.js"><link rel="prefetch" href="/assets/js/65.284acdeb.js"><link rel="prefetch" href="/assets/js/66.2ddc2745.js"><link rel="prefetch" href="/assets/js/67.eb37ac4c.js"><link rel="prefetch" href="/assets/js/68.959a8bc5.js"><link rel="prefetch" href="/assets/js/69.02b77ce0.js"><link rel="prefetch" href="/assets/js/7.706f533b.js"><link rel="prefetch" href="/assets/js/70.bfe280be.js"><link rel="prefetch" href="/assets/js/71.7aef00da.js"><link rel="prefetch" href="/assets/js/72.be85292b.js"><link rel="prefetch" href="/assets/js/73.fac9947d.js"><link rel="prefetch" href="/assets/js/74.694aa9a8.js"><link rel="prefetch" href="/assets/js/75.2efdf72f.js"><link rel="prefetch" href="/assets/js/76.f6792410.js"><link rel="prefetch" href="/assets/js/77.cb19fd0e.js"><link rel="prefetch" href="/assets/js/78.20a98f34.js"><link rel="prefetch" href="/assets/js/79.6030e847.js"><link rel="prefetch" href="/assets/js/8.5e0abf00.js"><link rel="prefetch" href="/assets/js/80.b95919e9.js"><link rel="prefetch" href="/assets/js/81.409820c4.js"><link rel="prefetch" href="/assets/js/82.cea68c6c.js"><link rel="prefetch" href="/assets/js/83.9603771c.js"><link rel="prefetch" href="/assets/js/84.f94304e2.js"><link rel="prefetch" href="/assets/js/85.1687d319.js"><link rel="prefetch" href="/assets/js/86.d9d59341.js"><link rel="prefetch" href="/assets/js/87.9ec44d88.js"><link rel="prefetch" href="/assets/js/88.c5cd7561.js"><link rel="prefetch" href="/assets/js/89.9e3e5049.js"><link rel="prefetch" href="/assets/js/9.2d9184d6.js"><link rel="prefetch" href="/assets/js/90.99760ff2.js"><link rel="prefetch" href="/assets/js/91.59046907.js"><link rel="prefetch" href="/assets/js/92.e0d2a51c.js"><link rel="prefetch" href="/assets/js/93.116e2aed.js"><link rel="prefetch" href="/assets/js/94.88804724.js"><link rel="prefetch" href="/assets/js/95.e1cef1ca.js"><link rel="prefetch" href="/assets/js/96.cce16545.js"><link rel="prefetch" href="/assets/js/97.868a50a6.js"><link rel="prefetch" href="/assets/js/98.5ea81e85.js"><link rel="prefetch" href="/assets/js/99.0fef2eb3.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.e51760b9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bfd62ff8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-1c4f0192 data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-1c4f0192><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Deep Diary</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>Blue</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Deep Diary</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/deep learning/" class="nav-link"><i class="iconfont undefined"></i>
+  deep learning
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Develop/" class="nav-link"><i class="iconfont undefined"></i>
+  Develop
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/conference/" class="nav-link"><i class="iconfont undefined"></i>
+  conference
+</a></li><li class="dropdown-item"><!----> <a href="/categories/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  blog
+</a></li><li class="dropdown-item"><!----> <a href="/categories/project/" class="nav-link"><i class="iconfont undefined"></i>
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/categories/WEB/" class="nav-link"><i class="iconfont undefined"></i>
+  WEB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Synology/" class="nav-link"><i class="iconfont undefined"></i>
+  Synology
+</a></li><li class="dropdown-item"><!----> <a href="/categories/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-faq"></i>
+      Guide
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link"><i class="iconfont undefined"></i>
+  Guide
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Project
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/management/" class="nav-link"><i class="iconfont undefined"></i>
+  Management
+</a></li><li class="dropdown-item"><!----> <a href="/project/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/project/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  Blog
+</a></li><li class="dropdown-item"><!----> <a href="/project/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  Vuepress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Web
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Web/Backend/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/web/backend/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/frondend/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/" class="nav-link"><i class="iconfont undefined"></i>
+  Database
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Deep Learning
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Deep-Learning/" class="nav-link"><i class="iconfont undefined"></i>
+  Deep Learning
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Software
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      PM
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-date"></i>
+      Timeline
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/timeline/" class="nav-link"><i class="iconfont undefined"></i>
+  Timeline
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-6c8ffc9c> <h3 class="name" data-v-6c8ffc9c>
+    Blue
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>59</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>79</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/deep learning/" class="nav-link"><i class="iconfont undefined"></i>
+  deep learning
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Develop/" class="nav-link"><i class="iconfont undefined"></i>
+  Develop
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/conference/" class="nav-link"><i class="iconfont undefined"></i>
+  conference
+</a></li><li class="dropdown-item"><!----> <a href="/categories/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  blog
+</a></li><li class="dropdown-item"><!----> <a href="/categories/project/" class="nav-link"><i class="iconfont undefined"></i>
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/categories/WEB/" class="nav-link"><i class="iconfont undefined"></i>
+  WEB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Synology/" class="nav-link"><i class="iconfont undefined"></i>
+  Synology
+</a></li><li class="dropdown-item"><!----> <a href="/categories/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-faq"></i>
+      Guide
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link"><i class="iconfont undefined"></i>
+  Guide
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Project
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/management/" class="nav-link"><i class="iconfont undefined"></i>
+  Management
+</a></li><li class="dropdown-item"><!----> <a href="/project/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/project/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  Blog
+</a></li><li class="dropdown-item"><!----> <a href="/project/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  Vuepress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Web
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Web/Backend/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/web/backend/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/frondend/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/" class="nav-link"><i class="iconfont undefined"></i>
+  Database
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Deep Learning
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Deep-Learning/" class="nav-link"><i class="iconfont undefined"></i>
+  Deep Learning
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Software
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      PM
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-date"></i>
+      Timeline
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/timeline/" class="nav-link"><i class="iconfont undefined"></i>
+  Timeline
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Blog</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Project/blog/" aria-current="page" class="sidebar-link">Introduction of Blog Project</a></li><li><a href="/Project/blog/favicon.html" class="sidebar-link">如何制作Favicon图标</a></li><li><a href="/Project/blog/博客前端.html" class="sidebar-link">博客前端</a></li><li><a href="/Project/blog/博客后端.html" class="active sidebar-link">博客后端</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Project/blog/博客后端.html#创建app" class="sidebar-link">创建app</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客后端.html#创建模型" class="sidebar-link">创建模型</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客后端.html#将模型添加倒admin中" class="sidebar-link">将模型添加倒admin中</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客后端.html#创建序列化器" class="sidebar-link">创建序列化器</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客后端.html#创建视图集" class="sidebar-link">创建视图集</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客后端.html#路由注册" class="sidebar-link">路由注册</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客后端.html#权限管理" class="sidebar-link">权限管理</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客后端.html#分页" class="sidebar-link">分页</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客后端.html#搜索功能" class="sidebar-link">搜索功能</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客后端.html#接口测试" class="sidebar-link">接口测试</a></li><li class="sidebar-sub-header"><a href="/Project/blog/博客后端.html#问题清单" class="sidebar-link">问题清单</a></li></ul></li><li><a href="/Project/blog/标签系统后端.html" class="sidebar-link">标签系统后端</a></li><li><a href="/Project/blog/评论后端.html" class="sidebar-link">评论后端</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>博客后端</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>Blue</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2022
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>博客后端</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>Blue</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2022-08-14</span></i> <!----> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      blog
+    </span><span class="tag-item" data-v-484a899e>
+      django
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><div class="custom-block tip"><p class="custom-block-title">说明</p> <p>django提供了很多使用的api接口，如果掌握了本文的所有知识点，那基本上可以说您的django已经入门了，其中包含了视图集，权限管理，序列化器，搜索，分页等相关知识点。</p> <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p></div> <h1 id="博客后端">博客后端</h1> <h2 id="创建app">创建app</h2> <p>首先在命令行创建图库的 App：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">(</span>venv<span class="token punctuation">)</span> <span class="token operator">&gt;</span> python manage.py startapp article
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>再在全局设置中添加应用</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># setting</span>
+
+INSTALLED_APPS <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token string">'article'</span><span class="token punctuation">,</span>
+    <span class="token string">'mdeditor'</span><span class="token punctuation">,</span>  <span class="token comment"># markdown实现富文本编辑</span>
+	<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="创建模型">创建模型</h2> <h3 id="定义模型">定义模型</h3> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">import</span> os
+
+<span class="token keyword">from</span> django<span class="token punctuation">.</span>contrib<span class="token punctuation">.</span>auth<span class="token punctuation">.</span>models <span class="token keyword">import</span> User
+<span class="token keyword">from</span> django<span class="token punctuation">.</span>db <span class="token keyword">import</span> models
+<span class="token keyword">from</span> django<span class="token punctuation">.</span>utils <span class="token keyword">import</span> timezone
+<span class="token keyword">from</span> imagekit<span class="token punctuation">.</span>models <span class="token keyword">import</span> ImageSpecField
+<span class="token keyword">from</span> imagekit<span class="token punctuation">.</span>processors <span class="token keyword">import</span> ResizeToFill
+<span class="token keyword">from</span> markdown <span class="token keyword">import</span> Markdown
+<span class="token keyword">from</span> mdeditor<span class="token punctuation">.</span>fields <span class="token keyword">import</span> MDTextField
+<span class="token keyword">from</span> taggit<span class="token punctuation">.</span>managers <span class="token keyword">import</span> TaggableManager
+
+
+<span class="token comment"># Create your models here.</span>
+
+
+<span class="token keyword">def</span> <span class="token function">user_directory_path</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> filename<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># dir struct MEDIA/user/subfolder/%Y-%m-%d/file</span>
+    sub_folder <span class="token operator">=</span> <span class="token string">&quot;article/avatar&quot;</span>
+    user_fold <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>instance<span class="token punctuation">.</span>author<span class="token punctuation">.</span>username<span class="token punctuation">,</span> sub_folder<span class="token punctuation">,</span> filename<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> user_fold
+
+
+<span class="token keyword">class</span> <span class="token class-name">Category</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;文章分类&quot;&quot;&quot;</span>
+    title <span class="token operator">=</span> models<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span>max_length<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">)</span>
+    created <span class="token operator">=</span> models<span class="token punctuation">.</span>DateTimeField<span class="token punctuation">(</span>default<span class="token operator">=</span>timezone<span class="token punctuation">.</span>now<span class="token punctuation">)</span>
+
+    <span class="token keyword">class</span> <span class="token class-name">Meta</span><span class="token punctuation">:</span>
+        ordering <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'-created'</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>title
+
+
+<span class="token comment"># 博客文章 model</span>
+<span class="token keyword">class</span> <span class="token class-name">Article</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    author <span class="token operator">=</span> models<span class="token punctuation">.</span>ForeignKey<span class="token punctuation">(</span>
+        User<span class="token punctuation">,</span>
+        null<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>
+        on_delete<span class="token operator">=</span>models<span class="token punctuation">.</span>CASCADE<span class="token punctuation">,</span>
+        related_name<span class="token operator">=</span><span class="token string">'articles'</span>
+    <span class="token punctuation">)</span>
+    <span class="token comment"># 分类</span>
+    category <span class="token operator">=</span> models<span class="token punctuation">.</span>ForeignKey<span class="token punctuation">(</span>
+        Category<span class="token punctuation">,</span>
+        null<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>
+        blank<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>
+        on_delete<span class="token operator">=</span>models<span class="token punctuation">.</span>SET_NULL<span class="token punctuation">,</span>
+        related_name<span class="token operator">=</span><span class="token string">'articles'</span>
+    <span class="token punctuation">)</span>
+    tags <span class="token operator">=</span> TaggableManager<span class="token punctuation">(</span>blank<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> verbose_name<span class="token operator">=</span><span class="token string">&quot;标签&quot;</span><span class="token punctuation">,</span> help_text<span class="token operator">=</span><span class="token string">'文章标签'</span><span class="token punctuation">)</span>
+    <span class="token comment"># 标题</span>
+    title <span class="token operator">=</span> models<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span>max_length<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">)</span>
+    avatar <span class="token operator">=</span> models<span class="token punctuation">.</span>ImageField<span class="token punctuation">(</span>upload_to<span class="token operator">=</span>user_directory_path<span class="token punctuation">,</span>
+                               verbose_name<span class="token operator">=</span><span class="token string">&quot;标题图&quot;</span><span class="token punctuation">,</span>
+                               help_text<span class="token operator">=</span><span class="token string">'文章标题图'</span><span class="token punctuation">,</span>
+                               null<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> blank<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>
+                               default<span class="token operator">=</span><span class="token string">'sys_img/logo_lg.png'</span><span class="token punctuation">,</span>
+                               <span class="token punctuation">)</span>
+
+    avatar_thumb <span class="token operator">=</span> ImageSpecField<span class="token punctuation">(</span>source<span class="token operator">=</span><span class="token string">'avatar'</span><span class="token punctuation">,</span>
+                                  processors<span class="token operator">=</span><span class="token punctuation">[</span>ResizeToFill<span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">,</span> <span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                                  <span class="token comment"># processors=[ResizeToFit(width=400, height=400)],</span>
+                                  <span class="token comment"># processors=[Thumbnail(width=400, height=400, anchor=None, crop=None, upscale=None)],</span>
+                                  <span class="token builtin">format</span><span class="token operator">=</span><span class="token string">'JPEG'</span><span class="token punctuation">,</span>
+                                  options<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'quality'</span><span class="token punctuation">:</span> <span class="token number">80</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                                  <span class="token punctuation">)</span>
+    <span class="token comment"># 正文</span>
+    body <span class="token operator">=</span> MDTextField<span class="token punctuation">(</span>null<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> blank<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">,</span> verbose_name<span class="token operator">=</span><span class="token string">'正文'</span><span class="token punctuation">,</span> help_text<span class="token operator">=</span><span class="token string">'请使用markdown语法书写文章'</span><span class="token punctuation">)</span>
+    <span class="token comment"># 创建时间</span>
+    created <span class="token operator">=</span> models<span class="token punctuation">.</span>DateTimeField<span class="token punctuation">(</span>default<span class="token operator">=</span>timezone<span class="token punctuation">.</span>now<span class="token punctuation">)</span>
+    <span class="token comment"># 更新时间</span>
+    updated <span class="token operator">=</span> models<span class="token punctuation">.</span>DateTimeField<span class="token punctuation">(</span>auto_now<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">class</span> <span class="token class-name">Meta</span><span class="token punctuation">:</span>
+        ordering <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'-created'</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>title
+
+    <span class="token comment"># 新增方法，将 body 转换为带 html 标签的正文</span>
+    <span class="token keyword">def</span> <span class="token function">get_md</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        md <span class="token operator">=</span> Markdown<span class="token punctuation">(</span>
+            extensions<span class="token operator">=</span><span class="token punctuation">[</span>
+                <span class="token string">'markdown.extensions.extra'</span><span class="token punctuation">,</span>
+                <span class="token string">'markdown.extensions.codehilite'</span><span class="token punctuation">,</span>
+                <span class="token string">'markdown.extensions.toc'</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">)</span>
+        md_body <span class="token operator">=</span> md<span class="token punctuation">.</span>convert<span class="token punctuation">(</span>self<span class="token punctuation">.</span>body<span class="token punctuation">)</span>
+        <span class="token comment"># toc 是渲染后的目录</span>
+        <span class="token keyword">return</span> md_body<span class="token punctuation">,</span> md<span class="token punctuation">.</span>toc
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br></div></div><p>关于博客写作，是用富文本还是用markdown，一开始一直由于不定，最担心的就是markdown上传图片比较麻烦</p> <p>但要相信，只要有痛点，就会有措施，前段时间发现了django-mdeditor, 可以轻松实现图片上传，果断弃富文本转markdown</p> <h3 id="什么是django-mdeditor">什么是Django-mdeditor</h3> <p>Django-mdeditor 是可以利用Python实现漂亮的Django markdown 富文本app插件，算是可以理解成是<code>markdown</code>和<code>ckeditor富文本编辑器</code>的整合体吧</p> <h3 id="先看效果">先看效果</h3> <p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/1644160590066.png" alt="1644160590066"></p> <p>更重要的是，它内置了Font awesome, 太给力了，瞬间破防</p> <p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/1644160358152.png" alt="1644160358152"></p> <p>如何使用这里就不赘诉了，详解如下的扩展阅读吧，讲得都比较清楚了</p> <h3 id="扩展阅读">扩展阅读</h3> <ul><li><a href="https://www.jianshu.com/p/a0ca9d1c4d72" target="_blank" rel="noopener noreferrer">Django在后端和前端添加Markdown支持（语法高亮以及图片上传）<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://zhuanlan.zhihu.com/p/55158579" target="_blank" rel="noopener noreferrer">利用Python实现漂亮的Django Markdown富文本app插件 <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://blog.csdn.net/Kevinhanser/article/details/121374767" target="_blank" rel="noopener noreferrer">Django + markdown 前台使用markdown编辑器深入浅出详解<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="将模型添加倒admin中">将模型添加倒admin中</h2> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># article/admin</span>
+
+<span class="token keyword">from</span> django<span class="token punctuation">.</span>contrib <span class="token keyword">import</span> admin
+
+<span class="token keyword">from</span> article<span class="token punctuation">.</span>models <span class="token keyword">import</span> Article<span class="token punctuation">,</span> Category
+
+<span class="token comment"># Register your models here.</span>
+
+admin<span class="token punctuation">.</span>site<span class="token punctuation">.</span>register<span class="token punctuation">(</span>Article<span class="token punctuation">)</span>
+admin<span class="token punctuation">.</span>site<span class="token punctuation">.</span>register<span class="token punctuation">(</span>Category<span class="token punctuation">)</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>启动服务</p> <p>进入后台添加一张图片试试</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">(</span>venv<span class="token punctuation">)</span> D:<span class="token punctuation">\</span>BlueDoc<span class="token punctuation">\</span>deep_diary<span class="token operator">&gt;</span>python manage.py runserver
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/1651410056765.png" alt="1651410056765"></p> <h2 id="创建序列化器">创建序列化器</h2> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">CategorySerializer</span><span class="token punctuation">(</span>serializers<span class="token punctuation">.</span>ModelSerializer<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;分类的序列化器&quot;&quot;&quot;</span>
+    url <span class="token operator">=</span> serializers<span class="token punctuation">.</span>HyperlinkedIdentityField<span class="token punctuation">(</span>view_name<span class="token operator">=</span><span class="token string">'category-detail'</span><span class="token punctuation">,</span> lookup_field<span class="token operator">=</span><span class="token string">'title'</span><span class="token punctuation">,</span> lookup_url_kwarg<span class="token operator">=</span><span class="token string">'pk'</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">class</span> <span class="token class-name">Meta</span><span class="token punctuation">:</span>
+        model <span class="token operator">=</span> Category
+        fields <span class="token operator">=</span> <span class="token string">'__all__'</span>
+        <span class="token comment"># fields = ['url', 'title']</span>
+        <span class="token comment"># exclude = ['id']   # Cannot set both 'fields' and 'exclude' options on serializer CategorySerializer</span>
+        read_only_fields <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'created'</span><span class="token punctuation">]</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">ArticleSerializer</span><span class="token punctuation">(</span>serializers<span class="token punctuation">.</span>ModelSerializer<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    url <span class="token operator">=</span> serializers<span class="token punctuation">.</span>HyperlinkedIdentityField<span class="token punctuation">(</span>view_name<span class="token operator">=</span><span class="token string">'article-detail'</span><span class="token punctuation">)</span>
+    author <span class="token operator">=</span> serializers<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span>source<span class="token operator">=</span><span class="token string">&quot;author.username&quot;</span><span class="token punctuation">,</span> read_only<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+    category <span class="token operator">=</span> serializers<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span>source<span class="token operator">=</span><span class="token string">&quot;category.title&quot;</span><span class="token punctuation">,</span> read_only<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+    <span class="token comment"># category = CategorySerializer(read_only=True)  ## read_only=True</span>
+    category_url <span class="token operator">=</span> serializers<span class="token punctuation">.</span>HyperlinkedIdentityField<span class="token punctuation">(</span>view_name<span class="token operator">=</span><span class="token string">'category-detail'</span><span class="token punctuation">,</span> lookup_field<span class="token operator">=</span><span class="token string">'category_id'</span><span class="token punctuation">,</span>
+                                                        lookup_url_kwarg<span class="token operator">=</span><span class="token string">'pk'</span><span class="token punctuation">)</span>
+    tags <span class="token operator">=</span> TagSerializerField<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    avatar_thumb <span class="token operator">=</span> serializers<span class="token punctuation">.</span>ImageField<span class="token punctuation">(</span>read_only<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">class</span> <span class="token class-name">Meta</span><span class="token punctuation">:</span>
+        model <span class="token operator">=</span> Article
+        fields <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'url'</span><span class="token punctuation">,</span> <span class="token string">'title'</span><span class="token punctuation">,</span> <span class="token string">'author'</span><span class="token punctuation">,</span> <span class="token string">'category'</span><span class="token punctuation">,</span> <span class="token string">'category_url'</span><span class="token punctuation">,</span> <span class="token string">'tags'</span><span class="token punctuation">,</span> <span class="token string">'avatar_thumb'</span><span class="token punctuation">]</span>
+
+        extra_kwargs <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'body'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">'write_only'</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">CategoryDetailSerializer</span><span class="token punctuation">(</span>serializers<span class="token punctuation">.</span>ModelSerializer<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;分类详情&quot;&quot;&quot;</span>
+    articles <span class="token operator">=</span> ArticleSerializer<span class="token punctuation">(</span>many<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> read_only<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># articles = ArticleCategoryDetailSerializer(many=True, read_only=True)</span>
+
+    <span class="token keyword">class</span> <span class="token class-name">Meta</span><span class="token punctuation">:</span>
+        model <span class="token operator">=</span> Category
+        fields <span class="token operator">=</span> <span class="token punctuation">[</span>
+            <span class="token comment"># 'id',</span>
+            <span class="token string">'title'</span><span class="token punctuation">,</span>
+            <span class="token comment"># 'created',</span>
+            <span class="token string">'articles'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">ArticleDetailSerializer</span><span class="token punctuation">(</span>ArticleSerializer<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token builtin">id</span> <span class="token operator">=</span> serializers<span class="token punctuation">.</span>IntegerField<span class="token punctuation">(</span>read_only<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+    <span class="token comment"># 渲染后的正文</span>
+    body_html <span class="token operator">=</span> serializers<span class="token punctuation">.</span>SerializerMethodField<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment"># 渲染后的目录</span>
+    toc_html <span class="token operator">=</span> serializers<span class="token punctuation">.</span>SerializerMethodField<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    comments <span class="token operator">=</span> CommentSerializer<span class="token punctuation">(</span>many<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> read_only<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">get_body_html</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> obj<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> obj<span class="token punctuation">.</span>get_md<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">def</span> <span class="token function">get_toc_html</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> obj<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> obj<span class="token punctuation">.</span>get_md<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">class</span> <span class="token class-name">Meta</span><span class="token punctuation">:</span>
+        model <span class="token operator">=</span> Article
+        fields <span class="token operator">=</span> <span class="token string">'__all__'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br></div></div><p><code>method_field = serializers.SerializerMethodField()</code>这个序列化类型，需要定义一个方法来实现，对应</p> <p><code>get_method_field(self, obj)</code>, 这个函数有2个变量<code>self</code>和<code>obj</code></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">ArticleDetailSerializer</span><span class="token punctuation">(</span>ArticleSerializer<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    toc_html <span class="token operator">=</span> serializers<span class="token punctuation">.</span>SerializerMethodField<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">get_body_html</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> obj<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'INFO get_body_html： self format is : </span><span class="token interpolation"><span class="token punctuation">{</span><span class="token builtin">type</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token string">, obj format is : </span><span class="token interpolation"><span class="token punctuation">{</span><span class="token builtin">type</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'INFO get_body_html： obj ID is : </span><span class="token interpolation"><span class="token punctuation">{</span>obj<span class="token punctuation">.</span><span class="token builtin">id</span><span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> obj<span class="token punctuation">.</span>get_md<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>执行以下文章详情，看下效果：</p> <p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/1651411370361.png" alt="1651411370361"></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>INFO get_body_html： self <span class="token builtin">format</span> <span class="token keyword">is</span> <span class="token punctuation">:</span> <span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token string">'article.serializers.ArticleDetailSerializer'</span><span class="token operator">&gt;</span><span class="token punctuation">,</span> obj <span class="token builtin">format</span> <span class="token keyword">is</span> <span class="token punctuation">:</span> <span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token string">'article.models.Article'</span><span class="token operator">&gt;</span>
+INFO get_body_html： obj ID <span class="token keyword">is</span> <span class="token punctuation">:</span> <span class="token number">34</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>从上面可以看出来，这里的<code>self</code>就是序列化本身，<code>obj</code>就是文章详情这个实例</p> <p>这里一共设计到4个序列化器。</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># 基本的序列化</span>
+<span class="token keyword">class</span> <span class="token class-name">CategorySerializer</span><span class="token punctuation">(</span>serializers<span class="token punctuation">.</span>ModelSerializer<span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">ArticleSerializer</span><span class="token punctuation">(</span>serializers<span class="token punctuation">.</span>ModelSerializer<span class="token punctuation">)</span>
+
+<span class="token comment"># 详情序嵌套着基本列化器</span>
+<span class="token keyword">class</span> <span class="token class-name">CategoryDetailSerializer</span><span class="token punctuation">(</span>serializers<span class="token punctuation">.</span>ModelSerializer<span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">ArticleDetailSerializer</span><span class="token punctuation">(</span>ArticleSerializer<span class="token punctuation">)</span> <span class="token comment"># 直接继承基础序列化器</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="创建视图集">创建视图集</h2> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># Create your views here.</span>
+<span class="token keyword">from</span> django_filters<span class="token punctuation">.</span>rest_framework <span class="token keyword">import</span> DjangoFilterBackend
+<span class="token keyword">from</span> rest_framework <span class="token keyword">import</span> filters
+<span class="token keyword">from</span> rest_framework <span class="token keyword">import</span> viewsets
+
+<span class="token keyword">from</span> article<span class="token punctuation">.</span>models <span class="token keyword">import</span> Article<span class="token punctuation">,</span> Category
+<span class="token keyword">from</span> article<span class="token punctuation">.</span>serializers <span class="token keyword">import</span> ArticleSerializer
+<span class="token keyword">from</span> article<span class="token punctuation">.</span>serializers <span class="token keyword">import</span> CategorySerializer<span class="token punctuation">,</span> CategoryDetailSerializer<span class="token punctuation">,</span> ArticleDetailSerializer
+<span class="token keyword">from</span> utils<span class="token punctuation">.</span>permissions <span class="token keyword">import</span> IsAdminUserOrReadOnly
+
+
+<span class="token keyword">class</span> <span class="token class-name">ArticleViewSet</span><span class="token punctuation">(</span>viewsets<span class="token punctuation">.</span>ModelViewSet<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    queryset <span class="token operator">=</span> Article<span class="token punctuation">.</span>objects<span class="token punctuation">.</span><span class="token builtin">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    serializer_class <span class="token operator">=</span> ArticleDetailSerializer
+    permission_classes <span class="token operator">=</span> <span class="token punctuation">[</span>IsAdminUserOrReadOnly<span class="token punctuation">]</span>
+
+    filter_backends <span class="token operator">=</span> <span class="token punctuation">[</span>DjangoFilterBackend<span class="token punctuation">,</span> filters<span class="token punctuation">.</span>SearchFilter<span class="token punctuation">,</span> filters<span class="token punctuation">.</span>OrderingFilter<span class="token punctuation">]</span>  <span class="token comment"># 模糊过滤，注意的是，这里的url参数名变成了?search=搜索内容</span>
+    <span class="token comment"># filterset_fields = ['author__username', 'title', 'tags__name']</span>
+    filterset_fields <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">'author__username'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'icontains'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment"># 包含</span>
+        <span class="token string">'title'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'icontains'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment"># 包含</span>
+        <span class="token string">'tags__name'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'icontains'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment"># 包含</span>
+        <span class="token comment"># 'created': ['icontains'],  # 模糊搜索</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment"># search_fields = ['author', 'title', 'tags__name', 'created', 'body']    # 报错</span>
+    search_fields <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'author__username'</span><span class="token punctuation">,</span> <span class="token string">'title'</span><span class="token punctuation">,</span> <span class="token string">'tags__name'</span><span class="token punctuation">,</span> <span class="token string">'created'</span><span class="token punctuation">]</span>  <span class="token comment"># 不报错</span>
+    ordering_fields <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'created'</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">def</span> <span class="token function">perform_create</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> serializer<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'文章创建：</span><span class="token interpolation"><span class="token punctuation">{</span>self<span class="token punctuation">.</span>request<span class="token punctuation">.</span>data<span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>request<span class="token punctuation">.</span>user<span class="token punctuation">.</span>is_authenticated<span class="token punctuation">:</span>  <span class="token comment"># 判断用户是否已经登入</span>
+            instance <span class="token operator">=</span> serializer<span class="token punctuation">.</span>save<span class="token punctuation">(</span>author<span class="token operator">=</span>self<span class="token punctuation">.</span>request<span class="token punctuation">.</span>user<span class="token punctuation">)</span>  <span class="token comment"># author 是外键，需要进行复写</span>
+            instance<span class="token punctuation">.</span>tags<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>request<span class="token punctuation">.</span>data<span class="token punctuation">[</span><span class="token string">'tags'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># 标签系统的保存逻辑，也需要复写, [A,B]拆分成2个标签进行保存</span>
+
+    <span class="token keyword">def</span> <span class="token function">perform_update</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> serializer<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># 应该在调用的模型中添加</span>
+        instance <span class="token operator">=</span> serializer<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'文章更新：</span><span class="token interpolation"><span class="token punctuation">{</span>self<span class="token punctuation">.</span>request<span class="token punctuation">.</span>data<span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> <span class="token string">'tags'</span> <span class="token keyword">in</span> self<span class="token punctuation">.</span>request<span class="token punctuation">.</span>data<span class="token punctuation">:</span>
+            instance<span class="token punctuation">.</span>tags<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>request<span class="token punctuation">.</span>data<span class="token punctuation">[</span><span class="token string">'tags'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">get_serializer_class</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>action <span class="token operator">==</span> <span class="token string">'list'</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> ArticleSerializer
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> ArticleDetailSerializer
+
+
+<span class="token keyword">class</span> <span class="token class-name">CategoryViewSet</span><span class="token punctuation">(</span>viewsets<span class="token punctuation">.</span>ModelViewSet<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;分类视图集&quot;&quot;&quot;</span>
+    queryset <span class="token operator">=</span> Category<span class="token punctuation">.</span>objects<span class="token punctuation">.</span><span class="token builtin">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    serializer_class <span class="token operator">=</span> CategorySerializer
+    permission_classes <span class="token operator">=</span> <span class="token punctuation">[</span>IsAdminUserOrReadOnly<span class="token punctuation">]</span>
+
+    <span class="token keyword">def</span> <span class="token function">get_serializer_class</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>action <span class="token operator">==</span> <span class="token string">'list'</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> CategorySerializer
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> CategoryDetailSerializer
+
+    pagination_class <span class="token operator">=</span> <span class="token boolean">None</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br></div></div><h2 id="路由注册">路由注册</h2> <p>基于<code>ViewSets</code>的路由就相当简单了，不需要像常规那样，一个模块增删改查需要4个不同的路由，这个用一个就好了。</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># deep_diary\url.py	项目主路由</span>
+
+<span class="token keyword">from</span> django<span class="token punctuation">.</span>urls <span class="token keyword">import</span> path<span class="token punctuation">,</span> include
+<span class="token keyword">from</span> rest_framework<span class="token punctuation">.</span>routers <span class="token keyword">import</span> DefaultRouter
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+router <span class="token operator">=</span> DefaultRouter<span class="token punctuation">(</span><span class="token punctuation">)</span>
+router<span class="token punctuation">.</span>register<span class="token punctuation">(</span><span class="token string">r'article'</span><span class="token punctuation">,</span> ArticleViewSet<span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+urlpatterns <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    path<span class="token punctuation">(</span><span class="token string">'api/'</span><span class="token punctuation">,</span> include<span class="token punctuation">(</span>router<span class="token punctuation">.</span>urls<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="权限管理">权限管理</h2> <p>好在<strong>自定义</strong>一个权限类也不难。在公用 app 中创建 <code>utils/permissions.py</code> 文件，写入以下代码：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># utils/permissions.py</span>
+
+<span class="token keyword">from</span> rest_framework <span class="token keyword">import</span> permissions
+
+<span class="token keyword">class</span> <span class="token class-name">IsAdminUserOrReadOnly</span><span class="token punctuation">(</span>permissions<span class="token punctuation">.</span>BasePermission<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;
+    仅管理员用户可进行修改
+    其他用户仅可查看
+    &quot;&quot;&quot;</span>
+    <span class="token keyword">def</span> <span class="token function">has_permission</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> request<span class="token punctuation">,</span> view<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 对所有人允许 GET, HEAD, OPTIONS 请求</span>
+        <span class="token keyword">if</span> request<span class="token punctuation">.</span>method <span class="token keyword">in</span> permissions<span class="token punctuation">.</span>SAFE_METHODS<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">True</span>
+
+        <span class="token comment"># 仅管理员可进行其他操作</span>
+        <span class="token keyword">return</span> request<span class="token punctuation">.</span>user<span class="token punctuation">.</span>is_superuser
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>自定义的权限类继承了 <code>BasePermission</code> 这个基础的父类，并实现了父类中的钩子方法 <code>def has_permission</code>。此方法在每次请求到来时被唤醒执行，里面简单判断了请求的种类是否安全（即不更改数据的请求），如果安全则直接通过，不安全则只允许管理员用户通过。</p> <h2 id="分页">分页</h2> <p>获取配置内容</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># 获取django的配置项</span>
+<span class="token keyword">from</span> django<span class="token punctuation">.</span>conf <span class="token keyword">import</span> settings
+
+<span class="token comment"># 获取rest_framework的配置项</span>
+<span class="token keyword">from</span> rest_frameworks<span class="token punctuation">.</span>settings <span class="token keyword">import</span> api_settings
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="全局配置">全局配置</h3> <div class="language-python line-numbers-mode"><pre class="language-python"><code>    <span class="token comment"># setting 中配置分页</span>
+    <span class="token string">'DEFAULT_PAGINATION_CLASS'</span><span class="token punctuation">:</span> <span class="token string">'rest_framework.pagination.PageNumberPagination'</span><span class="token punctuation">,</span>  <span class="token comment"># 页码分页器</span>
+    <span class="token comment"># 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',  # 偏移量分页器</span>
+    <span class="token string">'PAGE_SIZE'</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="局部分页器">局部分页器</h3> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># 在视图中调用如下</span>
+
+<span class="token keyword">from</span> rest_framework<span class="token punctuation">.</span>pagination <span class="token keyword">import</span> PageNumberPagination
+
+<span class="token comment"># 实际工作中，一般会单独创建一个文件pagination.py</span>
+<span class="token keyword">class</span> <span class="token class-name">ArticlePageNumberPagination</span><span class="token punctuation">(</span>PageNumberPagination<span class="token punctuation">)</span>
+	page_size <span class="token operator">=</span> <span class="token number">10</span>					<span class="token comment"># 默认分页的每一页数据量</span>
+    max_page_size <span class="token operator">=</span> <span class="token number">20</span>				<span class="token comment"># 设置允许客户端通过地址栏参数调整的最大单页数据量</span>
+    page_query_param <span class="token operator">=</span> <span class="token string">'pn'</span>			<span class="token comment"># 地址栏上代表页码的变量名，默认是 page</span>
+    page_size_query_param <span class="token operator">=</span><span class="token string">'size'</span>	<span class="token comment"># 地址栏上代表单页数据量的变量名，默认是page_size</span>
+
+pagination_class <span class="token operator">=</span> PageNumberPagination		<span class="token comment"># ArticlePageNumberPagination  自定义分类器</span>
+pagination_class <span class="token operator">=</span> <span class="token boolean">None</span>  			<span class="token comment"># 如果设置了全局分页，视图中可以指定None 关闭分页</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="复写list">复写<code>list</code></h3> <p>复写<code>list</code>函数，达到自定义分页效果</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># article/views.py/ArticleViewSet</span>
+
+    <span class="token keyword">def</span> <span class="token function">list</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> request<span class="token punctuation">,</span> <span class="token operator">*</span>args<span class="token punctuation">,</span> <span class="token operator">**</span>kwargs<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        page <span class="token operator">=</span> request<span class="token punctuation">.</span>query_params<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'page'</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">)</span>
+        limit <span class="token operator">=</span> request<span class="token punctuation">.</span>query_params<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'limit'</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">)</span>
+        sort <span class="token operator">=</span> request<span class="token punctuation">.</span>query_params<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'sort'</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'INFO request page is : </span><span class="token interpolation"><span class="token punctuation">{</span>page<span class="token punctuation">}</span></span><span class="token string">, limit is </span><span class="token interpolation"><span class="token punctuation">{</span>limit<span class="token punctuation">}</span></span><span class="token string">, sort is </span><span class="token interpolation"><span class="token punctuation">{</span>sort<span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>  <span class="token comment"># 头部参数信息</span>
+
+        <span class="token comment"># self.pagination_class.page_size = limit  # 通过复写，改变了page_size 参数, 如果地址栏参数为page_size, 默认可以不用配置</span>
+        queryset <span class="token operator">=</span> self<span class="token punctuation">.</span>filter_queryset<span class="token punctuation">(</span>self<span class="token punctuation">.</span>get_queryset<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>order_by<span class="token punctuation">(</span>sort<span class="token punctuation">)</span>  <span class="token comment"># 通过复写，sort 参数</span>
+
+        <span class="token comment"># self.pagination_class = PageNumberPagination</span>
+        <span class="token comment"># self.pagination_class.page_size = limit</span>
+
+        page <span class="token operator">=</span> self<span class="token punctuation">.</span>paginate_queryset<span class="token punctuation">(</span>queryset<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> page <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            serializer <span class="token operator">=</span> self<span class="token punctuation">.</span>get_serializer<span class="token punctuation">(</span>page<span class="token punctuation">,</span> many<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span> self<span class="token punctuation">.</span>get_paginated_response<span class="token punctuation">(</span>serializer<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+
+        serializer <span class="token operator">=</span> self<span class="token punctuation">.</span>get_serializer<span class="token punctuation">(</span>queryset<span class="token punctuation">,</span> many<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> Response<span class="token punctuation">(</span>serializer<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="搜索功能">搜索功能</h2> <p>过滤功能基本上是每个网站都有的，这里用到了一个现成的轮子<code>django-filter</code>,</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>filter_backends <span class="token operator">=</span> <span class="token punctuation">[</span>DjangoFilterBackend<span class="token punctuation">,</span> filters<span class="token punctuation">.</span>SearchFilter<span class="token punctuation">,</span> filters<span class="token punctuation">.</span>OrderingFilter<span class="token punctuation">]</span>  <span class="token comment"># 模糊过滤，注意的是，这里的url参数名变成了?search=搜索内容</span>
+<span class="token comment"># filterset_fields = ['author__username', 'title', 'tags__name']  # 不指定look_up 方式</span>
+filterset_fields <span class="token operator">=</span> <span class="token punctuation">{</span>										<span class="token comment"># 指定look_up 方式</span>
+    <span class="token string">'author__username'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'icontains'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment"># 包含</span>
+    <span class="token string">'title'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'icontains'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment"># 包含</span>
+    <span class="token string">'tags__name'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'icontains'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment"># 包含</span>
+    <span class="token comment"># 'created': ['icontains'],  # 模糊搜索</span>
+<span class="token punctuation">}</span>
+<span class="token comment"># search_fields = ['author', 'title', 'tags__name', 'created', 'body']    # 报错</span>
+search_fields <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'author__username'</span><span class="token punctuation">,</span> <span class="token string">'title'</span><span class="token punctuation">,</span> <span class="token string">'tags__name'</span><span class="token punctuation">,</span> <span class="token string">'created'</span><span class="token punctuation">]</span>  <span class="token comment"># 不报错</span>
+ordering_fields <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'created'</span><span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="接口测试">接口测试</h2> <h2 id="问题清单">问题清单</h2> <h3 id="related-field-got-invalid-lookup-icontains">Related Field got invalid lookup: icontains</h3> <div class="language-python line-numbers-mode"><pre class="language-python"><code>Related Field got invalid lookup<span class="token punctuation">:</span> icontains
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="原因">原因</h4> <p>没有指定外键具体字段</p> <h4 id="措施">措施</h4> <div class="language-python line-numbers-mode"><pre class="language-python"><code>search_fields <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'author'</span><span class="token punctuation">,</span> <span class="token string">'title'</span><span class="token punctuation">,</span> <span class="token string">'tags__name'</span><span class="token punctuation">,</span> <span class="token string">'created'</span><span class="token punctuation">,</span> <span class="token string">'body'</span><span class="token punctuation">]</span>    <span class="token comment"># 报错</span>
+search_fields <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'author__username'</span><span class="token punctuation">,</span> <span class="token string">'title'</span><span class="token punctuation">,</span> <span class="token string">'tags__name'</span><span class="token punctuation">,</span> <span class="token string">'created'</span><span class="token punctuation">,</span> <span class="token string">'body'</span><span class="token punctuation">]</span>  <span class="token comment"># 不报错</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">8/14/2022, 1:17:07 PM</span></div></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div><!----><div></div><!----><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://music.163.com/song/media/outer/url?id=316756.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://p2.music.126.net/qOOTIykbSLw9RHB0vI83GA==/737772302281958.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://p2.music.126.net/qOOTIykbSLw9RHB0vI83GA==/737772302281958.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>大城小事</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>杨千嬅</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><!----></div></div>
+    <script src="/assets/js/app.8fd3f559.js" defer></script><script src="/assets/js/4.5e854a94.js" defer></script><script src="/assets/js/1.650e7656.js" defer></script><script src="/assets/js/26.9c6af062.js" defer></script><script src="/assets/js/10.51e38269.js" defer></script>
+  </body>
+</html>

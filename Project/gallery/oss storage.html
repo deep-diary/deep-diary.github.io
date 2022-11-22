@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Django 实现云存储 | Deep Diary</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <meta name="description" content="基于深度学习，专注于旅游，记忆追溯相关的开发">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="google-site-verification">
+    <meta name="keywords" content="深记,deep-diary,自建博客,葛维冬，深度学习，记忆追溯">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="robots" content="all">
+    <meta name="author" content="deep-diary">
+    
+    <link rel="preload" href="/assets/css/0.styles.bfd62ff8.css" as="style"><link rel="preload" href="/assets/js/app.8fd3f559.js" as="script"><link rel="preload" href="/assets/js/4.5e854a94.js" as="script"><link rel="preload" href="/assets/js/1.650e7656.js" as="script"><link rel="preload" href="/assets/js/49.c39681e9.js" as="script"><link rel="preload" href="/assets/js/10.51e38269.js" as="script"><link rel="prefetch" href="/assets/js/11.fb66f811.js"><link rel="prefetch" href="/assets/js/12.4c092a46.js"><link rel="prefetch" href="/assets/js/13.35cb78ac.js"><link rel="prefetch" href="/assets/js/14.c5816d28.js"><link rel="prefetch" href="/assets/js/15.fdc6a846.js"><link rel="prefetch" href="/assets/js/16.fe23022b.js"><link rel="prefetch" href="/assets/js/17.1a31eb11.js"><link rel="prefetch" href="/assets/js/18.66d4c6cf.js"><link rel="prefetch" href="/assets/js/19.42422af7.js"><link rel="prefetch" href="/assets/js/20.ed6e6c3d.js"><link rel="prefetch" href="/assets/js/21.1a784aea.js"><link rel="prefetch" href="/assets/js/22.8bd53904.js"><link rel="prefetch" href="/assets/js/23.a3a2aaad.js"><link rel="prefetch" href="/assets/js/24.2b2ecd12.js"><link rel="prefetch" href="/assets/js/25.40a6d405.js"><link rel="prefetch" href="/assets/js/26.9c6af062.js"><link rel="prefetch" href="/assets/js/27.b0c209b4.js"><link rel="prefetch" href="/assets/js/28.089d0c18.js"><link rel="prefetch" href="/assets/js/29.327c0986.js"><link rel="prefetch" href="/assets/js/30.ed574e61.js"><link rel="prefetch" href="/assets/js/31.22de3eca.js"><link rel="prefetch" href="/assets/js/32.7fa4c407.js"><link rel="prefetch" href="/assets/js/33.fc6288e5.js"><link rel="prefetch" href="/assets/js/34.a2284905.js"><link rel="prefetch" href="/assets/js/35.e16bc36b.js"><link rel="prefetch" href="/assets/js/36.8933ab22.js"><link rel="prefetch" href="/assets/js/37.c8708c2d.js"><link rel="prefetch" href="/assets/js/38.0e49992a.js"><link rel="prefetch" href="/assets/js/39.a5343f2f.js"><link rel="prefetch" href="/assets/js/40.028ae324.js"><link rel="prefetch" href="/assets/js/41.d1e1db06.js"><link rel="prefetch" href="/assets/js/42.4c30c5f0.js"><link rel="prefetch" href="/assets/js/43.746190f0.js"><link rel="prefetch" href="/assets/js/44.5e7ae7b6.js"><link rel="prefetch" href="/assets/js/45.53b85b0c.js"><link rel="prefetch" href="/assets/js/46.b56fe8e7.js"><link rel="prefetch" href="/assets/js/47.bf32be9e.js"><link rel="prefetch" href="/assets/js/48.a95638b8.js"><link rel="prefetch" href="/assets/js/5.03b654a4.js"><link rel="prefetch" href="/assets/js/50.9dd6d4cf.js"><link rel="prefetch" href="/assets/js/51.37646a35.js"><link rel="prefetch" href="/assets/js/52.9891e5f0.js"><link rel="prefetch" href="/assets/js/53.6b5b1d14.js"><link rel="prefetch" href="/assets/js/54.def96dee.js"><link rel="prefetch" href="/assets/js/55.f7892c7c.js"><link rel="prefetch" href="/assets/js/56.5f5f204c.js"><link rel="prefetch" href="/assets/js/57.50f6279d.js"><link rel="prefetch" href="/assets/js/58.1f186d61.js"><link rel="prefetch" href="/assets/js/59.d844658f.js"><link rel="prefetch" href="/assets/js/6.ac399d41.js"><link rel="prefetch" href="/assets/js/60.c56afb78.js"><link rel="prefetch" href="/assets/js/61.a78f1fa4.js"><link rel="prefetch" href="/assets/js/62.1ffdbfc6.js"><link rel="prefetch" href="/assets/js/63.84d50267.js"><link rel="prefetch" href="/assets/js/64.c5b65bc1.js"><link rel="prefetch" href="/assets/js/65.284acdeb.js"><link rel="prefetch" href="/assets/js/66.2ddc2745.js"><link rel="prefetch" href="/assets/js/67.eb37ac4c.js"><link rel="prefetch" href="/assets/js/68.959a8bc5.js"><link rel="prefetch" href="/assets/js/69.02b77ce0.js"><link rel="prefetch" href="/assets/js/7.706f533b.js"><link rel="prefetch" href="/assets/js/70.bfe280be.js"><link rel="prefetch" href="/assets/js/71.7aef00da.js"><link rel="prefetch" href="/assets/js/72.be85292b.js"><link rel="prefetch" href="/assets/js/73.fac9947d.js"><link rel="prefetch" href="/assets/js/74.694aa9a8.js"><link rel="prefetch" href="/assets/js/75.2efdf72f.js"><link rel="prefetch" href="/assets/js/76.f6792410.js"><link rel="prefetch" href="/assets/js/77.cb19fd0e.js"><link rel="prefetch" href="/assets/js/78.20a98f34.js"><link rel="prefetch" href="/assets/js/79.6030e847.js"><link rel="prefetch" href="/assets/js/8.5e0abf00.js"><link rel="prefetch" href="/assets/js/80.b95919e9.js"><link rel="prefetch" href="/assets/js/81.409820c4.js"><link rel="prefetch" href="/assets/js/82.cea68c6c.js"><link rel="prefetch" href="/assets/js/83.9603771c.js"><link rel="prefetch" href="/assets/js/84.f94304e2.js"><link rel="prefetch" href="/assets/js/85.1687d319.js"><link rel="prefetch" href="/assets/js/86.d9d59341.js"><link rel="prefetch" href="/assets/js/87.9ec44d88.js"><link rel="prefetch" href="/assets/js/88.c5cd7561.js"><link rel="prefetch" href="/assets/js/89.9e3e5049.js"><link rel="prefetch" href="/assets/js/9.2d9184d6.js"><link rel="prefetch" href="/assets/js/90.99760ff2.js"><link rel="prefetch" href="/assets/js/91.59046907.js"><link rel="prefetch" href="/assets/js/92.e0d2a51c.js"><link rel="prefetch" href="/assets/js/93.116e2aed.js"><link rel="prefetch" href="/assets/js/94.88804724.js"><link rel="prefetch" href="/assets/js/95.e1cef1ca.js"><link rel="prefetch" href="/assets/js/96.cce16545.js"><link rel="prefetch" href="/assets/js/97.868a50a6.js"><link rel="prefetch" href="/assets/js/98.5ea81e85.js"><link rel="prefetch" href="/assets/js/99.0fef2eb3.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.e51760b9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bfd62ff8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-1c4f0192 data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-1c4f0192><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Deep Diary</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>Blue</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Deep Diary</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/deep learning/" class="nav-link"><i class="iconfont undefined"></i>
+  deep learning
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Develop/" class="nav-link"><i class="iconfont undefined"></i>
+  Develop
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/conference/" class="nav-link"><i class="iconfont undefined"></i>
+  conference
+</a></li><li class="dropdown-item"><!----> <a href="/categories/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  blog
+</a></li><li class="dropdown-item"><!----> <a href="/categories/project/" class="nav-link"><i class="iconfont undefined"></i>
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/categories/WEB/" class="nav-link"><i class="iconfont undefined"></i>
+  WEB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Synology/" class="nav-link"><i class="iconfont undefined"></i>
+  Synology
+</a></li><li class="dropdown-item"><!----> <a href="/categories/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-faq"></i>
+      Guide
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link"><i class="iconfont undefined"></i>
+  Guide
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Project
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/management/" class="nav-link"><i class="iconfont undefined"></i>
+  Management
+</a></li><li class="dropdown-item"><!----> <a href="/project/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/project/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  Blog
+</a></li><li class="dropdown-item"><!----> <a href="/project/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  Vuepress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Web
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Web/Backend/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/web/backend/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/frondend/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/" class="nav-link"><i class="iconfont undefined"></i>
+  Database
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Deep Learning
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Deep-Learning/" class="nav-link"><i class="iconfont undefined"></i>
+  Deep Learning
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Software
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      PM
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-date"></i>
+      Timeline
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/timeline/" class="nav-link"><i class="iconfont undefined"></i>
+  Timeline
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-6c8ffc9c> <h3 class="name" data-v-6c8ffc9c>
+    Blue
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>59</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>79</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/deep learning/" class="nav-link"><i class="iconfont undefined"></i>
+  deep learning
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Develop/" class="nav-link"><i class="iconfont undefined"></i>
+  Develop
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/conference/" class="nav-link"><i class="iconfont undefined"></i>
+  conference
+</a></li><li class="dropdown-item"><!----> <a href="/categories/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  blog
+</a></li><li class="dropdown-item"><!----> <a href="/categories/project/" class="nav-link"><i class="iconfont undefined"></i>
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/categories/WEB/" class="nav-link"><i class="iconfont undefined"></i>
+  WEB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Synology/" class="nav-link"><i class="iconfont undefined"></i>
+  Synology
+</a></li><li class="dropdown-item"><!----> <a href="/categories/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-faq"></i>
+      Guide
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link"><i class="iconfont undefined"></i>
+  Guide
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Project
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/management/" class="nav-link"><i class="iconfont undefined"></i>
+  Management
+</a></li><li class="dropdown-item"><!----> <a href="/project/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/project/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  Blog
+</a></li><li class="dropdown-item"><!----> <a href="/project/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  Vuepress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Web
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Web/Backend/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/web/backend/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/frondend/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/" class="nav-link"><i class="iconfont undefined"></i>
+  Database
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Deep Learning
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Deep-Learning/" class="nav-link"><i class="iconfont undefined"></i>
+  Deep Learning
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Software
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      PM
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-date"></i>
+      Timeline
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/timeline/" class="nav-link"><i class="iconfont undefined"></i>
+  Timeline
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Gallery</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Project/gallery/1. user login backend.html" class="sidebar-link">用户登入后端</a></li><li><a href="/Project/gallery/2. user login frontend.html" class="sidebar-link">用户登入前端</a></li><li><a href="/Project/gallery/3. gallery backend.html" class="sidebar-link">相册模块后台</a></li><li><a href="/Project/gallery/4. gallery frontend.html" class="sidebar-link">相册模块前台</a></li><li><a href="/Project/gallery/Amap.html" class="sidebar-link">高德地图</a></li><li><a href="/Project/gallery/Asynchronous tasks_celery.html" class="sidebar-link">Django 处理异步任务</a></li><li><a href="/Project/gallery/Development environment setup.html" class="sidebar-link">搭建开发环境</a></li><li><a href="/Project/gallery/GCN training_pending.html" class="sidebar-link">GraphNavigator</a></li><li><a href="/Project/gallery/GraphNavigator.html" class="sidebar-link">GraphNavigator</a></li><li><a href="/Project/gallery/" aria-current="page" class="sidebar-link">Introduction of Gallery Project</a></li><li><a href="/Project/gallery/Server Deployment.html" class="sidebar-link">服务器部署</a></li><li><a href="/Project/gallery/build the face group.html" class="sidebar-link">Build the Face Group</a></li><li><a href="/Project/gallery/face recognition.html" class="sidebar-link">人脸模块后台</a></li><li><a href="/Project/gallery/fetch basic info from image.html" class="sidebar-link">fetch the basic info from image</a></li><li><a href="/Project/gallery/fetch categorizers from image.html" class="sidebar-link">fetch categorizers from the image</a></li><li><a href="/Project/gallery/fetch colors from image.html" class="sidebar-link">fetch colors from the image</a></li><li><a href="/Project/gallery/fetch tags from image.html" class="sidebar-link">fetch tags from the image</a></li><li><a href="/Project/gallery/graph database_Neo4j.html" class="sidebar-link">图数据库neo4j</a></li><li><a href="/Project/gallery/infinite scroll.html" class="sidebar-link">Infinite Scroll</a></li><li><a href="/Project/gallery/object identification.html" class="sidebar-link">目标后台</a></li><li><a href="/Project/gallery/oss storage.html" class="active sidebar-link">Django 实现云存储</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Project/gallery/oss storage.html#什么是oss对象存储" class="sidebar-link">什么是oss对象存储</a></li><li class="sidebar-sub-header"><a href="/Project/gallery/oss storage.html#为什么要使用oss对象存储" class="sidebar-link">为什么要使用oss对象存储</a></li><li class="sidebar-sub-header"><a href="/Project/gallery/oss storage.html#阿里云oss的相关配置" class="sidebar-link">阿里云oss的相关配置</a></li><li class="sidebar-sub-header"><a href="/Project/gallery/oss storage.html#django-配置阿里云oss" class="sidebar-link">Django 配置阿里云oss</a></li><li class="sidebar-sub-header"><a href="/Project/gallery/oss storage.html#小结" class="sidebar-link">小结</a></li><li class="sidebar-sub-header"><a href="/Project/gallery/oss storage.html#扩展阅读" class="sidebar-link">扩展阅读</a></li></ul></li><li><a href="/Project/gallery/quick search.html" class="sidebar-link">quick search</a></li><li><a href="/Project/gallery/seeting of backend.html" class="sidebar-link">setting of backend</a></li><li><a href="/Project/gallery/synology.html" class="sidebar-link">Synology</a></li><li><a href="/Project/gallery/trademark registration.html" class="sidebar-link">商标注册</a></li><li><a href="/Project/gallery/upload.html" class="sidebar-link">upload the image</a></li><li><a href="/Project/gallery/vue-awesome-swiper.html" class="sidebar-link">vue-awesome-swiper</a></li><li><a href="/Project/gallery/web3.html" class="sidebar-link">web3</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Django 实现云存储</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>Blue</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2022
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>Django 实现云存储</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>Blue</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2022-06-22</span></i> <!----> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      oss
+    </span><span class="tag-item" data-v-484a899e>
+      Django
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><div class="custom-block tip"><p class="custom-block-title">说明</p> <p>对象存储<code>oss</code>可以简单理解为用来存储图片、音频、视频等非结构化数据的数据池。相对于主机服务器，具有读写速度快，利于分享的特点。本文主要分享下如何在<code>django</code>中使用阿里云<code>oss</code></p> <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p></div> <h1 id="django-使用阿里云oss对象存储">Django 使用阿里云oss对象存储</h1> <p>上一章我们实现了网站的域名绑定，可以通过域名进行网页访问，但有一个头疼的问题是，图片资源动不动就好几个M，加载一张图片等地真心累，这样用户早就跑完了。</p> <p>关于网站优化，有如下几个方法：</p> <ol><li>将图片等媒体文件放到oss服务器上</li> <li>将静态文件放到oss服务器上或者使用cdn服务器进行加载</li></ol> <p>本章先简单介绍下oss服务器。</p> <h2 id="什么是oss对象存储">什么是oss对象存储</h2> <p>对象存储服务（Object Storage Service，简称 OSS）为您提供基于网络的数据存取服务。使用 OSS，您可以通过网络随时存储和调用包括文本、图片、音频和视频等在内的各种非结构化数据文件。</p> <h2 id="为什么要使用oss对象存储">为什么要使用oss对象存储</h2> <p>对象存储可以简单理解为用来存储图片、音频、视频等非结构化数据的数据池。相对于主机服务器，具有读写速度快，利于分享的特点y</p> <p>阿里云OSS:海量、安全、低成本、高可靠的云存储服务，提供99.9999999999%的数据可靠性。使用RESTful API 可以在互联网任何位置存储和访问，容量和处理能力弹性扩展</p> <p>1、网站数据动静分离，大幅提升网页性能</p> <p>一般情况下，我们都是建议使用主机服务器和对象存储分工合作的方式来存储网站数据。主机服务器主要负责存储网站的动态数据，对象存储则用来存储网站的静态文件。从而实现网站的动静分离，当用户访问一个网站时，分别从主机服务器和对象存储的服务器同步读取数据，可以大幅的提升网页性能。</p> <p>2、单独的文件管理界面，管理网站文件和本地电脑一样方便</p> <p>无论是腾讯云、阿里云、杉岩，对象存储都有单独的管理控制台，腾讯云和阿里云还有专门的电脑客户端。你不必打开网站，就可以像使用百度云盘一样使用对象存储来管理你的网站文件，除了上传、下载、预览等常用功能，还可以直接在对象存储上进行图片处理/媒体转码/数据分析等。</p> <p>3、本质是”内置大容量硬盘的分布式服务器“，同一个文件支持跨域共享</p> <p>对象存储的本质是“内置大容量硬盘的分布式服务器”，对象存储有自己的 CPU、内存、网络和磁盘系统，具备一定的智能，同一个对象存储数据池可以新建不同的存储桶（bucket），分别用来存储不同网站的数据，彼此互不干扰。而且同一个文件可以引用到不同的网站，可以有效的减少数据冗余。</p> <p>4、储存节点多，支持跨地域实时同步，实现异地容灾</p> <p>假设你的图片等数据存储在你自己的服务器上，只能通过定期数据备份的方式保护你的数据。数据量大的话，每次备份都需要大量的时间和占用大量的磁盘空间，管理起来还不方便。</p> <p>如果你的数据放置在对象存储的数据池了，并与网站关联。那么静态文件的备份就可以交给对象存储。你只需要对网站少量的动态文件进行备份。省时省力。</p> <p>比如我使用对象存储，我在离我最近的节点【深圳】来存储网站的图片等静态文件。但是考虑到极端情况，比如深圳节点由于突然停电，可能导致数据全部丢失。但如果之前我选择了【杭州】作为第二个存储节点，而且设置【深圳】节点的数据实时增量同步到【杭州】节点。那么就算深圳节点的数据丢失了，但是我在杭州的数据还是可以使用。等到恢复供电，我再把数据从杭州节点同步回深圳节点就可以了。这就是我们说的异地容灾。</p> <p>5、成本低，资源弹性伸缩，按需付费</p> <p>对象存储不像服务器的流量是固定的，包含在服务器的费用里面了。无论你用或不用，都是这么多。对象存储可以是根据你的实际使用量进行计费。</p> <p>6、节省服务器空间</p> <p>为什么选择将这一点放在最后说呢？因为现在服务器的价格还算实惠，活动也比较多。大部分站长已经不存在服务器空间不够用的问题。而且对象存储的出现也不是为了解决服务器空间不够用的问题。而是为了结合【块存储】、【文件存储】各自的优点，从而实现高效的文件读写和分享。但是节省了服务器空间还是不争得事实，所以还是提一下吧。
+以上内容转载，原文详解末尾链接</p> <h2 id="阿里云oss的相关配置">阿里云oss的相关配置</h2> <h3 id="_1-创建bucket">1. 创建bucket</h3> <p>这里的bucket就是所谓的存储空间，可以理解成云盘的根目录</p> <p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/1644409424161.png" alt="1644409424161"></p> <h3 id="_2-配置bucket">2. 配置Bucket</h3> <p>由于是个人网站，很多用户都可以查阅，因此这里的读写权限选择公共读。</p> <p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/1644409506089.png" alt="1644409506089"></p> <h3 id="_3-尝试手动上传文件到oss服务器">3. 尝试手动上传文件到oss服务器</h3> <p>这里仅仅作为测试，后续肯定会用python实现自动上传相关媒体文件到服务器。</p> <p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/1644409845284.png" alt="1644409845284"></p> <h3 id="_4-尝试从服务器中获取照片">4. 尝试从服务器中获取照片</h3> <p><strong>示例代码</strong></p> <p>以下代码用于将examplebucket中testfolder目录下的exampleobject.txt下载到本地D:\localpath路径下的examplefile.txt。</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># -*- coding: utf-8 -*-</span>
+<span class="token keyword">import</span> oss2
+
+<span class="token comment"># 阿里云账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM账号进行API访问或日常运维，请登录RAM控制台创建RAM账号。</span>
+auth <span class="token operator">=</span> oss2<span class="token punctuation">.</span>Auth<span class="token punctuation">(</span><span class="token string">'yourAccessKeyId'</span><span class="token punctuation">,</span> <span class="token string">'yourAccessKeySecret'</span><span class="token punctuation">)</span>
+<span class="token comment"># Endpoint以杭州为例，其它Region请按实际情况填写。</span>
+<span class="token comment"># 填写Bucket名称，例如examplebucket。</span>
+bucket <span class="token operator">=</span> oss2<span class="token punctuation">.</span>Bucket<span class="token punctuation">(</span>auth<span class="token punctuation">,</span> <span class="token string">'http://oss-cn-hangzhou.aliyuncs.com'</span><span class="token punctuation">,</span> <span class="token string">'examplebucket'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 填写Object完整路径，完整路径中不包含Bucket名称，例如testfolder/exampleobject.txt。</span>
+<span class="token comment"># 下载Object到本地文件，并保存到指定的本地路径D:\\localpath\\examplefile.txt。如果指定的本地文件存在会覆盖，不存在则新建。</span>
+bucket<span class="token punctuation">.</span>get_object_to_file<span class="token punctuation">(</span><span class="token string">'testfolder/exampleobject.txt'</span><span class="token punctuation">,</span> <span class="token string">'D:\\localpath\\examplefile.txt'</span><span class="token punctuation">)</span>        
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>这里的bucket，就是阿里云存储对象，有很多属性，也可以对这个对象进行分页操作，同时，这个对象也有很多方法，比如上传，下载图片等，具体详解文章末尾链接的官网教程</p> <p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/1644419847400.png" alt="1644419847400"></p> <h2 id="django-配置阿里云oss">Django 配置阿里云oss</h2> <h3 id="_1-安装依赖包">1. 安装依赖包</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>pip install oss2
+pip install django-oss-storage
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_2-settings-py-中添加-oss-配置">2. settings.py 中添加 oss 配置</h3> <p>以下配置完毕后就会生效, 上传地址, 访问路径都会变成 oss 服务器上的</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>MEDIA_URL <span class="token operator">=</span> <span class="token string">'/media/'</span>
+MEDIA_ROOT <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>BASE_DIR<span class="token punctuation">,</span> <span class="token string">'media'</span><span class="token punctuation">)</span>
+OSS_ACCESS_KEY_ID <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>  
+OSS_ACCESS_KEY_SECRET <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>   
+OSS_ENDPOINT <span class="token operator">=</span> <span class="token string">&quot;oss-accelerate.aliyuncs.com&quot;</span>      <span class="token comment"># 访问域名, 根据服务器上的实际配置修改</span>
+OSS_BUCKET_NAME <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>    <span class="token comment"># oss 创建的 BUCKET 名称</span>
+
+<span class="token comment"># 添加下面配置后 Django admin 后台上传的 ImageField, FileField 类型的字段都会被自动上传到 oss 的服务器中, 访问路径也会自动替换# 如果注释掉的话 oss 的配置会失效, 上传文件会存储到本地, 且访问路径也会变成本地</span>
+DEFAULT_FILE_STORAGE <span class="token operator">=</span> <span class="token string">'django_oss_storage.backends.OssMediaStorage'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="_3-文件上传路径说明">3. 文件上传路径说明</h3> <p>如果开始设计的时候，是使用的本地media目录，现在无非就是把这个默认存储空间，转移到了阿里云bucket中的media目录，其它均可以保持不变。</p> <p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/1645532036150.png" alt="1645532036150"></p> <h3 id="_4-监听相关操作">4. 监听相关操作</h3> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Base</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    image <span class="token operator">=</span> models<span class="token punctuation">.</span>FileField<span class="token punctuation">(</span>verbose_name<span class="token operator">=</span><span class="token string">&quot;图片文件&quot;</span><span class="token punctuation">,</span> upload_to<span class="token operator">=</span><span class="token string">&quot;base/image/&quot;</span><span class="token punctuation">,</span> null<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> blank<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 该表删除操作时监听</span>
+
+<span class="token decorator annotation punctuation">@receiver</span><span class="token punctuation">(</span>post_delete<span class="token punctuation">,</span> sender<span class="token operator">=</span>Base<span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">delete_upload_files</span><span class="token punctuation">(</span>sender<span class="token punctuation">,</span> instance<span class="token punctuation">,</span> <span class="token operator">**</span>kwargs<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># 删除 oss仓库 图片</span>
+    files <span class="token operator">=</span> <span class="token builtin">getattr</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> <span class="token string">'image'</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token keyword">not</span> files<span class="token punctuation">:</span>
+        <span class="token keyword">return</span>
+
+    <span class="token comment"># 连接 oss </span>
+    auth <span class="token operator">=</span> oss2<span class="token punctuation">.</span>Auth<span class="token punctuation">(</span>settings<span class="token punctuation">.</span>OSS_ACCESS_KEY_ID<span class="token punctuation">,</span> settings<span class="token punctuation">.</span>OSS_ACCESS_KEY_SECRET<span class="token punctuation">)</span>
+    <span class="token comment"># 获取 bucket </span>
+    bucket <span class="token operator">=</span> oss2<span class="token punctuation">.</span>Bucket<span class="token punctuation">(</span>auth<span class="token punctuation">,</span> settings<span class="token punctuation">.</span>OSS_ENDPOINT<span class="token punctuation">,</span> settings<span class="token punctuation">.</span>OSS_BUCKET_NAME<span class="token punctuation">)</span>
+    <span class="token comment"># 删除文件</span>
+    bucket<span class="token punctuation">.</span>delete_object<span class="token punctuation">(</span>files<span class="token punctuation">.</span><span class="token builtin">file</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+
+
+<span class="token comment"># 该表更新/创建操作时监听</span>
+
+<span class="token decorator annotation punctuation">@receiver</span><span class="token punctuation">(</span>post_save<span class="token punctuation">,</span> sender<span class="token operator">=</span>Base<span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">save_upload_files</span><span class="token punctuation">(</span>sender<span class="token punctuation">,</span> instance<span class="token punctuation">,</span> <span class="token operator">**</span>kwargs<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># 更新 oss仓库 图片</span>
+    files <span class="token operator">=</span> <span class="token builtin">getattr</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> <span class="token string">'image'</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token keyword">not</span> files<span class="token punctuation">:</span>
+        <span class="token keyword">return</span>
+<span class="token comment"># 要对图片进行处理的样式</span>
+style1 <span class="token operator">=</span> <span class="token string">&quot;image/crop,x_10,y_10,w_200,h_200,g_se&quot;</span>
+style2 <span class="token operator">=</span> <span class="token string">'image/resize,w_700,h_260,m_lfit'</span>
+style3 <span class="token operator">=</span> <span class="token string">'image/resize,m_fixed,h_260,w_700'</span>
+
+auth <span class="token operator">=</span> oss2<span class="token punctuation">.</span>Auth<span class="token punctuation">(</span>settings<span class="token punctuation">.</span>OSS_ACCESS_KEY_ID<span class="token punctuation">,</span> settings<span class="token punctuation">.</span>OSS_ACCESS_KEY_SECRET<span class="token punctuation">)</span>
+bucket <span class="token operator">=</span> oss2<span class="token punctuation">.</span>Bucket<span class="token punctuation">(</span>auth<span class="token punctuation">,</span> settings<span class="token punctuation">.</span>OSS_ENDPOINT<span class="token punctuation">,</span> settings<span class="token punctuation">.</span>OSS_BUCKET_NAME<span class="token punctuation">)</span>
+process <span class="token operator">=</span> <span class="token string">&quot;{0}|sys/saveas,o_{1},b_{2}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>style<span class="token punctuation">,</span>
+                                              oss2<span class="token punctuation">.</span>compat<span class="token punctuation">.</span>to_string<span class="token punctuation">(</span>base64<span class="token punctuation">.</span>urlsafe_b64encode<span class="token punctuation">(</span>
+                                                  oss2<span class="token punctuation">.</span>compat<span class="token punctuation">.</span>to_bytes<span class="token punctuation">(</span>file_name<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                                              oss2<span class="token punctuation">.</span>compat<span class="token punctuation">.</span>to_string<span class="token punctuation">(</span>base64<span class="token punctuation">.</span>urlsafe_b64encode<span class="token punctuation">(</span>
+                                                  oss2<span class="token punctuation">.</span>compat<span class="token punctuation">.</span>to_bytes<span class="token punctuation">(</span>settings<span class="token punctuation">.</span>OSS_BUCKET_NAME<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># 更新文件</span>
+bucket<span class="token punctuation">.</span>process_object<span class="token punctuation">(</span>files<span class="token punctuation">.</span><span class="token builtin">file</span><span class="token punctuation">.</span>name<span class="token punctuation">,</span> process<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div><h2 id="小结">小结</h2> <p>现在图片等媒体文件可以上传到oss对象服务器了，是不是网站的访问速度就可以大大提高了呢？答案是有一定的作用，但还可以优化提速。</p> <p>我们知道服务器加载静态资源还是蛮费时间的，学习了本章，是否可以考虑把静态资源也搬到oss上呢？</p> <p>另外CDN也可以加快网站的访问速度，但具体快多少呢？下一节将揭晓答案。</p> <h2 id="扩展阅读">扩展阅读</h2> <p><a href="https://gosspublic.alicdn.com/image/index.html?spm=a2c4g.11186623.0.0.7d203871dQExI3" target="_blank" rel="noopener noreferrer">OSS图片处理6.0 (alicdn.com)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://help.aliyun.com/document_detail/47660.html" target="_blank" rel="noopener noreferrer">OSS SDK 图片处理 (aliyun.com)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://blog.csdn.net/Doudou_Mylove/article/details/107221109" target="_blank" rel="noopener noreferrer">为什么需要使用oss对象存储<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>[Django 配置阿里云oss]( <a href="https://www.cnblogs.com/chaoqi/p/13903371.html" target="_blank" rel="noopener noreferrer">python - Django 配置阿里云 oss - _Q - 博客园 (cnblogs.com)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> )</p></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div><!----><div></div><!----><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://music.163.com/song/media/outer/url?id=316756.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://p2.music.126.net/qOOTIykbSLw9RHB0vI83GA==/737772302281958.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://p2.music.126.net/qOOTIykbSLw9RHB0vI83GA==/737772302281958.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>大城小事</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>杨千嬅</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><!----></div></div>
+    <script src="/assets/js/app.8fd3f559.js" defer></script><script src="/assets/js/4.5e854a94.js" defer></script><script src="/assets/js/1.650e7656.js" defer></script><script src="/assets/js/49.c39681e9.js" defer></script><script src="/assets/js/10.51e38269.js" defer></script>
+  </body>
+</html>
