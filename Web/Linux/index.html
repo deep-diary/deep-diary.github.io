@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linux Operation and Maintenance | Deep Diary</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <meta name="description" content="基于深度学习，专注于旅游，记忆追溯相关的开发">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="google-site-verification">
+    <meta name="keywords" content="深记,deep-diary,自建博客,葛维冬，深度学习，记忆追溯">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="robots" content="all">
+    <meta name="author" content="deep-diary">
+    
+    <link rel="preload" href="/assets/css/0.styles.bfd62ff8.css" as="style"><link rel="preload" href="/assets/js/app.7976978d.js" as="script"><link rel="preload" href="/assets/js/4.5e854a94.js" as="script"><link rel="preload" href="/assets/js/1.650e7656.js" as="script"><link rel="preload" href="/assets/js/100.ef67a44c.js" as="script"><link rel="preload" href="/assets/js/10.51e38269.js" as="script"><link rel="prefetch" href="/assets/js/11.fc152001.js"><link rel="prefetch" href="/assets/js/12.4c092a46.js"><link rel="prefetch" href="/assets/js/13.42315140.js"><link rel="prefetch" href="/assets/js/14.ae4eb782.js"><link rel="prefetch" href="/assets/js/15.78e3a4f3.js"><link rel="prefetch" href="/assets/js/16.74a3bc76.js"><link rel="prefetch" href="/assets/js/17.c61d0566.js"><link rel="prefetch" href="/assets/js/18.06902dff.js"><link rel="prefetch" href="/assets/js/19.4fd02638.js"><link rel="prefetch" href="/assets/js/20.a6e88e6f.js"><link rel="prefetch" href="/assets/js/21.5a5564ba.js"><link rel="prefetch" href="/assets/js/22.1bc7bfec.js"><link rel="prefetch" href="/assets/js/23.6739fdea.js"><link rel="prefetch" href="/assets/js/24.b6dfee7d.js"><link rel="prefetch" href="/assets/js/25.52a3a65f.js"><link rel="prefetch" href="/assets/js/26.d6b2897d.js"><link rel="prefetch" href="/assets/js/27.5ae9517f.js"><link rel="prefetch" href="/assets/js/28.8295d252.js"><link rel="prefetch" href="/assets/js/29.74222f50.js"><link rel="prefetch" href="/assets/js/30.ab6110fd.js"><link rel="prefetch" href="/assets/js/31.722a4574.js"><link rel="prefetch" href="/assets/js/32.bf2af9df.js"><link rel="prefetch" href="/assets/js/33.ddff96a2.js"><link rel="prefetch" href="/assets/js/34.41a340f3.js"><link rel="prefetch" href="/assets/js/35.01c18961.js"><link rel="prefetch" href="/assets/js/36.0396f348.js"><link rel="prefetch" href="/assets/js/37.fdb7b2c3.js"><link rel="prefetch" href="/assets/js/38.7fa60a7d.js"><link rel="prefetch" href="/assets/js/39.10422496.js"><link rel="prefetch" href="/assets/js/40.ed62b7de.js"><link rel="prefetch" href="/assets/js/41.66ffe2df.js"><link rel="prefetch" href="/assets/js/42.1e2807e7.js"><link rel="prefetch" href="/assets/js/43.03adfe35.js"><link rel="prefetch" href="/assets/js/44.5f0a43bc.js"><link rel="prefetch" href="/assets/js/45.264e052a.js"><link rel="prefetch" href="/assets/js/46.9fcada01.js"><link rel="prefetch" href="/assets/js/47.c52b365f.js"><link rel="prefetch" href="/assets/js/48.95ba4f64.js"><link rel="prefetch" href="/assets/js/49.ac307f3f.js"><link rel="prefetch" href="/assets/js/5.03b654a4.js"><link rel="prefetch" href="/assets/js/50.1e8a9062.js"><link rel="prefetch" href="/assets/js/51.8a1fc1c5.js"><link rel="prefetch" href="/assets/js/52.71765157.js"><link rel="prefetch" href="/assets/js/53.41008fb1.js"><link rel="prefetch" href="/assets/js/54.0a309cbf.js"><link rel="prefetch" href="/assets/js/55.548fe89c.js"><link rel="prefetch" href="/assets/js/56.15a14144.js"><link rel="prefetch" href="/assets/js/57.69739251.js"><link rel="prefetch" href="/assets/js/58.51b9b5c9.js"><link rel="prefetch" href="/assets/js/59.242f96c2.js"><link rel="prefetch" href="/assets/js/6.ac399d41.js"><link rel="prefetch" href="/assets/js/60.58d5f89a.js"><link rel="prefetch" href="/assets/js/61.6c931490.js"><link rel="prefetch" href="/assets/js/62.2ce92037.js"><link rel="prefetch" href="/assets/js/63.d8fea99b.js"><link rel="prefetch" href="/assets/js/64.f5069f99.js"><link rel="prefetch" href="/assets/js/65.241324ae.js"><link rel="prefetch" href="/assets/js/66.aa443797.js"><link rel="prefetch" href="/assets/js/67.7bafc9b0.js"><link rel="prefetch" href="/assets/js/68.38c8d452.js"><link rel="prefetch" href="/assets/js/69.165d9d74.js"><link rel="prefetch" href="/assets/js/7.706f533b.js"><link rel="prefetch" href="/assets/js/70.cef90879.js"><link rel="prefetch" href="/assets/js/71.704e5e67.js"><link rel="prefetch" href="/assets/js/72.824d4b63.js"><link rel="prefetch" href="/assets/js/73.3870bdb1.js"><link rel="prefetch" href="/assets/js/74.de7fce4c.js"><link rel="prefetch" href="/assets/js/75.e6d9fd54.js"><link rel="prefetch" href="/assets/js/76.60bab7d8.js"><link rel="prefetch" href="/assets/js/77.cadda59a.js"><link rel="prefetch" href="/assets/js/78.26c55a56.js"><link rel="prefetch" href="/assets/js/79.de5a8b57.js"><link rel="prefetch" href="/assets/js/8.5e0abf00.js"><link rel="prefetch" href="/assets/js/80.71fb76c7.js"><link rel="prefetch" href="/assets/js/81.4f7062d9.js"><link rel="prefetch" href="/assets/js/82.e8bdfe5e.js"><link rel="prefetch" href="/assets/js/83.6eac0d92.js"><link rel="prefetch" href="/assets/js/84.a47a8768.js"><link rel="prefetch" href="/assets/js/85.c28a153f.js"><link rel="prefetch" href="/assets/js/86.fe40fea9.js"><link rel="prefetch" href="/assets/js/87.542a7184.js"><link rel="prefetch" href="/assets/js/88.c5cd7561.js"><link rel="prefetch" href="/assets/js/89.01258d53.js"><link rel="prefetch" href="/assets/js/9.2d9184d6.js"><link rel="prefetch" href="/assets/js/90.774e1f08.js"><link rel="prefetch" href="/assets/js/91.7c33c062.js"><link rel="prefetch" href="/assets/js/92.66f497d6.js"><link rel="prefetch" href="/assets/js/93.d31e122b.js"><link rel="prefetch" href="/assets/js/94.d5c8ddaf.js"><link rel="prefetch" href="/assets/js/95.278502df.js"><link rel="prefetch" href="/assets/js/96.695d4a1a.js"><link rel="prefetch" href="/assets/js/97.208ab732.js"><link rel="prefetch" href="/assets/js/98.637cf02c.js"><link rel="prefetch" href="/assets/js/99.5696699b.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.e51760b9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bfd62ff8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-1c4f0192 data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-1c4f0192><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Deep Diary</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>Blue</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Deep Diary</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/deep learning/" class="nav-link"><i class="iconfont undefined"></i>
+  deep learning
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Develop/" class="nav-link"><i class="iconfont undefined"></i>
+  Develop
+</a></li><li class="dropdown-item"><!----> <a href="/categories/project/" class="nav-link"><i class="iconfont undefined"></i>
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  blog
+</a></li><li class="dropdown-item"><!----> <a href="/categories/conference/" class="nav-link"><i class="iconfont undefined"></i>
+  conference
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/categories/WEB/" class="nav-link"><i class="iconfont undefined"></i>
+  WEB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Synology/" class="nav-link"><i class="iconfont undefined"></i>
+  Synology
+</a></li><li class="dropdown-item"><!----> <a href="/categories/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-faq"></i>
+      Guide
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link"><i class="iconfont undefined"></i>
+  Guide
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Project
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/management/" class="nav-link"><i class="iconfont undefined"></i>
+  Management
+</a></li><li class="dropdown-item"><!----> <a href="/project/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/project/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  Blog
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Web
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Web/Backend/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/web/backend/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/frondend/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/" class="nav-link"><i class="iconfont undefined"></i>
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/web/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Deep Learning
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Deep-Learning/" class="nav-link"><i class="iconfont undefined"></i>
+  Deep Learning
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Software
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-date"></i>
+      Timeline
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/timeline/" class="nav-link"><i class="iconfont undefined"></i>
+  Timeline
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-6c8ffc9c> <h3 class="name" data-v-6c8ffc9c>
+    Blue
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>60</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>80</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/deep learning/" class="nav-link"><i class="iconfont undefined"></i>
+  deep learning
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Develop/" class="nav-link"><i class="iconfont undefined"></i>
+  Develop
+</a></li><li class="dropdown-item"><!----> <a href="/categories/project/" class="nav-link"><i class="iconfont undefined"></i>
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  blog
+</a></li><li class="dropdown-item"><!----> <a href="/categories/conference/" class="nav-link"><i class="iconfont undefined"></i>
+  conference
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/categories/WEB/" class="nav-link"><i class="iconfont undefined"></i>
+  WEB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Synology/" class="nav-link"><i class="iconfont undefined"></i>
+  Synology
+</a></li><li class="dropdown-item"><!----> <a href="/categories/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-faq"></i>
+      Guide
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link"><i class="iconfont undefined"></i>
+  Guide
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Project
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/management/" class="nav-link"><i class="iconfont undefined"></i>
+  Management
+</a></li><li class="dropdown-item"><!----> <a href="/project/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/project/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  Blog
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Web
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Web/Backend/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/web/backend/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/frondend/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/" class="nav-link"><i class="iconfont undefined"></i>
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/web/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Deep Learning
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Deep-Learning/" class="nav-link"><i class="iconfont undefined"></i>
+  Deep Learning
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Software
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-date"></i>
+      Timeline
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/timeline/" class="nav-link"><i class="iconfont undefined"></i>
+  Timeline
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Linux</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Web/Linux/" aria-current="page" class="active sidebar-link">Linux Operation and Maintenance</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Web/Linux/#general-command" class="sidebar-link">General command</a></li><li class="sidebar-sub-header"><a href="/Web/Linux/#process-state" class="sidebar-link">Process State</a></li><li class="sidebar-sub-header"><a href="/Web/Linux/#memory" class="sidebar-link">Memory</a></li><li class="sidebar-sub-header"><a href="/Web/Linux/#vim" class="sidebar-link">vim</a></li></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Linux Operation and Maintenance</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>Blue</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2022
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>Linux Operation and Maintenance</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>Blue</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2022-08-13</span></i> <!----> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      Readme
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><div class="custom-block tip"><p class="custom-block-title">说明</p> <p>​	Linux general command, operation, maintenance, Deployment,etc</p> <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p></div> <h1 id="linux-operation-and-maintenance">Linux Operation and Maintenance</h1> <h2 id="general-command">General command</h2> <p><a href="https://www.runoob.com/linux/linux-comm-ps.html" target="_blank" rel="noopener noreferrer">Linux ps 命令 | 菜鸟教程 (runoob.com)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="process-state">Process State</h2> <p>Linux ps （英文全拼：process status）命令用于显示当前进程的状态，类似于 windows 的任务管理器。</p> <h3 id="语法">语法</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>ps [options] [--help]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>参数</strong>：</p> <ul><li><p>ps 的参数非常多, 在此仅列出几个常用的参数并大略介绍含义</p></li> <li><p>-A 列出所有的进程</p></li> <li><p>-w 显示加宽可以显示较多的资讯</p></li> <li><p>-au 显示较详细的资讯</p></li> <li><p>-aux 显示所有包含其他使用者的进程</p></li> <li><p>au(x) 输出格式 :</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>USER: 行程拥有者</li> <li>PID: pid</li> <li>%CPU: 占用的 CPU 使用率</li> <li>%MEM: 占用的记忆体使用率</li> <li>VSZ: 占用的虚拟记忆体大小</li> <li>RSS: 占用的记忆体大小</li> <li>TTY: 终端的次要装置号码 (minor device number of tty)</li> <li>STAT: 该行程的状态:
+<ul><li>D: 无法中断的休眠状态 (通常 IO 的进程)</li> <li>R: 正在执行中</li> <li>S: 静止状态</li> <li>T: 暂停执行</li> <li>Z: 不存在但暂时无法消除</li> <li>W: 没有足够的记忆体分页可分配</li> <li>&lt;: 高优先序的行程</li> <li>N: 低优先序的行程</li> <li>L: 有记忆体分页分配并锁在记忆体内 (实时系统或捱A I/O)</li></ul></li> <li>START: 行程开始时间</li> <li>TIME: 执行的时间</li> <li>COMMAND:所执行的指令</li></ul></li></ul> <h3 id="实例">实例</h3> <p>查找指定进程格式：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ps -ef | grep 进程关键字
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>例如显示 php 的进程：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># ps -ef | grep php
+root       794     1  0  2020 ?        00:00:52 php-fpm: master process (/etc/php/7.3/fpm/php-fpm.conf)
+www-data   951   794  0  2020 ?        00:24:15 php-fpm: pool www
+www-data   953   794  0  2020 ?        00:24:14 php-fpm: pool www
+www-data   954   794  0  2020 ?        00:24:29 php-fpm: pool www
+...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>显示进程信息：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># ps -A 
+PID TTY     TIME CMD
+  1 ?    00:00:02 init
+  2 ?    00:00:00 kthreadd
+  3 ?    00:00:00 migration/0
+  4 ?    00:00:00 ksoftirqd/0
+  5 ?    00:00:00 watchdog/0
+  6 ?    00:00:00 events/0
+  7 ?    00:00:00 cpuset
+  8 ?    00:00:00 khelper
+  9 ?    00:00:00 netns
+  10 ?    00:00:00 async/mgr
+  11 ?    00:00:00 pm
+  12 ?    00:00:00 sync_supers
+  13 ?    00:00:00 bdi-default
+  14 ?    00:00:00 kintegrityd/0
+  15 ?    00:00:02 kblockd/0
+  16 ?    00:00:00 kacpid
+  17 ?    00:00:00 kacpi_notify
+  18 ?    00:00:00 kacpi_hotplug
+  19 ?    00:00:27 ata/0
+……省略部分结果
+30749 pts/0  00:00:15 gedit
+30886 ?    00:01:10 qtcreator.bin
+30894 ?    00:00:00 qtcreator.bin 
+31160 ?    00:00:00 dhclient
+31211 ?    00:00:00 aptd
+31302 ?    00:00:00 sshd
+31374 pts/2  00:00:00 bash
+31396 pts/2  00:00:00 ps
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><p>显示指定用户信息</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># ps -u root //显示root进程用户信息
+ PID TTY     TIME CMD
+  1 ?    00:00:02 init
+  2 ?    00:00:00 kthreadd
+  3 ?    00:00:00 migration/0
+  4 ?    00:00:00 ksoftirqd/0
+  5 ?    00:00:00 watchdog/0
+  6 ?    00:00:00 events/0
+  7 ?    00:00:00 cpuset
+  8 ?    00:00:00 khelper
+  9 ?    00:00:00 netns
+  10 ?    00:00:00 async/mgr
+  11 ?    00:00:00 pm
+  12 ?    00:00:00 sync_supers
+  13 ?    00:00:00 bdi-default
+  14 ?    00:00:00 kintegrityd/0
+  15 ?    00:00:02 kblockd/0
+  16 ?    00:00:00 kacpid
+……省略部分结果
+30487 ?    00:00:06 gnome-terminal
+30488 ?    00:00:00 gnome-pty-helpe
+30489 pts/0  00:00:00 bash
+30670 ?    00:00:00 debconf-communi 
+30749 pts/0  00:00:15 gedit
+30886 ?    00:01:10 qtcreator.bin
+30894 ?    00:00:00 qtcreator.bin 
+31160 ?    00:00:00 dhclient
+31211 ?    00:00:00 aptd
+31302 ?    00:00:00 sshd
+31374 pts/2  00:00:00 bash
+31397 pts/2  00:00:00 ps
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><p>显示所有进程信息，连同命令行</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># ps -ef //显示所有命令，连带命令行
+UID    PID PPID C STIME TTY     TIME CMD
+root     1   0 0 10:22 ?    00:00:02 /sbin/init
+root     2   0 0 10:22 ?    00:00:00 [kthreadd]
+root     3   2 0 10:22 ?    00:00:00 [migration/0]
+root     4   2 0 10:22 ?    00:00:00 [ksoftirqd/0]
+root     5   2 0 10:22 ?    00:00:00 [watchdog/0]
+root     6   2 0 10:22 ?    /usr/lib/NetworkManager
+……省略部分结果
+root   31302 2095 0 17:42 ?    00:00:00 sshd: root@pts/2 
+root   31374 31302 0 17:42 pts/2  00:00:00 -bash
+root   31400   1 0 17:46 ?    00:00:00 /usr/bin/python /usr/sbin/aptd
+root   31407 31374 0 17:48 pts/2  00:00:00 ps -ef
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="memory">Memory</h2> <p>内存的管理和优化，是 Linux 系统性能优化的重要组成部分，换句话说，内存资源是否充足，会直接影响应用系统（包含操作系统和应用程序）的使用性能。</p> <p>本节将介绍几个系统命令，通过它们，可以快速查看 Linux 系统中内存的使用状况。</p> <h3 id="linux查看内存使用情况-free命令">Linux查看内存使用情况：free命令</h3> <p>free 是监控 Linux 内存使用状况最常用的命令之一，有关该命令的基本用法，已经在《<a href="http://c.biancheng.net/view/1083.html" target="_blank" rel="noopener noreferrer">Linux free命令<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>》一节中做了详细介绍，所以不再赘述，这里重点给大家讲解如何使用 free 命令查看系统内存的使用情况。</p> <p>下面是 free 命令在当前测试系统中的输出结果：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@localhost  ~]# free -m
+             total       used       free     shared    buffers     cached
+Mem:          2004        573       1431          0         47        201
+-/+ buffers/cache:        323       1680
+Swap:         1983          0       1983
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>从输出结果可以看到，该系统共 2GB 内存，其中系统空闲内存还有 1431MB，并且 swap 交换分区还未使用，因此可以判断出当前系统的内存资源还非常充足。</p> <p>除此之外，free 命令还可以实时地监控内存的使用状况，通过使用 -s 选项，可以实现在指定的时间段内不间断地监控内存的使用情况。例如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@localhost ~]# free -m -s 5
+             total       used       free     shared    buffers     cached
+Mem:          2004        571       1433          0         47        202
+-/+ buffers/cache:        321       1683
+Swap:         1983          0       1983
+
+             total       used       free     shared    buffers     cached
+Mem:          2004        571       1433          0         47        202
+-/+ buffers/cache:        321       1683
+Swap:         1983          0       1983
+#省略后续输出
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>要想实现动态地监控内存使用状况，除了使用 free 命令提供的 -s 选项，还可以借助 watch 命令。通过给 watch 命令后面添加需要运行的命令，watch 就会自行重复去运行这个命令（默认 2 秒执行一次），例如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@localhost ~]# watch -n 3 -d free
+Every 3.0s: free                                        Tue Oct 29 03:05:43 2019
+
+             total       used       free     shared    buffers     cached
+Mem:       2052988     586504    1466484          0      49184     207360
+-/+ buffers/cache:     329960    1723028
+Swap:      2031608          0    2031608
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>上面执行的命令中，-n 选项用于执行重复执行的间隔时间，-d 选项用于在显示数据时，高亮显示变动了的数据。</p> <h3 id="linux查看内存使用情况-vmstat命令">Linux查看内存使用情况：vmstat命令</h3> <p>vmstat 命令在监控系统内存方面的功能很强大，有关此命令的基本用法，已经在《<a href="http://c.biancheng.net/view/1081.html" target="_blank" rel="noopener noreferrer">Linux vmstat命令<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>》一节中做了详细介绍，这里重点讲解如何使用此命令查看内存的使用状况。</p> <p>下面是执行 vmstat 命令的输出结果：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@localhost ~]# vmstat 2 3
+procs -----------memory---------- ---swap-- -----io---- --system-- -----cpu-----
+r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+0  0      0 1436128  53004 210744    0    0     7     0   13   14  0  0 100  0  0
+1  0      0 1436112  53004 210744    0    0     0     0  128  226  0  0 100  0  0
+0  0      0 1435988  53004 210744    0    0     0     0  144  220  1  0 99  0  0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>对于内存的监控，我们只需要重点关注 swpd、si 和 so 这 3 列。从此输出结果可以看出，当前系统中，虚拟内存没有使用，硬盘和内存之间没有交换数据，可见内存资源处于空闲状态。</p> <h3 id="linux查看内存使用情况-sar命令">Linux查看内存使用情况：sar命令</h3> <p>sar 命令也可以用来监控 Linux 的内存使用状况，通过“sar -r”组合可以查看系统内存和交换空间的使用率。</p> <blockquote><p>有关 sar 命令的基本用法，可以阅读《<a href="http://c.biancheng.net/view/6212.html" target="_blank" rel="noopener noreferrer">Linux sar命令<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>》一文做详细了解。</p></blockquote> <p>如下是执行“sar -r”命令的输出结果：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@localhost ~]# sar -r 2 3
+Linux 2.6.32-431.el6.x86_64 (localhost)  10/29/2019  _x86_64_ (8 CPU)
+
+04:54:20 AM kbmemfree kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit
+04:54:22 AM   1218760    834228     40.63     53228    424908    738312     18.08
+04:54:24 AM   1218744    834244     40.64     53228    424908    738312     18.08
+04:54:26 AM   1218712    834276     40.64     53228    424908    738312     18.08
+Average:      1218739    834249     40.64     53228    424908    738312     18.08
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>此输出结果中，各个参数表示的含义如下：</p> <ul><li>kbmemfree：表示空闲的物理内存的大小；</li> <li>kbmemeused：表示已使用的物理内存的大小；</li> <li>%memused：表示已使用内存占总内存大小的百分比；</li> <li>kbbuffers：表示缓冲区所使用的物理内存的大小；</li> <li>kbcached：表示告诉缓存所使用的物理内存的大小；</li> <li>kbcommit 和 %commit：分别表示当前系统中应用程序使用的内存大小和百分比；</li></ul> <p>相比 free 命令，sar 命令的输出信息更加人性化，不仅给出了内存使用量，还给出了内存使用的百分比以及统计的平均值。比如说，仅通过 %commit 一项就可以得知，当前系统中的内存资源充足。</p> <p><a href="http://c.biancheng.net/view/6269.html" target="_blank" rel="noopener noreferrer">Linux查看内存使用情况方法汇总 (biancheng.net)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="查看某个进程的使用内存">查看某个进程的使用内存</h3> <p>通过： ps aux | sort -k4,4nr | head -n 10 查看内存占用前10名的程序</p> <p>[Linux下查看某一进程所占用内存的方法 - 小得盈满 - 博客园 (cnblogs.com)](https://www.cnblogs.com/freeweb/p/5407105.html#:~:text=Linux下查看某一个进程所占用的内存，首先可以通过ps命令找到进程id，比如 ps -ef | grep,kafka 可以看到kafka这个程序的进程id 可以看到是2913，现在可以使用如下命令查看内存： top -p 2913)</p> <h2 id="vim">vim</h2></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div><!----><div></div><!----><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://music.163.com/song/media/outer/url?id=316756.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://p2.music.126.net/qOOTIykbSLw9RHB0vI83GA==/737772302281958.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://p2.music.126.net/qOOTIykbSLw9RHB0vI83GA==/737772302281958.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>大城小事</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>杨千嬅</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><!----></div></div>
+    <script src="/assets/js/app.7976978d.js" defer></script><script src="/assets/js/4.5e854a94.js" defer></script><script src="/assets/js/1.650e7656.js" defer></script><script src="/assets/js/100.ef67a44c.js" defer></script><script src="/assets/js/10.51e38269.js" defer></script>
+  </body>
+</html>
