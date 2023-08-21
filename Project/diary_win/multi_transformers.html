@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Multi Transformers | Deep Diary</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/static/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script charset="utf-8" src="/static/js/custom.js"></script>
+    <meta name="description" content="基于深度学习，专注于旅游，记忆追溯相关的开发">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="google-site-verification">
+    <meta name="keywords" content="深记,deep-diary,自建博客,葛维冬，深度学习，记忆追溯">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="robots" content="all">
+    <meta name="author" content="deep-diary">
+    
+    <link rel="preload" href="/assets/css/0.styles.bfd62ff8.css" as="style"><link rel="preload" href="/assets/js/app.b92d5d04.js" as="script"><link rel="preload" href="/assets/js/4.5e854a94.js" as="script"><link rel="preload" href="/assets/js/1.650e7656.js" as="script"><link rel="preload" href="/assets/js/103.06545d39.js" as="script"><link rel="preload" href="/assets/js/10.51e38269.js" as="script"><link rel="prefetch" href="/assets/js/100.153d8fba.js"><link rel="prefetch" href="/assets/js/101.988a11b7.js"><link rel="prefetch" href="/assets/js/102.149f2f35.js"><link rel="prefetch" href="/assets/js/104.ec341d13.js"><link rel="prefetch" href="/assets/js/105.07874118.js"><link rel="prefetch" href="/assets/js/106.60917eb0.js"><link rel="prefetch" href="/assets/js/107.dc1ecdad.js"><link rel="prefetch" href="/assets/js/108.ac91e946.js"><link rel="prefetch" href="/assets/js/109.4377024f.js"><link rel="prefetch" href="/assets/js/11.eca28194.js"><link rel="prefetch" href="/assets/js/110.0b4e9261.js"><link rel="prefetch" href="/assets/js/111.b0e36156.js"><link rel="prefetch" href="/assets/js/112.6710a467.js"><link rel="prefetch" href="/assets/js/113.470af89c.js"><link rel="prefetch" href="/assets/js/114.98ce2239.js"><link rel="prefetch" href="/assets/js/115.a0cfd8c2.js"><link rel="prefetch" href="/assets/js/116.362cb8af.js"><link rel="prefetch" href="/assets/js/117.f94d79d1.js"><link rel="prefetch" href="/assets/js/118.f3361835.js"><link rel="prefetch" href="/assets/js/119.837be686.js"><link rel="prefetch" href="/assets/js/12.58d88b3a.js"><link rel="prefetch" href="/assets/js/120.d83ccafa.js"><link rel="prefetch" href="/assets/js/121.191c05bc.js"><link rel="prefetch" href="/assets/js/122.e53f188b.js"><link rel="prefetch" href="/assets/js/123.7c7c934c.js"><link rel="prefetch" href="/assets/js/124.cfd422f6.js"><link rel="prefetch" href="/assets/js/125.ee023ce3.js"><link rel="prefetch" href="/assets/js/126.7ff9de29.js"><link rel="prefetch" href="/assets/js/127.c828b2ad.js"><link rel="prefetch" href="/assets/js/128.6c9108df.js"><link rel="prefetch" href="/assets/js/129.82f3d7e7.js"><link rel="prefetch" href="/assets/js/13.fd9abc9e.js"><link rel="prefetch" href="/assets/js/130.8bdb6f79.js"><link rel="prefetch" href="/assets/js/131.a4825d42.js"><link rel="prefetch" href="/assets/js/132.dcef7f8b.js"><link rel="prefetch" href="/assets/js/133.5ab27554.js"><link rel="prefetch" href="/assets/js/134.14ffb5db.js"><link rel="prefetch" href="/assets/js/135.473ae75d.js"><link rel="prefetch" href="/assets/js/136.7683160a.js"><link rel="prefetch" href="/assets/js/137.200d667b.js"><link rel="prefetch" href="/assets/js/138.34d1b331.js"><link rel="prefetch" href="/assets/js/139.a41409b8.js"><link rel="prefetch" href="/assets/js/14.a4f3582d.js"><link rel="prefetch" href="/assets/js/140.978b9c80.js"><link rel="prefetch" href="/assets/js/141.4727f8ec.js"><link rel="prefetch" href="/assets/js/142.07282e4d.js"><link rel="prefetch" href="/assets/js/143.4fde995a.js"><link rel="prefetch" href="/assets/js/144.7f8b13c2.js"><link rel="prefetch" href="/assets/js/145.e33414fa.js"><link rel="prefetch" href="/assets/js/146.3e56c826.js"><link rel="prefetch" href="/assets/js/147.26dcb9e1.js"><link rel="prefetch" href="/assets/js/148.8b4e0105.js"><link rel="prefetch" href="/assets/js/149.6bae2527.js"><link rel="prefetch" href="/assets/js/15.71defc2f.js"><link rel="prefetch" href="/assets/js/150.c4747e89.js"><link rel="prefetch" href="/assets/js/151.894b2682.js"><link rel="prefetch" href="/assets/js/152.96b6041a.js"><link rel="prefetch" href="/assets/js/153.10b840e3.js"><link rel="prefetch" href="/assets/js/154.b815412b.js"><link rel="prefetch" href="/assets/js/155.38535922.js"><link rel="prefetch" href="/assets/js/156.3f492b88.js"><link rel="prefetch" href="/assets/js/157.139c8f24.js"><link rel="prefetch" href="/assets/js/158.8b784462.js"><link rel="prefetch" href="/assets/js/16.ca06e55e.js"><link rel="prefetch" href="/assets/js/17.ab7555cb.js"><link rel="prefetch" href="/assets/js/18.a8c7c83b.js"><link rel="prefetch" href="/assets/js/19.a91b6cd1.js"><link rel="prefetch" href="/assets/js/20.cd25491f.js"><link rel="prefetch" href="/assets/js/21.4edd42a9.js"><link rel="prefetch" href="/assets/js/22.3c33dd7a.js"><link rel="prefetch" href="/assets/js/23.c269d61a.js"><link rel="prefetch" href="/assets/js/24.f6f1b3d8.js"><link rel="prefetch" href="/assets/js/25.5857364b.js"><link rel="prefetch" href="/assets/js/26.c26a971b.js"><link rel="prefetch" href="/assets/js/27.cbc6d6ed.js"><link rel="prefetch" href="/assets/js/28.24448558.js"><link rel="prefetch" href="/assets/js/29.2d68138d.js"><link rel="prefetch" href="/assets/js/30.dadde165.js"><link rel="prefetch" href="/assets/js/31.368a2c10.js"><link rel="prefetch" href="/assets/js/32.872704ca.js"><link rel="prefetch" href="/assets/js/33.46480dbf.js"><link rel="prefetch" href="/assets/js/34.67ab1f72.js"><link rel="prefetch" href="/assets/js/35.13c53d85.js"><link rel="prefetch" href="/assets/js/36.8afd9903.js"><link rel="prefetch" href="/assets/js/37.f88f68d7.js"><link rel="prefetch" href="/assets/js/38.4d24ee94.js"><link rel="prefetch" href="/assets/js/39.5e2df920.js"><link rel="prefetch" href="/assets/js/40.83f10bff.js"><link rel="prefetch" href="/assets/js/41.67c6914c.js"><link rel="prefetch" href="/assets/js/42.e4367ca3.js"><link rel="prefetch" href="/assets/js/43.51eaeed6.js"><link rel="prefetch" href="/assets/js/44.50742ab4.js"><link rel="prefetch" href="/assets/js/45.522f16aa.js"><link rel="prefetch" href="/assets/js/46.fbc888ff.js"><link rel="prefetch" href="/assets/js/47.126e61a0.js"><link rel="prefetch" href="/assets/js/48.e390efe3.js"><link rel="prefetch" href="/assets/js/49.4b5f09f1.js"><link rel="prefetch" href="/assets/js/5.03b654a4.js"><link rel="prefetch" href="/assets/js/50.7bc927a2.js"><link rel="prefetch" href="/assets/js/51.ff5dee65.js"><link rel="prefetch" href="/assets/js/52.bedf26bc.js"><link rel="prefetch" href="/assets/js/53.d057a5b7.js"><link rel="prefetch" href="/assets/js/54.8d632ea8.js"><link rel="prefetch" href="/assets/js/55.49a32146.js"><link rel="prefetch" href="/assets/js/56.5bf71229.js"><link rel="prefetch" href="/assets/js/57.d0034a16.js"><link rel="prefetch" href="/assets/js/58.426559ec.js"><link rel="prefetch" href="/assets/js/59.a8bef30c.js"><link rel="prefetch" href="/assets/js/6.ac399d41.js"><link rel="prefetch" href="/assets/js/60.f76813ae.js"><link rel="prefetch" href="/assets/js/61.c6c6616c.js"><link rel="prefetch" href="/assets/js/62.8cb2bcdd.js"><link rel="prefetch" href="/assets/js/63.ac8364db.js"><link rel="prefetch" href="/assets/js/64.7b97c3d0.js"><link rel="prefetch" href="/assets/js/65.cd196df3.js"><link rel="prefetch" href="/assets/js/66.562c043a.js"><link rel="prefetch" href="/assets/js/67.c2a899c2.js"><link rel="prefetch" href="/assets/js/68.6aec71b0.js"><link rel="prefetch" href="/assets/js/69.34d8c3c9.js"><link rel="prefetch" href="/assets/js/7.706f533b.js"><link rel="prefetch" href="/assets/js/70.e87e9c91.js"><link rel="prefetch" href="/assets/js/71.e82f4279.js"><link rel="prefetch" href="/assets/js/72.bb0d41c1.js"><link rel="prefetch" href="/assets/js/73.093ecbb4.js"><link rel="prefetch" href="/assets/js/74.51a12ae8.js"><link rel="prefetch" href="/assets/js/75.ab39bd82.js"><link rel="prefetch" href="/assets/js/76.57e33f4e.js"><link rel="prefetch" href="/assets/js/77.d6a57c3e.js"><link rel="prefetch" href="/assets/js/78.8447e05a.js"><link rel="prefetch" href="/assets/js/79.7a58c26f.js"><link rel="prefetch" href="/assets/js/8.5e0abf00.js"><link rel="prefetch" href="/assets/js/80.467c53ba.js"><link rel="prefetch" href="/assets/js/81.cb7abee1.js"><link rel="prefetch" href="/assets/js/82.cb2d9268.js"><link rel="prefetch" href="/assets/js/83.8e543a02.js"><link rel="prefetch" href="/assets/js/84.a8d6a005.js"><link rel="prefetch" href="/assets/js/85.1b89b5a6.js"><link rel="prefetch" href="/assets/js/86.59860c0c.js"><link rel="prefetch" href="/assets/js/87.52f241f1.js"><link rel="prefetch" href="/assets/js/88.3f6bca1c.js"><link rel="prefetch" href="/assets/js/89.40ceac1c.js"><link rel="prefetch" href="/assets/js/9.2d9184d6.js"><link rel="prefetch" href="/assets/js/90.92b16cba.js"><link rel="prefetch" href="/assets/js/91.b8b0cec7.js"><link rel="prefetch" href="/assets/js/92.1079fab5.js"><link rel="prefetch" href="/assets/js/93.48425c6d.js"><link rel="prefetch" href="/assets/js/94.c05e300f.js"><link rel="prefetch" href="/assets/js/95.190d4fab.js"><link rel="prefetch" href="/assets/js/96.e6f66feb.js"><link rel="prefetch" href="/assets/js/97.b9ae4b16.js"><link rel="prefetch" href="/assets/js/98.8224ba4c.js"><link rel="prefetch" href="/assets/js/99.a66d3696.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.e51760b9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bfd62ff8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-1c4f0192 data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-1c4f0192><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Deep Diary</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>Blue</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Deep Diary</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Algorithm/" class="nav-link"><i class="iconfont undefined"></i>
+  Algorithm
+</a></li><li class="dropdown-item"><!----> <a href="/categories/deep learning/" class="nav-link"><i class="iconfont undefined"></i>
+  deep learning
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Embedded/" class="nav-link"><i class="iconfont undefined"></i>
+  Embedded
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Introduction/" class="nav-link"><i class="iconfont undefined"></i>
+  Introduction
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ROS/" class="nav-link"><i class="iconfont undefined"></i>
+  ROS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Develop/" class="nav-link"><i class="iconfont undefined"></i>
+  Develop
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/guide/" class="nav-link"><i class="iconfont undefined"></i>
+  guide
+</a></li><li class="dropdown-item"><!----> <a href="/categories/conference/" class="nav-link"><i class="iconfont undefined"></i>
+  conference
+</a></li><li class="dropdown-item"><!----> <a href="/categories/参考资料/" class="nav-link"><i class="iconfont undefined"></i>
+  参考资料
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ros2/" class="nav-link"><i class="iconfont undefined"></i>
+  ros2
+</a></li><li class="dropdown-item"><!----> <a href="/categories/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  blog
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/categories/DiaryWeb/" class="nav-link"><i class="iconfont undefined"></i>
+  DiaryWeb
+</a></li><li class="dropdown-item"><!----> <a href="/categories/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/categories/diary_server/" class="nav-link"><i class="iconfont undefined"></i>
+  diary_server
+</a></li><li class="dropdown-item"><!----> <a href="/categories/diary_win/" class="nav-link"><i class="iconfont undefined"></i>
+  diary_win
+</a></li><li class="dropdown-item"><!----> <a href="/categories/DiaryServer/" class="nav-link"><i class="iconfont undefined"></i>
+  DiaryServer
+</a></li><li class="dropdown-item"><!----> <a href="/categories/WEB/" class="nav-link"><i class="iconfont undefined"></i>
+  WEB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Synology/" class="nav-link"><i class="iconfont undefined"></i>
+  Synology
+</a></li><li class="dropdown-item"><!----> <a href="/categories/voice/" class="nav-link"><i class="iconfont undefined"></i>
+  voice
+</a></li><li class="dropdown-item"><!----> <a href="/categories/diary_web/" class="nav-link"><i class="iconfont undefined"></i>
+  diary_web
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Diary Web/" class="nav-link"><i class="iconfont undefined"></i>
+  Diary Web
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Diary_win/" class="nav-link"><i class="iconfont undefined"></i>
+  Diary_win
+</a></li><li class="dropdown-item"><!----> <a href="/categories/UI/" class="nav-link"><i class="iconfont undefined"></i>
+  UI
+</a></li><li class="dropdown-item"><!----> <a href="/categories/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/project/" class="nav-link"><i class="iconfont undefined"></i>
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/categories/django/" class="nav-link"><i class="iconfont undefined"></i>
+  django
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-faq"></i>
+      Guide
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link"><i class="iconfont undefined"></i>
+  Guide
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Project
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/management/" class="nav-link"><i class="iconfont undefined"></i>
+  Management
+</a></li><li class="dropdown-item"><!----> <a href="/project/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  Blog
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Embedded
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Embedded/" class="nav-link"><i class="iconfont undefined"></i>
+  Embedded
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Deep Learning
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Deep-Learning/" class="nav-link"><i class="iconfont undefined"></i>
+  Deep Learning
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Web
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Web/Backend/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/web/backend/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/frondend/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/" class="nav-link"><i class="iconfont undefined"></i>
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/web/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Software
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-date"></i>
+      Algorithm
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Algorithm/" class="nav-link"><i class="iconfont undefined"></i>
+  Algorithm
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><img src="/static/avatar.png" alt="author-avatar" class="personal-img" data-v-6c8ffc9c> <h3 class="name" data-v-6c8ffc9c>
+    Blue
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>119</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>129</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Algorithm/" class="nav-link"><i class="iconfont undefined"></i>
+  Algorithm
+</a></li><li class="dropdown-item"><!----> <a href="/categories/deep learning/" class="nav-link"><i class="iconfont undefined"></i>
+  deep learning
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Embedded/" class="nav-link"><i class="iconfont undefined"></i>
+  Embedded
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Introduction/" class="nav-link"><i class="iconfont undefined"></i>
+  Introduction
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ROS/" class="nav-link"><i class="iconfont undefined"></i>
+  ROS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Develop/" class="nav-link"><i class="iconfont undefined"></i>
+  Develop
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  Gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/guide/" class="nav-link"><i class="iconfont undefined"></i>
+  guide
+</a></li><li class="dropdown-item"><!----> <a href="/categories/conference/" class="nav-link"><i class="iconfont undefined"></i>
+  conference
+</a></li><li class="dropdown-item"><!----> <a href="/categories/参考资料/" class="nav-link"><i class="iconfont undefined"></i>
+  参考资料
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ros2/" class="nav-link"><i class="iconfont undefined"></i>
+  ros2
+</a></li><li class="dropdown-item"><!----> <a href="/categories/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  blog
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vuepress/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/categories/DiaryWeb/" class="nav-link"><i class="iconfont undefined"></i>
+  DiaryWeb
+</a></li><li class="dropdown-item"><!----> <a href="/categories/gallery/" class="nav-link"><i class="iconfont undefined"></i>
+  gallery
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/categories/diary_server/" class="nav-link"><i class="iconfont undefined"></i>
+  diary_server
+</a></li><li class="dropdown-item"><!----> <a href="/categories/diary_win/" class="nav-link"><i class="iconfont undefined"></i>
+  diary_win
+</a></li><li class="dropdown-item"><!----> <a href="/categories/DiaryServer/" class="nav-link"><i class="iconfont undefined"></i>
+  DiaryServer
+</a></li><li class="dropdown-item"><!----> <a href="/categories/WEB/" class="nav-link"><i class="iconfont undefined"></i>
+  WEB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Synology/" class="nav-link"><i class="iconfont undefined"></i>
+  Synology
+</a></li><li class="dropdown-item"><!----> <a href="/categories/voice/" class="nav-link"><i class="iconfont undefined"></i>
+  voice
+</a></li><li class="dropdown-item"><!----> <a href="/categories/diary_web/" class="nav-link"><i class="iconfont undefined"></i>
+  diary_web
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Diary Web/" class="nav-link"><i class="iconfont undefined"></i>
+  Diary Web
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Diary_win/" class="nav-link"><i class="iconfont undefined"></i>
+  Diary_win
+</a></li><li class="dropdown-item"><!----> <a href="/categories/UI/" class="nav-link"><i class="iconfont undefined"></i>
+  UI
+</a></li><li class="dropdown-item"><!----> <a href="/categories/PM/" class="nav-link"><i class="iconfont undefined"></i>
+  PM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/project/" class="nav-link"><i class="iconfont undefined"></i>
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/categories/django/" class="nav-link"><i class="iconfont undefined"></i>
+  django
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-faq"></i>
+      Guide
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link"><i class="iconfont undefined"></i>
+  Guide
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Project
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/management/" class="nav-link"><i class="iconfont undefined"></i>
+  Management
+</a></li><li class="dropdown-item"><!----> <a href="/project/blog/" class="nav-link"><i class="iconfont undefined"></i>
+  Blog
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Embedded
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Embedded/" class="nav-link"><i class="iconfont undefined"></i>
+  Embedded
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Deep Learning
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Deep-Learning/" class="nav-link"><i class="iconfont undefined"></i>
+  Deep Learning
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Web
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Web/Backend/Django/" class="nav-link"><i class="iconfont undefined"></i>
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/web/backend/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/frondend/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/Database/" class="nav-link"><i class="iconfont undefined"></i>
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/web/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      Software
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Software/" class="nav-link"><i class="iconfont undefined"></i>
+  Software
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-date"></i>
+      Algorithm
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Algorithm/" class="nav-link"><i class="iconfont undefined"></i>
+  Algorithm
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Diary Win</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Project/diary_win/0 QT learning.html" class="sidebar-link">QT learning</a></li><li><a href="/Project/diary_win/" aria-current="page" class="sidebar-link">Introduction of Diary Windows Version</a></li><li><a href="/Project/diary_win/audio.html" class="sidebar-link">audio</a></li><li><a href="/Project/diary_win/audio_transformers.html" class="sidebar-link">Audio Transformers</a></li><li><a href="/Project/diary_win/audio_whisper.html" class="sidebar-link">Whisper</a></li><li><a href="/Project/diary_win/developing log.html" class="sidebar-link">Developing Log</a></li><li><a href="/Project/diary_win/img_clip.html" class="sidebar-link">CLIP</a></li><li><a href="/Project/diary_win/img_deepface.html" class="sidebar-link">Deepface</a></li><li><a href="/Project/diary_win/img_detectron2.html" class="sidebar-link">Detectron2</a></li><li><a href="/Project/diary_win/img_imagebind.html" class="sidebar-link">imagebind</a></li><li><a href="/Project/diary_win/img_imgga.html" class="sidebar-link">Imgga</a></li><li><a href="/Project/diary_win/img_insightface.html" class="sidebar-link">Insightface</a></li><li><a href="/Project/diary_win/img_lavis.html" class="sidebar-link">Lavis</a></li><li><a href="/Project/diary_win/img_transformers.html" class="sidebar-link">Image Transformers</a></li><li><a href="/Project/diary_win/multi_transformers.html" aria-current="page" class="active sidebar-link">Multi Transformers</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Project/diary_win/multi_transformers.html#安装对应的包" class="sidebar-link">安装对应的包</a></li><li class="sidebar-sub-header"><a href="/Project/diary_win/multi_transformers.html#简单使用" class="sidebar-link">简单使用</a></li><li class="sidebar-sub-header"><a href="/Project/diary_win/multi_transformers.html#agents" class="sidebar-link">agents</a></li><li class="sidebar-sub-header"><a href="/Project/diary_win/multi_transformers.html#更新记录" class="sidebar-link">更新记录</a></li></ul></li><li><a href="/Project/diary_win/nlp_openai.html" class="sidebar-link">NLP OpenAI</a></li><li><a href="/Project/diary_win/nlp_transformers.html" class="sidebar-link">NLP Transformers</a></li><li><a href="/Project/diary_win/requirements specification.html" class="sidebar-link">Requirements Specification</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Multi Transformers</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>Blue</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2023
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>Multi Transformers</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>Blue</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2023-06-17</span></i> <!----> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      Transformers
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><div class="custom-block tip"><p class="custom-block-title">说明</p> <p>​	本文主要介绍Transformers 的实用，主要专注于多模态应用</p> <p><a href="www.deep-diary.com">点击免费观看教学视频</a></p></div> <h1 id="multi-transformers">Multi Transformers</h1> <h2 id="安装对应的包">安装对应的包</h2> <div class="language-python line-numbers-mode"><pre class="language-python"><code>!pip install transformers datasets
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="简单使用">简单使用</h2> <h3 id="图片问答">图片问答</h3> <p>输入</p> <p>一张图片和一个问题</p> <p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/invoice.png" alt="img"></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>result <span class="token operator">=</span> multi_transformers<span class="token punctuation">.</span>on_qa<span class="token punctuation">(</span>img<span class="token punctuation">,</span> <span class="token string">&quot;how much money for this invoice?&quot;</span><span class="token punctuation">)</span>
+result <span class="token operator">=</span> multi_transformers<span class="token punctuation">.</span>on_qa<span class="token punctuation">(</span>img<span class="token punctuation">,</span> <span class="token string">&quot;what is the date of this invoice?&quot;</span><span class="token punctuation">)</span>
+result <span class="token operator">=</span> multi_transformers<span class="token punctuation">.</span>on_qa<span class="token punctuation">(</span>img<span class="token punctuation">,</span> <span class="token string">&quot;Which city is this photo taken?&quot;</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>输出</p> <p>对应的回答</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token string">'score'</span><span class="token builtin class-name">:</span> <span class="token number">0.21186144649982452</span>, <span class="token string">'answer'</span><span class="token builtin class-name">:</span> <span class="token string">'145.00'</span>, <span class="token string">'start'</span><span class="token builtin class-name">:</span> <span class="token number">68</span>, <span class="token string">'end'</span><span class="token builtin class-name">:</span> <span class="token number">68</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token string">'score'</span><span class="token builtin class-name">:</span> <span class="token number">0.9881954193115234</span>, <span class="token string">'answer'</span><span class="token builtin class-name">:</span> <span class="token string">'1102/2019'</span>, <span class="token string">'start'</span><span class="token builtin class-name">:</span> <span class="token number">22</span>, <span class="token string">'end'</span><span class="token builtin class-name">:</span> <span class="token number">22</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token string">'score'</span><span class="token builtin class-name">:</span> <span class="token number">0.9997620582580566</span>, <span class="token string">'answer'</span><span class="token builtin class-name">:</span> <span class="token string">'New York,'</span>, <span class="token string">'start'</span><span class="token builtin class-name">:</span> <span class="token number">7</span>, <span class="token string">'end'</span><span class="token builtin class-name">:</span> <span class="token number">8</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>源代码</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>    <span class="token keyword">def</span> <span class="token function">on_qa</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> image<span class="token punctuation">,</span> question<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        vqa <span class="token operator">=</span> pipeline<span class="token punctuation">(</span>model<span class="token operator">=</span><span class="token string">&quot;impira/layoutlm-document-qa&quot;</span><span class="token punctuation">)</span>
+        results <span class="token operator">=</span> vqa<span class="token punctuation">(</span>image<span class="token operator">=</span>image<span class="token punctuation">,</span> question<span class="token operator">=</span>question<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> results
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>执行代码</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>multi_transformers <span class="token operator">=</span> MultiTransformers<span class="token punctuation">(</span><span class="token punctuation">)</span>
+result <span class="token operator">=</span> multi_transformers<span class="token punctuation">.</span>on_qa<span class="token punctuation">(</span>
+    image<span class="token operator">=</span><span class="token string">&quot;https://huggingface.co/spaces/impira/docquery/resolve/2359223c1837a7587402bda0f2643382a6eefeab/invoice.png&quot;</span><span class="token punctuation">,</span>
+    question<span class="token operator">=</span><span class="token string">&quot;What is the invoice number?&quot;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>报错</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>ValueError: If you provide an image without word_boxes, <span class="token keyword">then</span> the pipeline will 
+run OCR using Tesseract, but pytesseract is not available
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>措施</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>pip <span class="token function">install</span> pytesseract tesseract
+pip <span class="token function">install</span> tesseract
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>结果发现安装了这个包后，还是无法解决问题，网上一查，还需要安装exe文件包</p> <p>具体操作步骤如下</p> <p><a href="https://blog.csdn.net/qq_44921056/article/details/117529269" target="_blank" rel="noopener noreferrer">(3条消息) tesseract is not installed or it‘s not in your PATH解决办法！_tesseract is not installed or it's not in your pat_爱打瞌睡的CV君的博客-CSDN博客<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><code>exe</code>文件下载地址如下</p> <p><a href="https://github.com/UB-Mannheim/tesseract/wiki" target="_blank" rel="noopener noreferrer">Home · UB-Mannheim/tesseract Wiki · GitHub<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>tesseract<span class="token operator">-</span>ocr<span class="token operator">-</span>w64<span class="token operator">-</span>setup<span class="token operator">-</span><span class="token number">5.3</span><span class="token number">.1</span><span class="token number">.20230401</span><span class="token punctuation">.</span>exe  <span class="token comment"># 当前下载的版本</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>环境配置</p> <p>​		<a href="https://www.bilibili.com/video/BV1Pi4y157Eh/?from=search&amp;seid=1730295408288900697" target="_blank" rel="noopener noreferrer">tesseract-ocr，基本安装配置，以及python中如何使用？_哔哩哔哩_bilibili<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>添加
+path <span class="token operator">=</span> 
+d<span class="token punctuation">:</span>\Program Files\Tesseract<span class="token operator">-</span>OCR
+
+新建
+TESSDATA_PREFIX <span class="token operator">=</span> 
+d<span class="token punctuation">:</span>\Program Files\Tesseract<span class="token operator">-</span>OCR\tessdata
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/image-20230617134230353.png" alt="image-20230617134230353"></p> <p>验证命令</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>PS C:<span class="token punctuation">\</span>Users<span class="token punctuation">\</span>Blue<span class="token operator">&gt;</span> tesseract.exe -v
+tesseract v5.3.1.20230401
+ leptonica-1.83.1
+  libgif <span class="token number">5.2</span>.1 <span class="token builtin class-name">:</span> libjpeg 8d <span class="token punctuation">(</span>libjpeg-turbo <span class="token number">2.1</span>.4<span class="token punctuation">)</span> <span class="token builtin class-name">:</span> libpng <span class="token number">1.6</span>.39 <span class="token builtin class-name">:</span> libtiff <span class="token number">4.5</span>.0 <span class="token builtin class-name">:</span> zlib <span class="token number">1.2</span>.13 <span class="token builtin class-name">:</span> libwebp <span class="token number">1.3</span>.0 <span class="token builtin class-name">:</span> libopenjp2 <span class="token number">2.5</span>.0
+ Found AVX2
+ Found AVX
+ Found FMA
+ Found SSE4.1
+ Found libarchive <span class="token number">3.6</span>.2 zlib/1.2.13 liblzma/5.2.9 bz2lib/1.0.8 liblz4/1.9.4 libzstd/1.5.2
+ Found libcurl/8.0.1 Schannel zlib/1.2.13 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.4 libpsl/0.21.2 <span class="token punctuation">(</span>+libidn2/2.3.3<span class="token punctuation">)</span> libssh2/1.10.0
+PS C:<span class="token punctuation">\</span>Users<span class="token punctuation">\</span>Blue<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><div class="language-python line-numbers-mode"><pre class="language-python"><code>PS C<span class="token punctuation">:</span>\Users\Blue<span class="token operator">&gt;</span> tesseract<span class="token punctuation">.</span>exe <span class="token operator">-</span><span class="token operator">-</span><span class="token builtin">list</span><span class="token operator">-</span>langs
+List of available languages <span class="token keyword">in</span> <span class="token string">&quot;d:\Program Files\Tesseract-OCR\tessdata/&quot;</span> <span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+chi_sim
+chi_sim_vert
+chi_tra
+chi_tra_vert
+eng
+osd
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>python 简单实用</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment">#  识别中文</span>
+<span class="token operator">-</span><span class="token operator">-</span>oem 实用LSTM作为OCR引擎， 可选值为<span class="token number">0</span>，<span class="token number">1</span>，<span class="token number">2</span>，<span class="token number">3</span>
+<span class="token number">0</span>： Legacy engine only 
+<span class="token number">1</span><span class="token punctuation">:</span> Neural nets LSTM engine only
+<span class="token number">2</span><span class="token punctuation">:</span> Legacy <span class="token operator">+</span> LSTM engines
+<span class="token number">3</span><span class="token punctuation">:</span> Default<span class="token punctuation">,</span> based on what <span class="token keyword">is</span> available
+
+<span class="token operator">-</span><span class="token operator">-</span>psm 设置Page Segmentation 模式为自动
+
+config <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">'-l chi_sim --oem 1 --psm 3'</span><span class="token punctuation">)</span>
+im <span class="token operator">=</span> cv2<span class="token punctuation">.</span>imread<span class="token punctuation">(</span>impath<span class="token punctuation">,</span> cv2<span class="token punctuation">.</span>IMREAD_COLOR<span class="token punctuation">)</span>
+<span class="token comment"># 进行识别，本质上是调用tesseract 命令行工具</span>
+text <span class="token operator">=</span> pytesseract<span class="token punctuation">.</span>image_to_string<span class="token punctuation">(</span>im<span class="token punctuation">,</span> config<span class="token operator">=</span>config<span class="token punctuation">)</span>
+
+<span class="token comment"># 打印结果</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="agents">agents</h2> <p>安装</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>pip <span class="token function">install</span> transformers<span class="token punctuation">[</span>agents<span class="token punctuation">]</span>
+
+Installing collected packages: safetensors, transformers
+  Attempting uninstall: transformers
+    Found existing installation: transformers <span class="token number">4.26</span>.1
+    Uninstalling transformers-4.26.1:
+      Successfully uninstalled transformers-4.26.1
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the <span class="token builtin class-name">source</span> of the following dependency conflicts.
+salesforce-lavis <span class="token number">1.0</span>.2 requires transformers<span class="token operator">&lt;</span><span class="token number">4.27</span>,<span class="token operator">&gt;=</span><span class="token number">4.25</span>.0, but you have transformers <span class="token number">4.30</span>.2 <span class="token function">which</span> is incompatible.
+Successfully installed safetensors-0.3.1 transformers-4.30.2
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>==这里需要安装最新的transformers, 一开始这边是4.26.1， 提示无法导入<code>OpenAiAgent</code>, 升级到4.30.2后就正常了==</p> <h3 id="给图片打标签">给图片打标签</h3> <p>输入：</p> <p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/wind-farm-538576_640.jpg" alt="img"></p> <p>读取图片</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">import</span> requests
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
+<span class="token keyword">import</span> os
+<span class="token keyword">from</span> io <span class="token keyword">import</span> BytesIO
+<span class="token keyword">import</span> tempfile
+
+<span class="token keyword">def</span> <span class="token function">open_image</span><span class="token punctuation">(</span>img_path<span class="token punctuation">,</span> is_save<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;
+    :param img_path: could be URL or local path
+    :param is_save: if the img_path is URL, then save the image to local path
+    :return image: the opened image
+    :return path: local image path or Temporary path if the img_path is URL; None if is_save is False
+    &quot;&quot;&quot;</span>
+    path <span class="token operator">=</span> <span class="token boolean">None</span>
+    <span class="token keyword">if</span> img_path<span class="token punctuation">.</span>startswith<span class="token punctuation">(</span><span class="token string">'http://'</span><span class="token punctuation">)</span> <span class="token keyword">or</span> img_path<span class="token punctuation">.</span>startswith<span class="token punctuation">(</span><span class="token string">'https://'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        response <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>img_path<span class="token punctuation">)</span>
+        image <span class="token operator">=</span> Image<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>BytesIO<span class="token punctuation">(</span>response<span class="token punctuation">.</span>content<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">if</span> is_save<span class="token punctuation">:</span>
+            <span class="token keyword">with</span> tempfile<span class="token punctuation">.</span>NamedTemporaryFile<span class="token punctuation">(</span>delete<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span> <span class="token keyword">as</span> temp_file<span class="token punctuation">:</span>
+                temp_file<span class="token punctuation">.</span>write<span class="token punctuation">(</span>response<span class="token punctuation">.</span>content<span class="token punctuation">)</span>
+                path <span class="token operator">=</span> temp_file<span class="token punctuation">.</span>name
+
+    <span class="token keyword">else</span><span class="token punctuation">:</span>  <span class="token comment"># Local path</span>
+        <span class="token keyword">if</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>isfile<span class="token punctuation">(</span>img_path<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            image <span class="token operator">=</span> Image<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>img_path<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> is_save<span class="token punctuation">:</span>
+                path <span class="token operator">=</span> img_path
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">raise</span> FileNotFoundError<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;Cannot find the image file at '</span><span class="token interpolation"><span class="token punctuation">{</span>img_path<span class="token punctuation">}</span></span><span class="token string">'&quot;</span></span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> image<span class="token punctuation">,</span> path
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><div class="language-python line-numbers-mode"><pre class="language-python"><code>agent <span class="token operator">=</span> OpenAiAgent<span class="token punctuation">(</span>model<span class="token operator">=</span><span class="token string">&quot;text-davinci-003&quot;</span><span class="token punctuation">,</span> api_key<span class="token operator">=</span>OPENAI_API_KEY<span class="token punctuation">)</span>
+img <span class="token operator">=</span> <span class="token string">&quot;https://www.imagga.com/static/images/tagging/wind-farm-538576_640.jpg&quot;</span>
+<span class="token comment"># img = r&quot;D:\BlueDoc\DiaryWin\source\img\demo2.jpg&quot;</span>
+<span class="token comment"># img = r&quot;c:\Users\Blue\Desktop\singapore.png&quot;</span>
+image<span class="token punctuation">,</span> path <span class="token operator">=</span> open_image<span class="token punctuation">(</span>img<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span>
+
+result <span class="token operator">=</span> agent<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token string">&quot;Caption the following image&quot;</span><span class="token punctuation">,</span> image<span class="token operator">=</span>image<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>输出</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>wind turbines <span class="token keyword">in</span> the desert
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="根据描述生成图片">根据描述生成图片</h3> <div class="language-python line-numbers-mode"><pre class="language-python"><code>agent <span class="token operator">=</span> OpenAiAgent<span class="token punctuation">(</span>model<span class="token operator">=</span><span class="token string">&quot;text-davinci-003&quot;</span><span class="token punctuation">,</span> api_key<span class="token operator">=</span>OPENAI_API_KEY<span class="token punctuation">)</span>
+picture <span class="token operator">=</span> agent<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token string">&quot;Generate a picture of rivers and lakes.&quot;</span><span class="token punctuation">)</span>
+result <span class="token operator">=</span> agent<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token string">&quot;Transform the image in `picture` to add an island to it.&quot;</span><span class="token punctuation">,</span> picture<span class="token operator">=</span>picture<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>执行后，会打印出执行过程</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token operator">==</span>Explanation from the <span class="token assign-left variable">agent</span><span class="token operator">==</span>
+I will use the following  tool: <span class="token variable"><span class="token variable">`</span>image_generator<span class="token variable">`</span></span> to generate an image according to the prompt.
+
+
+<span class="token operator">==</span>Code generated by the <span class="token assign-left variable">agent</span><span class="token operator">==</span>
+image <span class="token operator">=</span> image_generator<span class="token punctuation">(</span>prompt<span class="token operator">=</span><span class="token string">&quot;rivers and lakes&quot;</span><span class="token punctuation">)</span>
+
+
+<span class="token operator">==</span>Result<span class="token operator">==</span>
+ImportError: This modeling <span class="token function">file</span> requires the following packages that were not 
+found <span class="token keyword">in</span> your environment: diffusers. Run <span class="token variable"><span class="token variable">`</span>pip <span class="token function">install</span> diffusers<span class="token variable">`</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>由于这个agent使用的是diffusers这个库，因此需要安装下</p> <p>安装结束后，会下载一大堆模型，结果的结果就是，内存不足</p> <p>因此，尝试用<code>remote</code>方式试试</p> <p><img src="https://deep-diary.oss-cn-hangzhou.aliyuncs.com/blog/image-20230617224536175.png" alt="image-20230617224536175"></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>picture <span class="token operator">=</span> agent<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token string">&quot;Generate a picture of rivers and lakes.&quot;</span><span class="token punctuation">,</span> remote<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="翻译">翻译</h3> <div class="language-python line-numbers-mode"><pre class="language-python"><code>result <span class="token operator">=</span> agent<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token string">&quot;Translate the following text into Chinese&quot;</span><span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">&quot;Hello, my dog is cute&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>输出</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token operator">==</span>Explanation from the <span class="token assign-left variable">agent</span><span class="token operator">==</span>
+I will use the following  tool: <span class="token variable"><span class="token variable">`</span>translator<span class="token variable">`</span></span> to translate the text into Chinese.
+
+
+<span class="token operator">==</span>Code generated by the <span class="token assign-left variable">agent</span><span class="token operator">==</span>
+translated_text <span class="token operator">=</span> translator<span class="token punctuation">(</span>text<span class="token operator">=</span>text, <span class="token assign-left variable">src_lang</span><span class="token operator">=</span><span class="token string">&quot;English&quot;</span>, <span class="token assign-left variable">tgt_lang</span><span class="token operator">=</span><span class="token string">&quot;Chinese&quot;</span><span class="token punctuation">)</span>
+
+
+<span class="token operator">==</span>Result<span class="token operator">==</span>
+Downloading <span class="token punctuation">(</span>…<span class="token punctuation">)</span>okenizer_config.json: <span class="token number">100</span>%<span class="token operator">|</span>██████████<span class="token operator">|</span> <span class="token number">564</span>/564 <span class="token punctuation">[</span>00:0<span class="token operator"><span class="token file-descriptor important">0</span>&lt;</span>00:00, 283kB/s<span class="token punctuation">]</span>
+D:<span class="token punctuation">\</span>BlueDoc<span class="token punctuation">\</span>DiaryWin<span class="token punctuation">\</span>venv<span class="token punctuation">\</span>lib<span class="token punctuation">\</span>site-packages<span class="token punctuation">\</span>huggingface_hub<span class="token punctuation">\</span>file_download.py:133: UserWarning: <span class="token variable"><span class="token variable">`</span>huggingface_hub<span class="token variable">`</span></span> cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them <span class="token keyword">in</span> D:<span class="token punctuation">\</span>.cache<span class="token punctuation">\</span>huggingface<span class="token punctuation">\</span>hub. Caching files will still work but <span class="token keyword">in</span> a degraded version that might require <span class="token function">more</span> space on your disk. This warning can be disabled by setting the <span class="token variable"><span class="token variable">`</span>HF_HUB_DISABLE_SYMLINKS_WARNING<span class="token variable">`</span></span> environment variable. For <span class="token function">more</span> details, see https://huggingface.co/docs/huggingface_hub/how-to-cache<span class="token comment">#limitations.</span>
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to see activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn<span class="token punctuation">(</span>message<span class="token punctuation">)</span>
+Downloading <span class="token punctuation">(</span>…<span class="token punctuation">)</span>tencepiece.bpe.model: <span class="token number">100</span>%<span class="token operator">|</span>██████████<span class="token operator">|</span> <span class="token number">4</span>.85M/4.85M <span class="token punctuation">[</span>00:0<span class="token operator"><span class="token file-descriptor important">7</span>&lt;</span>00:00, 636kB/s<span class="token punctuation">]</span>
+Downloading tokenizer.json: <span class="token number">100</span>%<span class="token operator">|</span>██████████<span class="token operator">|</span> <span class="token number">17</span>.3M/17.3M <span class="token punctuation">[</span>00:0<span class="token operator"><span class="token file-descriptor important">5</span>&lt;</span>00:00, <span class="token number">3</span>.14MB/s<span class="token punctuation">]</span>
+Downloading <span class="token punctuation">(</span>…<span class="token punctuation">)</span>cial_tokens_map.json: <span class="token number">100</span>%<span class="token operator">|</span>██████████<span class="token operator">|</span> <span class="token number">3</span>.55k/3.55k <span class="token punctuation">[</span>00:0<span class="token operator"><span class="token file-descriptor important">0</span>&lt;</span>00:00, <span class="token number">1</span>.19MB/s<span class="token punctuation">]</span>
+Downloading <span class="token punctuation">(</span>…<span class="token punctuation">)</span>lve/main/config.json: <span class="token number">100</span>%<span class="token operator">|</span>██████████<span class="token operator">|</span> <span class="token number">846</span>/846 <span class="token punctuation">[</span>00:0<span class="token operator"><span class="token file-descriptor important">0</span>&lt;</span>00:00, 430kB/s<span class="token punctuation">]</span>
+Downloading pytorch_model.bin:  <span class="token number">78</span>%<span class="token operator">|</span>███████▊  <span class="token operator">|</span> <span class="token number">1</span>.92G/2.46G <span class="token punctuation">[</span>04:4<span class="token operator"><span class="token file-descriptor important">7</span>&lt;</span>01:17, <span class="token number">7</span>.03MB/s<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="语音播放">语音播放</h3> <div class="language-python line-numbers-mode"><pre class="language-python"><code>result <span class="token operator">=</span> agent<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token string">&quot;Read the following text out loud&quot;</span><span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">&quot;Hello, my dog is cute&quot;</span><span class="token punctuation">)</span>
+play_audio<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>结果报错了</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>RuntimeError: play_audio requires FFmpeg extension <span class="token function">which</span> is not available. 
+Please refer to the stacktrace above <span class="token keyword">for</span> how to resolve this.
+
+WindowsPath<span class="token punctuation">(</span><span class="token string">'D:/BlueDoc/DiaryWin/venv/lib/site-packages/torchaudio/lib/libtorchaudio_ffmpeg.pyd'</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="更新记录">更新记录</h2> <table><thead><tr><th>Date</th> <th>Updated Info</th> <th>Address</th></tr></thead> <tbody><tr><td>2023-06-17</td> <td>init</td> <td>@ home</td></tr> <tr><td></td> <td></td> <td></td></tr> <tr><td></td> <td></td> <td></td></tr> <tr><td></td> <td></td> <td></td></tr> <tr><td></td> <td></td> <td></td></tr></tbody></table></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">7/5/2023, 8:59:33 AM</span></div></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div><!----><div></div><!----><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://music.163.com/song/media/outer/url?id=316756.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://p2.music.126.net/qOOTIykbSLw9RHB0vI83GA==/737772302281958.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://p2.music.126.net/qOOTIykbSLw9RHB0vI83GA==/737772302281958.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>大城小事</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>杨千嬅</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><!----></div></div>
+    <script src="/assets/js/app.b92d5d04.js" defer></script><script src="/assets/js/4.5e854a94.js" defer></script><script src="/assets/js/1.650e7656.js" defer></script><script src="/assets/js/103.06545d39.js" defer></script><script src="/assets/js/10.51e38269.js" defer></script>
+  </body>
+</html>
